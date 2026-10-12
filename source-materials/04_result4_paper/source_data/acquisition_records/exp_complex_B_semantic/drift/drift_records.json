@@ -1,0 +1,242 @@
+[
+  {
+    "token_id": 0,
+    "word": "cat",
+    "rep": 0,
+    "opm_uW": 853.264818,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.3195748329162598,
+    "file": "drift_t0_rep00.npy",
+    "timestamp": "13:07:26"
+  },
+  {
+    "token_id": 0,
+    "word": "cat",
+    "rep": 1,
+    "opm_uW": 855.079721,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.3202080726623535,
+    "file": "drift_t0_rep01.npy",
+    "timestamp": "13:07:30"
+  },
+  {
+    "token_id": 0,
+    "word": "cat",
+    "rep": 2,
+    "opm_uW": 855.382205,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.320948600769043,
+    "file": "drift_t0_rep02.npy",
+    "timestamp": "13:07:34"
+  },
+  {
+    "token_id": 1,
+    "word": "dog",
+    "rep": 0,
+    "opm_uW": 853.718544,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.51985764503479,
+    "file": "drift_t1_rep00.npy",
+    "timestamp": "13:07:38"
+  },
+  {
+    "token_id": 1,
+    "word": "dog",
+    "rep": 1,
+    "opm_uW": 855.76031,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.5142314434051514,
+    "file": "drift_t1_rep01.npy",
+    "timestamp": "13:07:42"
+  },
+  {
+    "token_id": 1,
+    "word": "dog",
+    "rep": 2,
+    "opm_uW": 855.911552,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.5153019428253174,
+    "file": "drift_t1_rep02.npy",
+    "timestamp": "13:07:46"
+  },
+  {
+    "token_id": 2,
+    "word": "hammer",
+    "rep": 0,
+    "opm_uW": 851.90364,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.41290020942688,
+    "file": "drift_t2_rep00.npy",
+    "timestamp": "13:07:50"
+  },
+  {
+    "token_id": 2,
+    "word": "hammer",
+    "rep": 1,
+    "opm_uW": 852.054882,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.41043758392334,
+    "file": "drift_t2_rep01.npy",
+    "timestamp": "13:07:54"
+  },
+  {
+    "token_id": 2,
+    "word": "hammer",
+    "rep": 2,
+    "opm_uW": 851.979261,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.414621591567993,
+    "file": "drift_t2_rep02.npy",
+    "timestamp": "13:07:58"
+  },
+  {
+    "token_id": 3,
+    "word": "saw",
+    "rep": 0,
+    "opm_uW": 850.996188,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.5079236030578613,
+    "file": "drift_t3_rep00.npy",
+    "timestamp": "13:08:03"
+  },
+  {
+    "token_id": 3,
+    "word": "saw",
+    "rep": 1,
+    "opm_uW": 849.710632,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.5101585388183594,
+    "file": "drift_t3_rep01.npy",
+    "timestamp": "13:08:07"
+  },
+  {
+    "token_id": 3,
+    "word": "saw",
+    "rep": 2,
+    "opm_uW": 849.55939,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.5123722553253174,
+    "file": "drift_t3_rep02.npy",
+    "timestamp": "13:08:11"
+  },
+  {
+    "token_id": 4,
+    "word": "apple",
+    "rep": 0,
+    "opm_uW": 852.206124,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.2416019439697266,
+    "file": "drift_t4_rep00.npy",
+    "timestamp": "13:08:16"
+  },
+  {
+    "token_id": 4,
+    "word": "apple",
+    "rep": 1,
+    "opm_uW": 852.357366,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.2444584369659424,
+    "file": "drift_t4_rep01.npy",
+    "timestamp": "13:08:20"
+  },
+  {
+    "token_id": 4,
+    "word": "apple",
+    "rep": 2,
+    "opm_uW": 853.642923,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.228947639465332,
+    "file": "drift_t4_rep02.npy",
+    "timestamp": "13:08:24"
+  },
+  {
+    "token_id": 5,
+    "word": "grape",
+    "rep": 0,
+    "opm_uW": 853.491681,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.5896430015563965,
+    "file": "drift_t5_rep00.npy",
+    "timestamp": "13:08:29"
+  },
+  {
+    "token_id": 5,
+    "word": "grape",
+    "rep": 1,
+    "opm_uW": 853.340439,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.586909294128418,
+    "file": "drift_t5_rep01.npy",
+    "timestamp": "13:08:33"
+  },
+  {
+    "token_id": 5,
+    "word": "grape",
+    "rep": 2,
+    "opm_uW": 853.264818,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.589376211166382,
+    "file": "drift_t5_rep02.npy",
+    "timestamp": "13:08:37"
+  },
+  {
+    "token_id": 6,
+    "word": "car",
+    "rep": 0,
+    "opm_uW": 851.979261,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.420706033706665,
+    "file": "drift_t6_rep00.npy",
+    "timestamp": "13:08:41"
+  },
+  {
+    "token_id": 6,
+    "word": "car",
+    "rep": 1,
+    "opm_uW": 852.811092,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.4265060424804688,
+    "file": "drift_t6_rep01.npy",
+    "timestamp": "13:08:45"
+  },
+  {
+    "token_id": 6,
+    "word": "car",
+    "rep": 2,
+    "opm_uW": 854.17227,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.433847665786743,
+    "file": "drift_t6_rep02.npy",
+    "timestamp": "13:08:49"
+  },
+  {
+    "token_id": 7,
+    "word": "train",
+    "rep": 0,
+    "opm_uW": 853.41606,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.513218402862549,
+    "file": "drift_t7_rep00.npy",
+    "timestamp": "13:08:53"
+  },
+  {
+    "token_id": 7,
+    "word": "train",
+    "rep": 1,
+    "opm_uW": 852.357366,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.5311970710754395,
+    "file": "drift_t7_rep01.npy",
+    "timestamp": "13:08:57"
+  },
+  {
+    "token_id": 7,
+    "word": "train",
+    "rep": 2,
+    "opm_uW": 855.079721,
+    "exposure_ms": 2.431397,
+    "roi_mean": 2.523764133453369,
+    "file": "drift_t7_rep02.npy",
+    "timestamp": "13:09:01"
+  }
+]

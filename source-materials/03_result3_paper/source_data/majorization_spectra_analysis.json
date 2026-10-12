@@ -1,0 +1,554 @@
+{
+  "prl_b_vs_e": {
+    "name": "PRL b vs e (incomp)",
+    "lam1": [
+      0.6,
+      0.3,
+      0.1
+    ],
+    "lam2": [
+      0.55,
+      0.45,
+      0.0
+    ],
+    "relation": "incomparable",
+    "crossings": [
+      {
+        "k": 1,
+        "ps_lam1": 0.6,
+        "ps_lam2": 0.55,
+        "diff": 0.05,
+        "lam1_leads": true
+      },
+      {
+        "k": 2,
+        "ps_lam1": 0.9,
+        "ps_lam2": 1.0,
+        "diff": -0.1,
+        "lam1_leads": false
+      }
+    ],
+    "n_verts1": 6,
+    "n_verts2": 6,
+    "containment_1in2": false,
+    "containment_2in1": false,
+    "protrusion_1_outside_2": 0.04999999999999993,
+    "protrusion_2_outside_1": 0.1,
+    "min_protrusion": 0.04999999999999993,
+    "entropy_1": 0.8979457248567797,
+    "entropy_2": 0.6881388137135884,
+    "crossing_strength": 0.05
+  },
+  "prl_c_vs_e": {
+    "name": "PRL c vs e (incomp)",
+    "lam1": [
+      0.8,
+      0.15,
+      0.05
+    ],
+    "lam2": [
+      0.55,
+      0.45,
+      0.0
+    ],
+    "relation": "incomparable",
+    "crossings": [
+      {
+        "k": 1,
+        "ps_lam1": 0.8,
+        "ps_lam2": 0.55,
+        "diff": 0.25,
+        "lam1_leads": true
+      },
+      {
+        "k": 2,
+        "ps_lam1": 0.95,
+        "ps_lam2": 1.0,
+        "diff": -0.05,
+        "lam1_leads": false
+      }
+    ],
+    "n_verts1": 6,
+    "n_verts2": 6,
+    "containment_1in2": false,
+    "containment_2in1": false,
+    "protrusion_1_outside_2": 0.25,
+    "protrusion_2_outside_1": 0.05,
+    "min_protrusion": 0.05,
+    "entropy_1": 0.6128694524619495,
+    "entropy_2": 0.6881388137135884,
+    "crossing_strength": 0.05
+  },
+  "prl_a_vs_b": {
+    "name": "PRL a vs b (comp: a\u227ab)",
+    "lam1": [
+      0.33,
+      0.33,
+      0.33
+    ],
+    "lam2": [
+      0.6,
+      0.3,
+      0.1
+    ],
+    "relation": "incomparable",
+    "crossings": [
+      {
+        "k": 1,
+        "ps_lam1": 0.33,
+        "ps_lam2": 0.6,
+        "diff": -0.27,
+        "lam1_leads": false
+      },
+      {
+        "k": 2,
+        "ps_lam1": 0.66,
+        "ps_lam2": 0.9,
+        "diff": -0.24,
+        "lam1_leads": false
+      }
+    ],
+    "n_verts1": 1,
+    "n_verts2": 6,
+    "containment_1in2": true,
+    "containment_2in1": false,
+    "protrusion_1_outside_2": 0.0,
+    "protrusion_2_outside_1": -1.0,
+    "min_protrusion": -1.0,
+    "entropy_1": 1.097575998276395,
+    "entropy_2": 0.8979457248567797,
+    "crossing_strength": 0.24
+  },
+  "prl_b_vs_c": {
+    "name": "PRL b vs c (comp: b\u227ac)",
+    "lam1": [
+      0.6,
+      0.3,
+      0.1
+    ],
+    "lam2": [
+      0.8,
+      0.15,
+      0.05
+    ],
+    "relation": "lam2_maj_lam1",
+    "crossings": [
+      {
+        "k": 1,
+        "ps_lam1": 0.6,
+        "ps_lam2": 0.8,
+        "diff": -0.2,
+        "lam1_leads": false
+      },
+      {
+        "k": 2,
+        "ps_lam1": 0.9,
+        "ps_lam2": 0.95,
+        "diff": -0.05,
+        "lam1_leads": false
+      }
+    ],
+    "n_verts1": 6,
+    "n_verts2": 6,
+    "containment_1in2": true,
+    "containment_2in1": false,
+    "protrusion_1_outside_2": 0.0,
+    "protrusion_2_outside_1": 0.20000000000000007,
+    "min_protrusion": 0.0,
+    "entropy_1": 0.8979457248567797,
+    "entropy_2": 0.6128694524619495,
+    "crossing_strength": 0.05
+  },
+  "4port_comparable": {
+    "name": "4-port comparable",
+    "lam1": [
+      0.4,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "lam2": [
+      0.7,
+      0.2,
+      0.07,
+      0.03
+    ],
+    "relation": "lam2_maj_lam1",
+    "crossings": [
+      {
+        "k": 1,
+        "ps_lam1": 0.4,
+        "ps_lam2": 0.7,
+        "diff": -0.3,
+        "lam1_leads": false
+      },
+      {
+        "k": 2,
+        "ps_lam1": 0.7,
+        "ps_lam2": 0.9,
+        "diff": -0.2,
+        "lam1_leads": false
+      },
+      {
+        "k": 3,
+        "ps_lam1": 0.9,
+        "ps_lam2": 0.97,
+        "diff": -0.07,
+        "lam1_leads": false
+      }
+    ],
+    "n_verts1": 24,
+    "n_verts2": 24,
+    "containment_1in2": true,
+    "containment_2in1": false,
+    "protrusion_1_outside_2": 0.0,
+    "protrusion_2_outside_1": 0.29999999999999993,
+    "min_protrusion": 0.0,
+    "entropy_1": 1.2798542258336674,
+    "entropy_2": 0.8629049827488267,
+    "crossing_strength": 0.07
+  },
+  "4port_incomp_A": {
+    "name": "4-port incomp A",
+    "lam1": [
+      0.52,
+      0.23,
+      0.13,
+      0.12
+    ],
+    "lam2": [
+      0.45,
+      0.33,
+      0.2,
+      0.02
+    ],
+    "relation": "incomparable",
+    "crossings": [
+      {
+        "k": 1,
+        "ps_lam1": 0.52,
+        "ps_lam2": 0.45,
+        "diff": 0.07,
+        "lam1_leads": true
+      },
+      {
+        "k": 2,
+        "ps_lam1": 0.75,
+        "ps_lam2": 0.78,
+        "diff": -0.03,
+        "lam1_leads": false
+      },
+      {
+        "k": 3,
+        "ps_lam1": 0.88,
+        "ps_lam2": 0.98,
+        "diff": -0.1,
+        "lam1_leads": false
+      }
+    ],
+    "n_verts1": 24,
+    "n_verts2": 24,
+    "containment_1in2": false,
+    "containment_2in1": false,
+    "protrusion_1_outside_2": 0.07,
+    "protrusion_2_outside_1": 0.09999999999999999,
+    "min_protrusion": 0.07,
+    "entropy_1": 1.197727568217485,
+    "entropy_2": 1.125315171985512,
+    "crossing_strength": 0.07
+  },
+  "4port_Hand-A": {
+    "name": "4-port Hand-A",
+    "lam1": [
+      0.6,
+      0.15,
+      0.15,
+      0.1
+    ],
+    "lam2": [
+      0.4,
+      0.35,
+      0.15,
+      0.1
+    ],
+    "relation": "lam1_maj_lam2",
+    "crossings": [
+      {
+        "k": 1,
+        "ps_lam1": 0.6,
+        "ps_lam2": 0.4,
+        "diff": 0.2,
+        "lam1_leads": true
+      },
+      {
+        "k": 2,
+        "ps_lam1": 0.75,
+        "ps_lam2": 0.75,
+        "diff": 0.0,
+        "lam1_leads": false
+      },
+      {
+        "k": 3,
+        "ps_lam1": 0.9,
+        "ps_lam2": 0.9,
+        "diff": 0.0,
+        "lam1_leads": false
+      }
+    ],
+    "n_verts1": 12,
+    "n_verts2": 24,
+    "containment_1in2": false,
+    "containment_2in1": true,
+    "protrusion_1_outside_2": 0.19999999999999996,
+    "protrusion_2_outside_1": 0.0,
+    "min_protrusion": 0.0,
+    "entropy_1": 1.1058898790247633,
+    "entropy_2": 1.2487805433564858,
+    "crossing_strength": 0.0
+  },
+  "4port_Hand-B": {
+    "name": "4-port Hand-B",
+    "lam1": [
+      0.55,
+      0.15,
+      0.15,
+      0.15
+    ],
+    "lam2": [
+      0.35,
+      0.35,
+      0.25,
+      0.05
+    ],
+    "relation": "incomparable",
+    "crossings": [
+      {
+        "k": 1,
+        "ps_lam1": 0.55,
+        "ps_lam2": 0.35,
+        "diff": 0.2,
+        "lam1_leads": true
+      },
+      {
+        "k": 2,
+        "ps_lam1": 0.7,
+        "ps_lam2": 0.7,
+        "diff": 0.0,
+        "lam1_leads": true
+      },
+      {
+        "k": 3,
+        "ps_lam1": 0.85,
+        "ps_lam2": 0.95,
+        "diff": -0.1,
+        "lam1_leads": false
+      }
+    ],
+    "n_verts1": 4,
+    "n_verts2": 12,
+    "containment_1in2": false,
+    "containment_2in1": false,
+    "protrusion_1_outside_2": 0.20000000000000007,
+    "protrusion_2_outside_1": 0.09999999999999999,
+    "min_protrusion": 0.09999999999999999,
+    "entropy_1": 1.1825143436142376,
+    "entropy_2": 1.2312356911067466,
+    "crossing_strength": 0.1
+  },
+  "4port_Hand-C": {
+    "name": "4-port Hand-C",
+    "lam1": [
+      0.5,
+      0.2,
+      0.2,
+      0.1
+    ],
+    "lam2": [
+      0.4,
+      0.4,
+      0.1,
+      0.1
+    ],
+    "relation": "incomparable",
+    "crossings": [
+      {
+        "k": 1,
+        "ps_lam1": 0.5,
+        "ps_lam2": 0.4,
+        "diff": 0.1,
+        "lam1_leads": true
+      },
+      {
+        "k": 2,
+        "ps_lam1": 0.7,
+        "ps_lam2": 0.8,
+        "diff": -0.1,
+        "lam1_leads": false
+      },
+      {
+        "k": 3,
+        "ps_lam1": 0.9,
+        "ps_lam2": 0.9,
+        "diff": -0.0,
+        "lam1_leads": false
+      }
+    ],
+    "n_verts1": 12,
+    "n_verts2": 6,
+    "containment_1in2": false,
+    "containment_2in1": false,
+    "protrusion_1_outside_2": 0.09999999999999998,
+    "protrusion_2_outside_1": 0.07071067811865478,
+    "min_protrusion": 0.07071067811865478,
+    "entropy_1": 1.2206072645530173,
+    "entropy_2": 1.193549604098133,
+    "crossing_strength": 0.1
+  },
+  "4port_Hand-D": {
+    "name": "4-port Hand-D",
+    "lam1": [
+      0.55,
+      0.2,
+      0.15,
+      0.1
+    ],
+    "lam2": [
+      0.4,
+      0.35,
+      0.2,
+      0.05
+    ],
+    "relation": "incomparable",
+    "crossings": [
+      {
+        "k": 1,
+        "ps_lam1": 0.55,
+        "ps_lam2": 0.4,
+        "diff": 0.15,
+        "lam1_leads": true
+      },
+      {
+        "k": 2,
+        "ps_lam1": 0.75,
+        "ps_lam2": 0.75,
+        "diff": 0.0,
+        "lam1_leads": false
+      },
+      {
+        "k": 3,
+        "ps_lam1": 0.9,
+        "ps_lam2": 0.95,
+        "diff": -0.05,
+        "lam1_leads": false
+      }
+    ],
+    "n_verts1": 24,
+    "n_verts2": 24,
+    "containment_1in2": false,
+    "containment_2in1": false,
+    "protrusion_1_outside_2": 0.15000000000000002,
+    "protrusion_2_outside_1": 0.05,
+    "min_protrusion": 0.05,
+    "entropy_1": 1.165524439934698,
+    "entropy_2": 1.2056282324887189,
+    "crossing_strength": 0.05
+  },
+  "4port_Hand-E": {
+    "name": "4-port Hand-E",
+    "lam1": [
+      0.6,
+      0.2,
+      0.1,
+      0.1
+    ],
+    "lam2": [
+      0.4,
+      0.3,
+      0.25,
+      0.05
+    ],
+    "relation": "incomparable",
+    "crossings": [
+      {
+        "k": 1,
+        "ps_lam1": 0.6,
+        "ps_lam2": 0.4,
+        "diff": 0.2,
+        "lam1_leads": true
+      },
+      {
+        "k": 2,
+        "ps_lam1": 0.8,
+        "ps_lam2": 0.7,
+        "diff": 0.1,
+        "lam1_leads": true
+      },
+      {
+        "k": 3,
+        "ps_lam1": 0.9,
+        "ps_lam2": 0.95,
+        "diff": -0.05,
+        "lam1_leads": false
+      }
+    ],
+    "n_verts1": 12,
+    "n_verts2": 24,
+    "containment_1in2": false,
+    "containment_2in1": false,
+    "protrusion_1_outside_2": 0.19999999999999996,
+    "protrusion_2_outside_1": 0.05,
+    "min_protrusion": 0.05,
+    "entropy_1": 1.0888999753452235,
+    "entropy_2": 1.224068338005115,
+    "crossing_strength": 0.05
+  },
+  "4port_search_best": {
+    "name": "4-port SEARCH BEST",
+    "lam1": [
+      0.3697091178738856,
+      0.3088710900224543,
+      0.29000673737781435,
+      0.031413054725845525
+    ],
+    "lam2": [
+      0.47761653750300953,
+      0.21167637321041846,
+      0.16116798321755796,
+      0.14953910606901408
+    ],
+    "relation": "incomparable",
+    "crossings": [
+      {
+        "k": 1,
+        "ps_lam1": 0.369709,
+        "ps_lam2": 0.477617,
+        "diff": -0.107907,
+        "lam1_leads": false
+      },
+      {
+        "k": 2,
+        "ps_lam1": 0.67858,
+        "ps_lam2": 0.689293,
+        "diff": -0.010713,
+        "lam1_leads": false
+      },
+      {
+        "k": 3,
+        "ps_lam1": 0.968587,
+        "ps_lam2": 0.850461,
+        "diff": 0.118126,
+        "lam1_leads": true
+      }
+    ],
+    "n_verts1": 24,
+    "n_verts2": 24,
+    "containment_1in2": false,
+    "containment_2in1": false,
+    "protrusion_1_outside_2": 0.11812605134316856,
+    "protrusion_2_outside_1": 0.10790741962912392,
+    "min_protrusion": 0.10790741962912392,
+    "entropy_1": 1.1984373527369205,
+    "entropy_2": 1.2599375942415456,
+    "crossing_strength": 0.107907
+  }
+}

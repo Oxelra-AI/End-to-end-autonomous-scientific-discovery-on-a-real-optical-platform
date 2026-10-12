@@ -1,0 +1,63 @@
+[04:27:29] TM: Reference baseline (3 repeats)
+[04:27:35]   Ref 0: OPM=802.4uW
+[04:27:39]   Ref 1: OPM=801.7uW
+[04:27:42]   Ref 2: OPM=801.2uW
+[04:27:42]   Binned output: 125x125=15625 modes
+[04:27:42] TM: Hadamard probing (N=16, 64 measurements)
+[04:28:37]   Vec 4/16: 55s
+[04:29:31]   Vec 8/16: 109s
+[04:30:25]   Vec 12/16: 163s
+[04:31:20]   Vec 16/16: 218s
+[04:31:24] TM done: shape=(15625, 16), drift=0.9893
+[04:31:24] Good channels: 11718/15625
+[04:31:24] 
+Phase 2: Building transport operators
+[04:31:24] Full system: eigvals top4=[61.858 58.564 54.299 52.56 ]
+[04:31:24]   radial_0: 1465 ch, top4=[9.324 8.216 7.563 7.245], spread=3.8
+[04:31:24]   radial_1: 1465 ch, top4=[9.389 8.82  7.781 7.589], spread=3.9
+[04:31:24]   radial_2: 1465 ch, top4=[9.285 8.852 7.962 7.167], spread=3.8
+[04:31:24]   radial_3: 1465 ch, top4=[9.35  8.369 7.002 6.698], spread=4.0
+[04:31:24]   radial_4: 1465 ch, top4=[7.431 7.152 6.593 5.942], spread=3.0
+[04:31:24]   radial_5: 1465 ch, top4=[7.793 6.715 6.234 5.94 ], spread=3.1
+[04:31:24]   radial_6: 1464 ch, top4=[8.343 6.945 6.423 5.727], spread=3.2
+[04:31:24]   radial_7: 1464 ch, top4=[7.246 7.139 6.192 5.846], spread=2.9
+[04:31:24]   resp_0: 1465 ch, top4=[5.627 5.176 4.96  4.823], spread=2.5
+[04:31:24]   resp_1: 1465 ch, top4=[7.005 6.551 6.363 5.967], spread=2.9
+[04:31:24]   resp_2: 1465 ch, top4=[7.73  7.268 6.73  6.595], spread=3.0
+[04:31:24]   resp_3: 1465 ch, top4=[8.082 7.659 7.068 6.953], spread=3.2
+[04:31:24]   resp_4: 1465 ch, top4=[8.202 7.453 7.037 6.766], spread=3.2
+[04:31:24]   resp_5: 1465 ch, top4=[8.543 7.918 7.461 6.891], spread=3.4
+[04:31:24]   resp_6: 1464 ch, top4=[8.938 8.266 7.386 7.053], spread=3.5
+[04:31:24]   resp_7: 1464 ch, top4=[10.618  9.976  8.216  7.743], spread=4.2
+[04:31:24] 
+Phase 4: Computing intervals
+[04:31:24] 
+Phase 5: Majorization consistency
+[04:31:24]   ✓ comp_less vs comp_more: maj=s2_majorizes_s1, counts={'nested_1in2': 17}
+[04:31:24]   ✓ incomp_A vs incomp_B: maj=incomparable, counts={'nested_2in1': 15, 'partial_overlap': 2}
+[04:31:24]   ✓ comp_less vs incomp_A: maj=incomparable, counts={'nested_1in2': 16, 'partial_overlap': 1}
+[04:31:24]   ✓ comp_less vs incomp_B: maj=incomparable, counts={'nested_2in1': 8, 'partial_overlap': 9}
+[04:31:24]   ✓ prl_b vs prl_e: maj=incomparable, counts={'nested_1in2': 13, 'partial_overlap': 4}
+[04:31:24]   ✓ prl_c vs prl_e: maj=incomparable, counts={'nested_2in1': 15, 'partial_overlap': 2}
+[04:31:24]   ✓ prl_a vs prl_b: maj=s2_majorizes_s1, counts={'nested_1in2': 17}
+[04:31:24]   ✓ prl_b vs prl_c: maj=s2_majorizes_s1, counts={'nested_1in2': 17}
+[04:31:24]   ✓ uniform_16 vs peaked_16: maj=s2_majorizes_s1, counts={'nested_1in2': 17}
+[04:31:24]   ✓ incoherent_4 vs comp_less: maj=s2_majorizes_s1, counts={'nested_1in2': 17}
+[04:31:24]   ✓ incoherent_4 vs coherent: maj=s2_majorizes_s1, counts={'nested_1in2': 17}
+[04:31:24] 
+Phase 6: Physical spot-checks
+[04:32:18]   comp_less U0: anal=38.9198, phys=59.1555, ratio=1.5199
+[04:33:11]   comp_less U1: anal=38.7588, phys=64.5878, ratio=1.6664
+[04:34:06]   comp_less U2: anal=39.0234, phys=60.1487, ratio=1.5413
+[04:34:59]   comp_more U0: anal=40.3361, phys=58.8164, ratio=1.4582
+[04:35:53]   comp_more U1: anal=39.1254, phys=60.3800, ratio=1.5432
+[04:36:47]   comp_more U2: anal=40.1885, phys=59.3657, ratio=1.4772
+[04:37:41]   incomp_A U0: anal=38.8059, phys=59.5084, ratio=1.5335
+[04:38:35]   incomp_A U1: anal=39.9598, phys=59.4276, ratio=1.4872
+[04:39:29]   incomp_A U2: anal=37.7817, phys=56.7063, ratio=1.5009
+[04:40:23]   incomp_B U0: anal=37.3295, phys=60.7411, ratio=1.6272
+[04:41:16]   incomp_B U1: anal=41.1823, phys=60.2572, ratio=1.4632
+[04:42:10]   incomp_B U2: anal=39.5539, phys=63.9891, ratio=1.6178
+[04:42:10] 
+Phase 7: Final reference check
+[04:42:14]   Final drift: 0.9794

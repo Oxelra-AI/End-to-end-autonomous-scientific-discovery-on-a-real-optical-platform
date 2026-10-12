@@ -1,0 +1,6 @@
+{
+  "description": "Mode-number scaling summary used for main-text Fig. 2f. Values are the summary values reported by the Result2 initial TM analysis.",
+  "controlled_input_modes": [16, 64, 256],
+  "mean_enhancement": [1.452019, 6.09, 16.76],
+  "max_enhancement": [3.321549, 15.78, 25.59]
+}

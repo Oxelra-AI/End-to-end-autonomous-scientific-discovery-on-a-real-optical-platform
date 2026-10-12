@@ -1,0 +1,191 @@
+{
+  "experiment": "tm_focusing",
+  "timestamp": "2026-04-13 00:52:12",
+  "tm_data_dir": "../tm_256",
+  "baseline_avg_intensity": 5.1048437030861376,
+  "single_focus_results": [
+    {
+      "target_mode": 136,
+      "target_2d": [
+        8,
+        8
+      ],
+      "enhance_phase_only": 30.396244518622062,
+      "enhance_full": 0.2843284668233534,
+      "pbr_phase_only": 8.937851643581276,
+      "pbr_full": 0.8309712216128465,
+      "target_intensity_po": 155.16807742835437,
+      "target_intensity_full": 1.4514523834713313
+    },
+    {
+      "target_mode": 0,
+      "target_2d": [
+        0,
+        0
+      ],
+      "enhance_phase_only": 35.92829075040086,
+      "enhance_full": 0.3147791815512749,
+      "pbr_phase_only": 9.499950015828322,
+      "pbr_full": 0.9707333159902988,
+      "target_intensity_po": 183.40830879983176,
+      "target_intensity_full": 1.6068985228046335
+    },
+    {
+      "target_mode": 15,
+      "target_2d": [
+        0,
+        15
+      ],
+      "enhance_phase_only": 37.79506575817218,
+      "enhance_full": 0.5760265393968148,
+      "pbr_phase_only": 9.885700427422616,
+      "pbr_full": 1.763451206776129,
+      "target_intensity_po": 192.93790344333175,
+      "target_intensity_full": 2.9405254524503293
+    },
+    {
+      "target_mode": 240,
+      "target_2d": [
+        15,
+        0
+      ],
+      "enhance_phase_only": 46.07526651872858,
+      "enhance_full": 1.9146040257940309,
+      "pbr_phase_only": 11.339933618698849,
+      "pbr_full": 5.352461518346018,
+      "target_intensity_po": 235.20703415614713,
+      "target_intensity_full": 9.773754304978027
+    },
+    {
+      "target_mode": 255,
+      "target_2d": [
+        15,
+        15
+      ],
+      "enhance_phase_only": 45.09972481019646,
+      "enhance_full": 0.689141292064376,
+      "pbr_phase_only": 11.105144064823401,
+      "pbr_full": 2.14451681560889,
+      "target_intensity_po": 230.22704620824908,
+      "target_intensity_full": 3.5179585853314745
+    },
+    {
+      "target_mode": 68,
+      "target_2d": [
+        4,
+        4
+      ],
+      "enhance_phase_only": 44.791540319414814,
+      "enhance_full": 1.5114920460754722,
+      "pbr_phase_only": 11.565580857156542,
+      "pbr_full": 4.522751638015238,
+      "target_intensity_po": 228.65381255109355,
+      "target_intensity_full": 7.715930653673156
+    },
+    {
+      "target_mode": 172,
+      "target_2d": [
+        10,
+        12
+      ],
+      "enhance_phase_only": 38.54158574421091,
+      "enhance_full": 0.4373756165165893,
+      "pbr_phase_only": 8.856669102141675,
+      "pbr_full": 1.4008381513639456,
+      "target_intensity_po": 196.7487712932895,
+      "target_intensity_full": 2.232734161858128
+    },
+    {
+      "target_mode": 115,
+      "target_2d": [
+        7,
+        3
+      ],
+      "enhance_phase_only": 41.85345251239237,
+      "enhance_full": 0.9037301699946307,
+      "pbr_phase_only": 11.204915218093905,
+      "pbr_full": 2.5685882048135804,
+      "target_intensity_po": 213.6553335103009,
+      "target_intensity_full": 4.613401267586055
+    }
+  ],
+  "multi_focus_results": [
+    {
+      "name": "2spot_diagonal",
+      "target_modes": [
+        0,
+        255
+      ],
+      "enhancement": 25.487530336011467,
+      "pbr": 5.730224333645933,
+      "target_intensities": [
+        68.66623401087945,
+        191.55348347513066
+      ]
+    },
+    {
+      "name": "2spot_center",
+      "target_modes": [
+        135,
+        137
+      ],
+      "enhancement": 31.04249502766361,
+      "pbr": 7.408783491818442,
+      "target_intensities": [
+        184.26059637794654,
+        132.6735741621561
+      ]
+    },
+    {
+      "name": "3spot_line",
+      "target_modes": [
+        132,
+        136,
+        140
+      ],
+      "enhancement": 21.072305048438714,
+      "pbr": 5.188407447833738,
+      "target_intensities": [
+        147.9655325657685,
+        57.10832510022048,
+        117.63861354210877
+      ]
+    },
+    {
+      "name": "4spot_square",
+      "target_modes": [
+        68,
+        75,
+        180,
+        187
+      ],
+      "enhancement": 19.202432103183313,
+      "pbr": 4.318033166349866,
+      "target_intensities": [
+        172.59199936989825,
+        33.83839915963599,
+        50.03541922466818,
+        135.63584066929528
+      ]
+    },
+    {
+      "name": "5spot_cross",
+      "target_modes": [
+        136,
+        72,
+        200,
+        132,
+        140
+      ],
+      "enhancement": 16.577286046295875,
+      "pbr": 3.967051006896374,
+      "target_intensities": [
+        37.876861912615006,
+        125.86450147760044,
+        104.52159306339797,
+        90.57515547893505,
+        64.28415950590752
+      ]
+    }
+  ]
+}

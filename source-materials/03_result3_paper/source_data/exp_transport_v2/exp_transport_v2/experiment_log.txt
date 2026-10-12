@@ -1,0 +1,51 @@
+[04:08:03] Config: N=16, port_size=8, gap=2
+[04:08:03] TM: Reference baseline (3 repeats)
+[04:08:10]   Ref 0: OPM=805.2uW
+[04:08:13]   Ref 1: OPM=805.5uW
+[04:08:16]   Ref 2: OPM=806.6uW
+[04:08:16]   Binned output: 125x125=15625 modes
+[04:08:16] TM: Hadamard probing (N=16, 64 measurements)
+[04:09:12]   Vec 4/16: 56s
+[04:10:06]   Vec 8/16: 110s
+[04:11:00]   Vec 12/16: 164s
+[04:11:54]   Vec 16/16: 217s
+[04:11:57] TM done: shape=(15625, 16), drift=0.9872
+[04:11:57] Selected 11718/15625 good channels
+[04:11:57] Phase 3: Building 8 virtual transport operators
+[04:11:57]   H_all eigenvalues (top 4): [54.0523 50.3807 47.7017 46.1035]
+[04:11:57]   System 0: 1465 channels, eigvals(top4)=[6.8631 6.5448 6.0936 5.6588]
+[04:11:57]   System 1: 1465 channels, eigvals(top4)=[7.1695 6.4357 6.1086 5.7169]
+[04:11:57]   System 2: 1465 channels, eigvals(top4)=[6.7952 6.3247 5.7518 5.6671]
+[04:11:57]   System 3: 1465 channels, eigvals(top4)=[6.8099 6.2801 5.8684 5.7732]
+[04:11:57]   System 4: 1465 channels, eigvals(top4)=[7.0367 6.4966 6.0568 5.6961]
+[04:11:57]   System 5: 1465 channels, eigvals(top4)=[6.6663 6.4615 6.1859 5.8777]
+[04:11:57]   System 6: 1464 channels, eigvals(top4)=[7.2542 6.5251 6.1422 5.7562]
+[04:11:57]   System 7: 1464 channels, eigvals(top4)=[7.0721 6.3855 6.0158 5.933 ]
+[04:11:57] 
+Phase 5: Computing intervals for 9 systems × 13 spectra
+[04:11:57] 
+Phase 6: Majorization consistency across systems
+[04:11:57]   ✓ comp_less vs comp_more: maj=s2_majorizes_s1, relations={'nested_1in2': 9}, overlap=False
+[04:11:57]   ✗ incomp_A vs incomp_B: maj=incomparable, relations={'nested_2in1': 9}, overlap=False
+[04:11:57]   ✗ comp_less vs incomp_A: maj=incomparable, relations={'nested_1in2': 9}, overlap=False
+[04:11:57]   ✓ comp_less vs incomp_B: maj=incomparable, relations={'partial_overlap': 6, 'nested_2in1': 3}, overlap=True
+[04:11:57]   ✓ prl_b vs prl_e: maj=incomparable, relations={'nested_1in2': 8, 'partial_overlap': 1}, overlap=True
+[04:11:57]   ✗ prl_c vs prl_e: maj=incomparable, relations={'nested_2in1': 9}, overlap=False
+[04:11:57]   ✓ prl_a vs prl_b: maj=s2_majorizes_s1, relations={'nested_1in2': 9}, overlap=False
+[04:11:57]   ✓ prl_b vs prl_c: maj=s2_majorizes_s1, relations={'nested_1in2': 9}, overlap=False
+[04:11:57]   ✓ uniform_16 vs peaked_16: maj=s2_majorizes_s1, relations={'nested_1in2': 9}, overlap=False
+[04:11:57] 
+Phase 7: Physical spot-checks (5 random unitaries × 2 spectra)
+[04:12:51]   comp_less U0: pred=34.9807, meas=56.4762, ratio=1.614, in_interval=False
+[04:13:45]   comp_less U1: pred=33.5397, meas=57.9833, ratio=1.729, in_interval=False
+[04:14:38]   comp_less U2: pred=34.6575, meas=56.3268, ratio=1.625, in_interval=False
+[04:15:32]   comp_less U3: pred=36.4047, meas=58.9954, ratio=1.621, in_interval=False
+[04:16:26]   comp_less U4: pred=34.2570, meas=54.7574, ratio=1.598, in_interval=False
+[04:17:20]   incomp_A U0: pred=35.1928, meas=56.6050, ratio=1.608, in_interval=False
+[04:18:14]   incomp_A U1: pred=34.2237, meas=55.7283, ratio=1.628, in_interval=False
+[04:19:08]   incomp_A U2: pred=34.8779, meas=54.8990, ratio=1.574, in_interval=False
+[04:20:02]   incomp_A U3: pred=33.9171, meas=57.6079, ratio=1.698, in_interval=False
+[04:20:56]   incomp_A U4: pred=32.0742, meas=55.7617, ratio=1.739, in_interval=False
+[04:20:56] 
+Phase 8: Final reference check
+[04:20:59]   Final drift: 0.9712

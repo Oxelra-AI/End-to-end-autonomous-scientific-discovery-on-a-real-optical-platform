@@ -1,0 +1,248 @@
+{
+  "zx_only": {
+    "n_features": 400,
+    "budgets": {
+      "10": {
+        "k_effective": 10,
+        "task_A_pair_id": 0.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.0
+      },
+      "25": {
+        "k_effective": 25,
+        "task_A_pair_id": 0.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.0
+      },
+      "50": {
+        "k_effective": 50,
+        "task_A_pair_id": 0.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.0
+      },
+      "100": {
+        "k_effective": 100,
+        "task_A_pair_id": 0.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.0
+      },
+      "200": {
+        "k_effective": 200,
+        "task_A_pair_id": 0.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.0
+      },
+      "400": {
+        "k_effective": 400,
+        "task_A_pair_id": 0.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.0
+      }
+    }
+  },
+  "zy_only": {
+    "n_features": 400,
+    "budgets": {
+      "10": {
+        "k_effective": 10,
+        "task_A_pair_id": 0.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.0
+      },
+      "25": {
+        "k_effective": 25,
+        "task_A_pair_id": 0.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.0
+      },
+      "50": {
+        "k_effective": 50,
+        "task_A_pair_id": 0.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.0
+      },
+      "100": {
+        "k_effective": 100,
+        "task_A_pair_id": 0.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.0
+      },
+      "200": {
+        "k_effective": 200,
+        "task_A_pair_id": 0.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.0
+      },
+      "400": {
+        "k_effective": 400,
+        "task_A_pair_id": 0.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.0
+      }
+    }
+  },
+  "zx_zy_concat": {
+    "n_features": 800,
+    "budgets": {
+      "10": {
+        "k_effective": 10,
+        "task_A_pair_id": 0.4938,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.7359
+      },
+      "25": {
+        "k_effective": 25,
+        "task_A_pair_id": 1.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 1.0
+      },
+      "50": {
+        "k_effective": 50,
+        "task_A_pair_id": 1.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 1.0
+      },
+      "100": {
+        "k_effective": 100,
+        "task_A_pair_id": 1.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 1.0
+      },
+      "200": {
+        "k_effective": 200,
+        "task_A_pair_id": 1.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 1.0
+      },
+      "400": {
+        "k_effective": 400,
+        "task_A_pair_id": 1.0,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 1.0
+      }
+    }
+  },
+  "zx_minus_zy": {
+    "n_features": 400,
+    "budgets": {
+      "10": {
+        "k_effective": 10,
+        "task_A_pair_id": 0.875,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.75
+      },
+      "25": {
+        "k_effective": 25,
+        "task_A_pair_id": 0.875,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.75
+      },
+      "50": {
+        "k_effective": 50,
+        "task_A_pair_id": 0.875,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.75
+      },
+      "100": {
+        "k_effective": 100,
+        "task_A_pair_id": 0.875,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.75
+      },
+      "200": {
+        "k_effective": 200,
+        "task_A_pair_id": 0.875,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.75
+      },
+      "400": {
+        "k_effective": 400,
+        "task_A_pair_id": 0.875,
+        "task_B_same_cat": 0.5,
+        "task_C_cat_pair": 0.75
+      }
+    }
+  },
+  "digital_bilinear_ew": {
+    "n_features": 400,
+    "budgets": {
+      "10": {
+        "k_effective": 10,
+        "task_A_pair_id": 0.1234,
+        "task_B_same_cat": 0.6115,
+        "task_C_cat_pair": 0.2484
+      },
+      "25": {
+        "k_effective": 25,
+        "task_A_pair_id": 0.125,
+        "task_B_same_cat": 0.8615,
+        "task_C_cat_pair": 0.25
+      },
+      "50": {
+        "k_effective": 50,
+        "task_A_pair_id": 0.125,
+        "task_B_same_cat": 1.0,
+        "task_C_cat_pair": 0.25
+      },
+      "100": {
+        "k_effective": 100,
+        "task_A_pair_id": 0.125,
+        "task_B_same_cat": 1.0,
+        "task_C_cat_pair": 0.25
+      },
+      "200": {
+        "k_effective": 200,
+        "task_A_pair_id": 0.125,
+        "task_B_same_cat": 1.0,
+        "task_C_cat_pair": 0.25
+      },
+      "400": {
+        "k_effective": 400,
+        "task_A_pair_id": 0.125,
+        "task_B_same_cat": 1.0,
+        "task_C_cat_pair": 0.25
+      }
+    }
+  },
+  "complex_B": {
+    "n_features": 800,
+    "budgets": {
+      "10": {
+        "k_effective": 10,
+        "task_A_pair_id": 0.5284,
+        "task_B_same_cat": 0.7521,
+        "task_C_cat_pair": 0.3272
+      },
+      "25": {
+        "k_effective": 25,
+        "task_A_pair_id": 0.9872,
+        "task_B_same_cat": 0.804,
+        "task_C_cat_pair": 0.7213
+      },
+      "50": {
+        "k_effective": 50,
+        "task_A_pair_id": 0.9994,
+        "task_B_same_cat": 0.9579,
+        "task_C_cat_pair": 0.9944
+      },
+      "100": {
+        "k_effective": 100,
+        "task_A_pair_id": 1.0,
+        "task_B_same_cat": 0.9975,
+        "task_C_cat_pair": 0.9997
+      },
+      "200": {
+        "k_effective": 200,
+        "task_A_pair_id": 1.0,
+        "task_B_same_cat": 0.9988,
+        "task_C_cat_pair": 1.0
+      },
+      "400": {
+        "k_effective": 400,
+        "task_A_pair_id": 1.0,
+        "task_B_same_cat": 1.0,
+        "task_C_cat_pair": 1.0
+      }
+    }
+  }
+}

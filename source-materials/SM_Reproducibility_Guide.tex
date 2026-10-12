@@ -1,0 +1,365 @@
+\documentclass[11pt]{article}
+\pdfinfoomitdate=1
+\pdftrailerid{}
+\pdfsuppressptexinfo=-1
+\ifdefined\pdfvariable\pdfvariable suppressoptionalinfo -1\fi
+\usepackage[margin=0.85in]{geometry}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\emergencystretch=3em
+\Urlmuskip=0mu plus 1mu
+
+\title{\textbf{Source Data, Code, and Reproducibility Guide}\\
+\large End-to-end autonomous scientific discovery on a real optical platform}
+
+\author{
+\scriptsize Shuxing Yang$^{1,2,3}$, Fujia Chen$^{1,2,3}$, Rui Zhao$^{1,2,3}$, Junyao Wu$^{1,2,3}$,\\
+\scriptsize Yize Wang$^{1,2,3}$, Haiyao Luo$^{1,2,3}$, Ning Han$^{4}$, Qiaolu Chen$^{1,2,5}$,\\
+\scriptsize Yuze Hu$^{1}$, Wenhao Li$^{1,2,3}$, Mingzhu Li$^{6}$, Hongsheng Chen$^{1,2,3,*}$,\\
+\scriptsize and Yihao Yang$^{1,2,3,*}$\\[6pt]
+\tiny $^{1}$State Key Laboratory of Extreme Photonics and Instrumentation, College of Information Science and Electronic Engineering,\\
+\tiny ZJU-Hangzhou Global Scientific and Technological Innovation Center, The Electromagnetics Academy at Zhejiang University,\\
+\tiny Zhejiang University, Hangzhou 310027, China\\
+\tiny $^{2}$Key Laboratory of Advanced Micro/Nano Electronic Devices \& Smart Systems of Zhejiang,\\
+\tiny Jinhua Institute of Zhejiang University, Zhejiang University, Jinhua 321099, China\\
+\tiny $^{3}$Shaoxing Institute of Zhejiang University, Zhejiang University, Shaoxing 312000, China\\
+\tiny $^{4}$College of Optical and Electronic Technology, China Jiliang University, Hangzhou 310018, China\\
+\tiny $^{5}$Laboratory of Wave Engineering, Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland\\
+\tiny $^{6}$School of Information and Electrical Engineering, Hangzhou City University, Hangzhou 310015, China\\[6pt]
+\scriptsize Correspondence should be addressed to Yihao Yang (\texttt{yangyihao@zju.edu.cn})\\
+\scriptsize and Hongsheng Chen (\texttt{hansomchen@zju.edu.cn}).
+}
+
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Purpose}
+
+This guide accompanies the Zenodo source-data archive for the manuscript
+\textit{End-to-end autonomous scientific discovery on a real optical platform}.
+We provide it to help reviewers and readers locate the data, offline analysis
+scripts, generated figures, provenance records, and report-level material
+supporting the analyses reported in the paper.
+
+The archive is arranged in five report-based sections, with additional files
+for selected main-text data-panel replots and a short qualitative video of the
+optical platform. The formal main manuscript and the formal Supplementary
+Information are not duplicated here; they are submitted separately through the
+journal system and remain the authoritative scientific documents.
+
+The files in this archive support inspection and offline rerunning of analyses
+from the included data. Re-acquiring optical measurements requires the original
+optical platform and instrument-control environment, and is therefore outside
+the scope of this source-data/code deposit.
+
+\section*{Repository Deposit and Journal Upload}
+
+Because this source-data package is larger than a typical journal
+Supplementary Information file, we deposit it on Zenodo and cite the record in
+the journal submission. The submission route is:
+
+\begin{enumerate}[leftmargin=1.5em]
+  \item Upload \path{SM_Source_Materials_CORE_5REPORTS.tar.gz} and its
+  checksum file to the Zenodo record associated with the DOI below.
+  \item Use the same repository DOI in the manuscript, Supplementary
+  Information, this guide, and the Zenodo record.
+  \item Cite the DOI in the manuscript Data Availability and Code Availability
+  statements.
+  \item Submit the formal main manuscript and formal Supplementary Information
+  through the journal submission system.
+  \item If the journal requests a reviewer-facing PDF for the archive, submit
+  this guide PDF as the lightweight source-data/code guide.
+\end{enumerate}
+
+Repository DOI: \textbf{10.5281/zenodo.19890402}.\\
+Repository URL: \url{https://doi.org/10.5281/zenodo.19890402}.
+
+This archive should be cited as the source-data/code and provenance deposit for
+the study, and should be read alongside the formal Supplementary Information.
+
+\section*{Relation to the Main Manuscript and SI}
+
+The main manuscript and Supplementary Information carry the final scientific
+description: the claims, methods narrative, figure assembly, panel labels, and
+captions. The Zenodo archive has a narrower role. It records the data, scripts,
+generated outputs, and report-level materials that allow the analyses to be
+inspected and rerun offline.
+
+The folder \path{main_text_data_panels/} provides audit replots for selected
+data-derived main-text panels only: Fig. 2d-g, Fig. 3d-f, and Fig. 4g-i. The
+PDF/PNG files in that folder are standalone replots made from the included data
+and scripts. They are not exact visual copies of the final assembled manuscript
+panels. Differences in crop, color scale, font, layout, panel spacing,
+normalization display, or selected representative channels/tasks are expected
+and do not change the role of the underlying data.
+
+The five report PDFs included under \path{*/report/} are retained as source
+reports documenting the analysis history and experiment provenance. They do not
+replace the formal manuscript or SI. If report-level wording, file labels, or
+figure layouts differ from the final submission documents, the manuscript and
+SI should be treated as the formal reference, while this package should be used
+for data/code traceability.
+
+The same boundary is also summarized in
+\path{SM_SCOPE_AND_RELATION_TO_MANUSCRIPT_SI.md}.
+
+\section*{Package Contents}
+
+\begin{longtable}{@{}L{0.34\linewidth}L{0.58\linewidth}@{}}
+\textbf{Path} & \textbf{Contents} \\
+\hline
+\path{SM_SCOPE_AND_RELATION_TO_MANUSCRIPT_SI.md} & Boundary between this repository archive, the submitted main manuscript, and the submitted SI. \\
+\path{ZENODO_DEPOSIT_NOTES.md} & Practical notes for repository deposition and DOI linking. \\
+\path{00_context/} & Qualitative visual documentation of the optical platform. \\
+\path{01_result2_paper/} & Report 1: initial transmission-matrix reproduction. \\
+\path{02_result2_refine_paper/} & Report 2: refined self-referenced transmission-matrix experiment. \\
+\path{03_result3_paper/} & Report 3: majorization-order transport experiment. \\
+\path{04_result4_paper/} & Report 4: Complex-B bilinear interaction field, XOR showcase, and semantic benchmark. \\
+\path{05_result4_refine_paper/} & Report 5: refined Complex-B advantage map and sparse-output analyses. \\
+\path{main_text_data_panels/} & Audit replots for selected main-text data panels Fig. 2d-g, Fig. 3d-f, and Fig. 4g-i; not exact final manuscript panels. \\
+\path{shared_raw_data/result4_frame_data/} & Full Result4 frame-level CMOS \texttt{.npy} arrays shared by Reports 4 and 5. \\
+\path{provenance/} & File tree, inventory, checksums, section map, figure-source map, and raw-data inclusion map. \\
+\end{longtable}
+
+Each report section contains four standard subfolders:
+\path{report/}, \path{source_data/}, \path{scripts/}, and \path{figures/}.
+
+The video \path{00_context/visual_documentation/video_qiushi.mp4} is included
+as qualitative visual documentation of the live Qiushi Engine optical-platform
+interface, including instrument-status indicators, optical-power monitoring,
+SLM/CMOS display panels, and a witness-camera view of the physical setup. It is
+not used as quantitative evidence for any reported result.
+
+The paths listed in this guide are the paths to use for review and offline
+reruns. Some source reports were generated during the internal analysis
+workflow; if a report refers to an older path label, the corresponding files
+should be located through the report-specific folders and provenance files in
+this archive.
+
+\section*{Integrity Check}
+
+From the package root, verify the included files:
+
+\begin{verbatim}
+cd SM_Source_Materials_CORE_5REPORTS
+sha256sum -c provenance/checksums_sha256.txt --quiet
+\end{verbatim}
+
+A silent return indicates that the package files match the checksum manifest.
+
+\section*{Software Environment}
+
+The offline analysis scripts use standard scientific Python packages:
+
+\begin{itemize}[leftmargin=1.5em]
+  \item Python 3.9 or newer
+  \item \texttt{numpy}
+  \item \texttt{scipy}
+  \item \texttt{matplotlib}
+  \item \texttt{scikit-learn}
+\end{itemize}
+
+The package does not require the optical hardware-control software for offline
+analysis. Hardware-control acquisition scripts are intentionally not included.
+
+Recommended shell setup:
+
+\begin{verbatim}
+export MPLBACKEND=Agg
+cd SM_Source_Materials_CORE_5REPORTS
+\end{verbatim}
+
+\section*{Quick Reproduction Map}
+
+\small
+\begin{longtable}{@{}L{0.20\linewidth}L{0.18\linewidth}L{0.31\linewidth}L{0.14\linewidth}@{}}
+\textbf{Report section} & \textbf{Data} & \textbf{Main scripts} & \textbf{Generated figures} \\
+\hline
+\path{01_result2_paper} &
+\path{source_data/} &
+\path{make_core_figures.py}; \path{make_core_figures_v2.py} &
+\path{figures/} \\
+\path{02_result2_refine_paper} &
+\path{source_data/} &
+\path{generate_paper_figures.py}; \path{fix_tm_filtering.py} &
+\path{figures/} \\
+\path{03_result3_paper} &
+\path{source_data/} &
+\path{generate_v3_figures.py}; \path{generate_raw_data_figure.py}; analysis scripts &
+\path{figures/} \\
+\path{04_result4_paper} &
+\path{source_data/}; \path{shared_raw_data/} &
+XOR, semantic, and compressed-budget scripts &
+\path{figures/} \\
+\path{05_result4_refine_paper} &
+\path{source_data/}; \path{shared_raw_data/} &
+phase-2, three-bin, advantage-boundary, and sparse-tap scripts &
+\path{figures/} \\
+\end{longtable}
+\normalsize
+
+For exact data/code/figure mapping, see
+\path{provenance/FIGURE_SOURCE_MAP.tsv}.
+
+For main-text data-panel mapping, see
+\path{main_text_data_panels/MAIN_TEXT_DATA_PANEL_SOURCE_MAP.tsv}. This map
+covers only Fig. 2d-g, Fig. 3d-f, and Fig. 4g-i and includes a visual-status
+column marking these outputs as audit replots. It does not attempt to
+reconstruct the full manuscript page layouts, final assembled panels, or
+schematic panels.
+
+\section*{Report-by-Report Reproduction Commands}
+
+The commands below are intended for offline reruns. They overwrite or refresh
+outputs inside the corresponding report section. For a non-destructive review,
+copy the package to a working directory before running scripts.
+
+\subsection*{Main-Text Data Panels}
+
+\begin{verbatim}
+cd SM_Source_Materials_CORE_5REPORTS
+python main_text_data_panels/scripts/generate_main_text_data_panels.py
+\end{verbatim}
+
+This command regenerates standalone audit-replot outputs for Fig. 2d-g,
+Fig. 3d-f, and Fig. 4g-i under
+\path{main_text_data_panels/generated_panels/}. These files support data/code
+inspection and should not be used as exact visual copies of the final
+manuscript panels.
+
+\subsection*{Report 1: Initial Transmission-Matrix Reproduction}
+
+\begin{verbatim}
+cd SM_Source_Materials_CORE_5REPORTS/01_result2_paper
+python scripts/make_core_figures.py
+python scripts/make_core_figures_v2.py
+\end{verbatim}
+
+Inputs are in \texttt{source\_data/}. Figures are written to \texttt{figures/}.
+
+\subsection*{Report 2: Refined Self-Referenced Transmission Matrix}
+
+\begin{verbatim}
+cd SM_Source_Materials_CORE_5REPORTS/02_result2_refine_paper
+python scripts/generate_paper_figures.py
+\end{verbatim}
+
+The script uses \path{source_data/tm_256},
+\path{source_data/focusing}, \path{source_data/forward_model},
+and \path{source_data/ring_screening}. The optional script
+\path{fix_tm_filtering.py} recomputes filtered TM diagnostics and can
+overwrite filtered arrays.
+
+\subsection*{Report 3: Majorization-Order Transport}
+
+\begin{verbatim}
+cd SM_Source_Materials_CORE_5REPORTS/03_result3_paper
+python scripts/generate_v3_figures.py
+python scripts/generate_raw_data_figure.py
+python scripts/analyze_majorization_spectra.py
+python scripts/analyze_majorization_spectra_v2.py
+\end{verbatim}
+
+Inputs are in \path{source_data/exp_transport_v1},
+\path{source_data/exp_transport_v2}, and
+\path{source_data/exp_transport_v3}.
+
+\subsection*{Report 4: Complex-B Bilinear Interaction Field}
+
+The full frame-level CMOS arrays are included once under
+\path{shared_raw_data/result4_frame_data/}. Commands:
+
+\begin{verbatim}
+cd SM_Source_Materials_CORE_5REPORTS/04_result4_paper
+RAW=../shared_raw_data/result4_frame_data
+
+python scripts/analyze_complex_B_xor_showcase.py \
+  --data-dir $RAW/exp_bilinear_001/exp_bilinear_001 \
+  --output-dir source_data/processed/complex_B_xor_showcase_results
+
+python scripts/analyze_complex_B_semantic.py \
+  --data-dir $RAW/exp_complex_B_semantic \
+  --output-dir source_data/processed/complex_B_semantic_results
+
+python scripts/generate_semantic_bin10_figures.py
+python scripts/generate_semantic_bin10_figures_v2.py
+
+python scripts/analyze_semantic_compressed_budget.py \
+  --data-dir $RAW/exp_complex_B_semantic \
+  --output-dir source_data/processed/semantic_compressed_budget_results
+\end{verbatim}
+
+\subsection*{Report 5: Refined Complex-B Advantage Map}
+
+\begin{verbatim}
+cd SM_Source_Materials_CORE_5REPORTS/05_result4_refine_paper
+python scripts/analyze_refinement_phase2_fast.py
+python scripts/regenerate_xor_complex_scatter_bin10.py
+python scripts/analyze_three_bin_sparse.py
+python scripts/analyze_advantage_boundary.py
+python scripts/analyze_bin_anchored_twin.py
+python scripts/analyze_sparse_tap_twin.py
+\end{verbatim}
+
+These scripts read the shared raw Result4 frame data and write to the local
+\path{source_data/processed/} and \path{figures/} folders.
+
+\section*{Expected Reproduction Level}
+
+\begin{longtable}{p{0.30\linewidth}p{0.62\linewidth}}
+\textbf{Level} & \textbf{Supported by this package} \\
+\hline
+Report inspection & Yes. Five report PDFs are included in the five report sections. \\
+Main manuscript and SI inspection & Not included in this repository archive. Submit the formal manuscript and SI separately through the journal system. \\
+Figure inspection & Yes. Generated figures are included in each report section. \\
+Main-text data-panel rerun & Yes. Fig. 2d-g, Fig. 3d-f, and Fig. 4g-i are regenerated by \path{main_text_data_panels/scripts/generate_main_text_data_panels.py}. \\
+Physical-platform visual documentation & Yes. A short MP4 recording is included under \path{00_context/visual_documentation/}. \\
+Processed-data inspection & Yes. Each report section contains its own \path{source_data/}. \\
+Script inspection & Yes. Offline Python scripts are included and syntax-checked. \\
+Offline figure/result rerun & Yes, subject to standard Python dependencies and runtime. \\
+Result4 raw-frame reprocessing & Yes. Frame-level CMOS arrays are included in \path{shared_raw_data/}. \\
+Optical hardware re-acquisition & No. This requires the original physical platform and hardware-control stack. \\
+\end{longtable}
+
+\section*{Validation Summary}
+
+At package finalization, the repository archive contained:
+
+\begin{itemize}[leftmargin=1.5em]
+  \item Five report-specific sections.
+  \item One main-text data-panel reproduction section for Fig. 2d-g, Fig. 3d-f, and Fig. 4g-i.
+  \item No main-manuscript or Supplementary Information PDFs inside the repository archive.
+  \item One qualitative optical-platform visual-documentation video.
+  \item Full Result4 frame-level raw data under \path{shared_raw_data/}.
+  \item Twenty-nine offline Python scripts with zero syntax errors.
+  \item A checksum manifest in \path{provenance/checksums_sha256.txt}.
+\end{itemize}
+
+\section*{Contact}
+
+Correspondence and requests for materials should be addressed to:
+
+\begin{itemize}[leftmargin=1.5em]
+  \item Yihao Yang, \texttt{yangyihao@zju.edu.cn}
+  \item Hongsheng Chen, \texttt{hansomchen@zju.edu.cn}
+\end{itemize}
+
+\end{document}

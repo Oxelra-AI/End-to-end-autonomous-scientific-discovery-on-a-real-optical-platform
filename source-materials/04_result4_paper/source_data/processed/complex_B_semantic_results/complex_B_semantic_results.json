@@ -1,0 +1,225 @@
+{
+  "experiment": "complex_B_semantic_benchmark",
+  "primary_object": "complex interaction field B(x,y)",
+  "object_discipline": "|B| NOT used as headline",
+  "semantic_tokens": [
+    {
+      "id": 0,
+      "word": "cat",
+      "category": 0,
+      "category_name": "animals"
+    },
+    {
+      "id": 1,
+      "word": "dog",
+      "category": 0,
+      "category_name": "animals"
+    },
+    {
+      "id": 2,
+      "word": "hammer",
+      "category": 1,
+      "category_name": "tools"
+    },
+    {
+      "id": 3,
+      "word": "saw",
+      "category": 1,
+      "category_name": "tools"
+    },
+    {
+      "id": 4,
+      "word": "apple",
+      "category": 2,
+      "category_name": "fruits"
+    },
+    {
+      "id": 5,
+      "word": "grape",
+      "category": 2,
+      "category_name": "fruits"
+    },
+    {
+      "id": 6,
+      "word": "car",
+      "category": 3,
+      "category_name": "vehicles"
+    },
+    {
+      "id": 7,
+      "word": "train",
+      "category": 3,
+      "category_name": "vehicles"
+    }
+  ],
+  "metadata_summary": {
+    "total_measurements": 1512
+  },
+  "complex_B_stability": {
+    "mean_corr": 0.982822384781258,
+    "min_corr": 0.8567428973621336
+  },
+  "classification_results": {
+    "zx_only": {
+      "n_features": 400,
+      "task_A_pair_id": 0.0,
+      "task_B_same_cat": 0.5,
+      "task_C_cat_pair": 0.0
+    },
+    "zy_only": {
+      "n_features": 400,
+      "task_A_pair_id": 0.0,
+      "task_B_same_cat": 0.5,
+      "task_C_cat_pair": 0.0
+    },
+    "zx_zy_concat": {
+      "n_features": 800,
+      "task_A_pair_id": 1.0,
+      "task_B_same_cat": 0.5,
+      "task_C_cat_pair": 1.0
+    },
+    "zx_plus_zy": {
+      "n_features": 400,
+      "task_A_pair_id": 0.125,
+      "task_B_same_cat": 0.5,
+      "task_C_cat_pair": 0.25
+    },
+    "zx_minus_zy": {
+      "n_features": 400,
+      "task_A_pair_id": 0.875,
+      "task_B_same_cat": 0.5,
+      "task_C_cat_pair": 0.75
+    },
+    "digital_bilinear_ew": {
+      "n_features": 400,
+      "task_A_pair_id": 0.125,
+      "task_B_same_cat": 1.0,
+      "task_C_cat_pair": 0.25
+    },
+    "complex_B": {
+      "n_features": 800,
+      "task_A_pair_id": 1.0,
+      "task_B_same_cat": 1.0,
+      "task_C_cat_pair": 1.0
+    },
+    "hybrid_zz_B": {
+      "n_features": 1600,
+      "task_A_pair_id": 1.0,
+      "task_B_same_cat": 1.0,
+      "task_C_cat_pair": 1.0
+    }
+  },
+  "cross_split_results": {
+    "zx_only": {
+      "cross_split_same_cat_bal_acc": 0.5,
+      "n_train": 240,
+      "n_test": 80
+    },
+    "zy_only": {
+      "cross_split_same_cat_bal_acc": 0.5,
+      "n_train": 240,
+      "n_test": 80
+    },
+    "zx_zy_concat": {
+      "cross_split_same_cat_bal_acc": 0.5,
+      "n_train": 240,
+      "n_test": 80
+    },
+    "zx_plus_zy": {
+      "cross_split_same_cat_bal_acc": 0.5,
+      "n_train": 240,
+      "n_test": 80
+    },
+    "zx_minus_zy": {
+      "cross_split_same_cat_bal_acc": 0.5,
+      "n_train": 240,
+      "n_test": 80
+    },
+    "digital_bilinear_ew": {
+      "cross_split_same_cat_bal_acc": 1.0,
+      "n_train": 240,
+      "n_test": 80
+    },
+    "complex_B": {
+      "cross_split_same_cat_bal_acc": 0.625,
+      "n_train": 240,
+      "n_test": 80
+    },
+    "hybrid_zz_B": {
+      "cross_split_same_cat_bal_acc": 0.4583,
+      "n_train": 240,
+      "n_test": 80
+    }
+  },
+  "held_out_pairs": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      7,
+      4
+    ]
+  ],
+  "n_samples": 320,
+  "cat_binary_balance": [
+    240,
+    80
+  ]
+}

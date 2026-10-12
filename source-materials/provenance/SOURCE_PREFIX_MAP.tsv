@@ -1,0 +1,9 @@
+package_prefix	included_material
+00_context	visual documentation video and README only; formal manuscript and SI excluded from repository archive
+01_result2_paper	result2_paper.pdf; core data; offline figure scripts; figures
+02_result2_refine_paper	result2_refine_paper.pdf; refined TM data; offline figure scripts; figures
+03_result3_paper	result3_paper.pdf; majorization data; offline analysis scripts; figures
+04_result4_paper	result4_paper.pdf; original Complex-B XOR/semantic processed data; compact acquisition records; scripts; figures
+05_result4_refine_paper	result4_refine_paper.pdf; refined Complex-B advantage-map processed data; compact acquisition records; scripts; figures
+main_text_data_panels	audit-replot mapping, script, source-data summary, and generated outputs for selected main-text Fig. 2d-g, Fig. 3d-f, and Fig. 4g-i; not exact final manuscript panels
+shared_raw_data	Result4 frame-level raw CMOS arrays shared by 04_result4_paper and 05_result4_refine_paper

@@ -1,0 +1,1150 @@
+{
+  "speckle_coherence": {
+    "fwhm_v_mean": 11.08,
+    "fwhm_v_std": 1.0,
+    "fwhm_h_mean": 9.83,
+    "fwhm_h_std": 0.8,
+    "fwhm_mean": 10.46,
+    "n_rois": 24,
+    "bin25_over_speckle": 2.39
+  },
+  "multi_bin": {
+    "5": {
+      "bin_size": 5,
+      "n_channels": 10000,
+      "zx_zy_concat": {
+        "dim": 20000,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "dim": 10000,
+        "A": 0.5625,
+        "B": 1.0,
+        "C": 0.5125,
+        "D": 0.5625
+      },
+      "complex_B": {
+        "dim": 20000,
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0,
+        "D": 0.7396
+      },
+      "self_pair_Bxx": [
+        {
+          "token": "cat",
+          "re": 0.531411,
+          "im": -0.021777,
+          "mag": 0.531857,
+          "phase_deg": -2.35
+        },
+        {
+          "token": "dog",
+          "re": 0.381605,
+          "im": 0.190531,
+          "mag": 0.426526,
+          "phase_deg": 26.53
+        },
+        {
+          "token": "hammer",
+          "re": 0.322436,
+          "im": 0.240698,
+          "mag": 0.402369,
+          "phase_deg": 36.74
+        },
+        {
+          "token": "saw",
+          "re": 0.700913,
+          "im": -0.135619,
+          "mag": 0.713913,
+          "phase_deg": -10.95
+        },
+        {
+          "token": "apple",
+          "re": 0.33693,
+          "im": 0.159281,
+          "mag": 0.372683,
+          "phase_deg": 25.3
+        },
+        {
+          "token": "grape",
+          "re": 0.409312,
+          "im": 0.187989,
+          "mag": 0.450418,
+          "phase_deg": 24.67
+        },
+        {
+          "token": "car",
+          "re": 0.733043,
+          "im": -0.162197,
+          "mag": 0.750773,
+          "phase_deg": -12.48
+        },
+        {
+          "token": "train",
+          "re": 0.413832,
+          "im": 0.201274,
+          "mag": 0.460183,
+          "phase_deg": 25.94
+        }
+      ]
+    },
+    "10": {
+      "bin_size": 10,
+      "n_channels": 2500,
+      "zx_zy_concat": {
+        "dim": 5000,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "dim": 2500,
+        "A": 0.5625,
+        "B": 1.0,
+        "C": 0.4437,
+        "D": 0.5833
+      },
+      "complex_B": {
+        "dim": 5000,
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0,
+        "D": 0.7396
+      },
+      "self_pair_Bxx": [
+        {
+          "token": "cat",
+          "re": 0.531411,
+          "im": -0.021777,
+          "mag": 0.531857,
+          "phase_deg": -2.35
+        },
+        {
+          "token": "dog",
+          "re": 0.381605,
+          "im": 0.190531,
+          "mag": 0.426526,
+          "phase_deg": 26.53
+        },
+        {
+          "token": "hammer",
+          "re": 0.322436,
+          "im": 0.240698,
+          "mag": 0.402369,
+          "phase_deg": 36.74
+        },
+        {
+          "token": "saw",
+          "re": 0.700913,
+          "im": -0.135619,
+          "mag": 0.713913,
+          "phase_deg": -10.95
+        },
+        {
+          "token": "apple",
+          "re": 0.33693,
+          "im": 0.159281,
+          "mag": 0.372683,
+          "phase_deg": 25.3
+        },
+        {
+          "token": "grape",
+          "re": 0.409312,
+          "im": 0.187989,
+          "mag": 0.450418,
+          "phase_deg": 24.67
+        },
+        {
+          "token": "car",
+          "re": 0.733043,
+          "im": -0.162197,
+          "mag": 0.750773,
+          "phase_deg": -12.48
+        },
+        {
+          "token": "train",
+          "re": 0.413832,
+          "im": 0.201274,
+          "mag": 0.460183,
+          "phase_deg": 25.94
+        }
+      ]
+    },
+    "12": {
+      "bin_size": 12,
+      "n_channels": 1681,
+      "zx_zy_concat": {
+        "dim": 3362,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "dim": 1681,
+        "A": 0.5625,
+        "B": 1.0,
+        "C": 0.4437,
+        "D": 0.5938
+      },
+      "complex_B": {
+        "dim": 3362,
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0,
+        "D": 0.7438
+      },
+      "self_pair_Bxx": [
+        {
+          "token": "cat",
+          "re": 0.535913,
+          "im": -0.022024,
+          "mag": 0.536366,
+          "phase_deg": -2.35
+        },
+        {
+          "token": "dog",
+          "re": 0.384352,
+          "im": 0.191931,
+          "mag": 0.429609,
+          "phase_deg": 26.54
+        },
+        {
+          "token": "hammer",
+          "re": 0.32518,
+          "im": 0.242218,
+          "mag": 0.405476,
+          "phase_deg": 36.68
+        },
+        {
+          "token": "saw",
+          "re": 0.706275,
+          "im": -0.135464,
+          "mag": 0.719149,
+          "phase_deg": -10.86
+        },
+        {
+          "token": "apple",
+          "re": 0.337921,
+          "im": 0.159873,
+          "mag": 0.373832,
+          "phase_deg": 25.32
+        },
+        {
+          "token": "grape",
+          "re": 0.411345,
+          "im": 0.189112,
+          "mag": 0.452734,
+          "phase_deg": 24.69
+        },
+        {
+          "token": "car",
+          "re": 0.739017,
+          "im": -0.162903,
+          "mag": 0.756759,
+          "phase_deg": -12.43
+        },
+        {
+          "token": "train",
+          "re": 0.416424,
+          "im": 0.203037,
+          "mag": 0.463285,
+          "phase_deg": 25.99
+        }
+      ]
+    },
+    "16": {
+      "bin_size": 16,
+      "n_channels": 961,
+      "zx_zy_concat": {
+        "dim": 1922,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "dim": 961,
+        "A": 0.5625,
+        "B": 1.0,
+        "C": 0.4437,
+        "D": 0.5104
+      },
+      "complex_B": {
+        "dim": 1922,
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0,
+        "D": 0.7344
+      },
+      "self_pair_Bxx": [
+        {
+          "token": "cat",
+          "re": 0.533545,
+          "im": -0.021824,
+          "mag": 0.533991,
+          "phase_deg": -2.34
+        },
+        {
+          "token": "dog",
+          "re": 0.383015,
+          "im": 0.191226,
+          "mag": 0.428098,
+          "phase_deg": 26.53
+        },
+        {
+          "token": "hammer",
+          "re": 0.323863,
+          "im": 0.2415,
+          "mag": 0.403992,
+          "phase_deg": 36.71
+        },
+        {
+          "token": "saw",
+          "re": 0.703238,
+          "im": -0.135685,
+          "mag": 0.716208,
+          "phase_deg": -10.92
+        },
+        {
+          "token": "apple",
+          "re": 0.337182,
+          "im": 0.159438,
+          "mag": 0.372978,
+          "phase_deg": 25.31
+        },
+        {
+          "token": "grape",
+          "re": 0.4101,
+          "im": 0.188549,
+          "mag": 0.451367,
+          "phase_deg": 24.69
+        },
+        {
+          "token": "car",
+          "re": 0.735244,
+          "im": -0.162569,
+          "mag": 0.753002,
+          "phase_deg": -12.47
+        },
+        {
+          "token": "train",
+          "re": 0.414992,
+          "im": 0.201947,
+          "mag": 0.46152,
+          "phase_deg": 25.95
+        }
+      ]
+    },
+    "20": {
+      "bin_size": 20,
+      "n_channels": 625,
+      "zx_zy_concat": {
+        "dim": 1250,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "dim": 625,
+        "A": 0.5625,
+        "B": 1.0,
+        "C": 0.4437,
+        "D": 0.5208
+      },
+      "complex_B": {
+        "dim": 1250,
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0,
+        "D": 0.7396
+      },
+      "self_pair_Bxx": [
+        {
+          "token": "cat",
+          "re": 0.531411,
+          "im": -0.021777,
+          "mag": 0.531857,
+          "phase_deg": -2.35
+        },
+        {
+          "token": "dog",
+          "re": 0.381605,
+          "im": 0.190531,
+          "mag": 0.426526,
+          "phase_deg": 26.53
+        },
+        {
+          "token": "hammer",
+          "re": 0.322436,
+          "im": 0.240698,
+          "mag": 0.402369,
+          "phase_deg": 36.74
+        },
+        {
+          "token": "saw",
+          "re": 0.700913,
+          "im": -0.135619,
+          "mag": 0.713913,
+          "phase_deg": -10.95
+        },
+        {
+          "token": "apple",
+          "re": 0.33693,
+          "im": 0.159281,
+          "mag": 0.372683,
+          "phase_deg": 25.3
+        },
+        {
+          "token": "grape",
+          "re": 0.409312,
+          "im": 0.187989,
+          "mag": 0.450418,
+          "phase_deg": 24.67
+        },
+        {
+          "token": "car",
+          "re": 0.733043,
+          "im": -0.162197,
+          "mag": 0.750773,
+          "phase_deg": -12.48
+        },
+        {
+          "token": "train",
+          "re": 0.413832,
+          "im": 0.201274,
+          "mag": 0.460183,
+          "phase_deg": 25.94
+        }
+      ]
+    },
+    "25": {
+      "bin_size": 25,
+      "n_channels": 400,
+      "zx_zy_concat": {
+        "dim": 800,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "dim": 400,
+        "A": 0.5625,
+        "B": 1.0,
+        "C": 0.4437,
+        "D": 0.5417
+      },
+      "complex_B": {
+        "dim": 800,
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0,
+        "D": 0.7292
+      },
+      "self_pair_Bxx": [
+        {
+          "token": "cat",
+          "re": 0.531411,
+          "im": -0.021777,
+          "mag": 0.531857,
+          "phase_deg": -2.35
+        },
+        {
+          "token": "dog",
+          "re": 0.381605,
+          "im": 0.190531,
+          "mag": 0.426526,
+          "phase_deg": 26.53
+        },
+        {
+          "token": "hammer",
+          "re": 0.322436,
+          "im": 0.240698,
+          "mag": 0.402369,
+          "phase_deg": 36.74
+        },
+        {
+          "token": "saw",
+          "re": 0.700913,
+          "im": -0.135619,
+          "mag": 0.713913,
+          "phase_deg": -10.95
+        },
+        {
+          "token": "apple",
+          "re": 0.33693,
+          "im": 0.159281,
+          "mag": 0.372683,
+          "phase_deg": 25.3
+        },
+        {
+          "token": "grape",
+          "re": 0.409312,
+          "im": 0.187989,
+          "mag": 0.450418,
+          "phase_deg": 24.67
+        },
+        {
+          "token": "car",
+          "re": 0.733043,
+          "im": -0.162197,
+          "mag": 0.750773,
+          "phase_deg": -12.48
+        },
+        {
+          "token": "train",
+          "re": 0.413832,
+          "im": 0.201274,
+          "mag": 0.460183,
+          "phase_deg": 25.94
+        }
+      ]
+    },
+    "50": {
+      "bin_size": 50,
+      "n_channels": 100,
+      "zx_zy_concat": {
+        "dim": 200,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "dim": 100,
+        "A": 0.5625,
+        "B": 1.0,
+        "C": 0.4437,
+        "D": 0.6042
+      },
+      "complex_B": {
+        "dim": 200,
+        "A": 1.0,
+        "B": 0.9625,
+        "C": 1.0,
+        "D": 0.7594
+      },
+      "self_pair_Bxx": [
+        {
+          "token": "cat",
+          "re": 0.531411,
+          "im": -0.021777,
+          "mag": 0.531857,
+          "phase_deg": -2.35
+        },
+        {
+          "token": "dog",
+          "re": 0.381605,
+          "im": 0.190531,
+          "mag": 0.426526,
+          "phase_deg": 26.53
+        },
+        {
+          "token": "hammer",
+          "re": 0.322436,
+          "im": 0.240698,
+          "mag": 0.402369,
+          "phase_deg": 36.74
+        },
+        {
+          "token": "saw",
+          "re": 0.700913,
+          "im": -0.135619,
+          "mag": 0.713913,
+          "phase_deg": -10.95
+        },
+        {
+          "token": "apple",
+          "re": 0.33693,
+          "im": 0.159281,
+          "mag": 0.372683,
+          "phase_deg": 25.3
+        },
+        {
+          "token": "grape",
+          "re": 0.409312,
+          "im": 0.187989,
+          "mag": 0.450418,
+          "phase_deg": 24.67
+        },
+        {
+          "token": "car",
+          "re": 0.733043,
+          "im": -0.162197,
+          "mag": 0.750773,
+          "phase_deg": -12.48
+        },
+        {
+          "token": "train",
+          "re": 0.413832,
+          "im": 0.201274,
+          "mag": 0.460183,
+          "phase_deg": 25.94
+        }
+      ]
+    }
+  },
+  "pseudo_B_control": {
+    "dim=100 (bin\u224850)": {
+      "concat_A": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "concat_B": {
+        "mean": 0.5,
+        "std": 0.0
+      },
+      "concat_C": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "dig_bilinear_A": {
+        "mean": 0.5625,
+        "std": 0.0
+      },
+      "dig_bilinear_B": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "dig_bilinear_C": {
+        "mean": 0.4437,
+        "std": 0.0
+      },
+      "pseudo_B_A": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "pseudo_B_B": {
+        "mean": 0.9979,
+        "std": 0.0042
+      },
+      "pseudo_B_C": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "dim=400 (bin=25)": {
+      "concat_A": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "concat_B": {
+        "mean": 0.5,
+        "std": 0.0
+      },
+      "concat_C": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "dig_bilinear_A": {
+        "mean": 0.5625,
+        "std": 0.0
+      },
+      "dig_bilinear_B": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "dig_bilinear_C": {
+        "mean": 0.4437,
+        "std": 0.0
+      },
+      "pseudo_B_A": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "pseudo_B_B": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "pseudo_B_C": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "dim=2500 (bin=10)": {
+      "concat_A": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "concat_B": {
+        "mean": 0.5,
+        "std": 0.0
+      },
+      "concat_C": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "dig_bilinear_A": {
+        "mean": 0.5625,
+        "std": 0.0
+      },
+      "dig_bilinear_B": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "dig_bilinear_C": {
+        "mean": 0.4437,
+        "std": 0.0
+      },
+      "pseudo_B_A": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "pseudo_B_B": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "pseudo_B_C": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    }
+  },
+  "pca_fairness": {
+    "2": {
+      "zx_zy_concat": {
+        "actual_dim": 2,
+        "var_explained": 0.2359,
+        "A": 0.0625,
+        "B": 0.5,
+        "C": 0.0969,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 2,
+        "var_explained": 0.4347,
+        "A": 0.0469,
+        "B": 0.5,
+        "C": 0.1406,
+        "D": 0.4792
+      },
+      "complex_B": {
+        "actual_dim": 2,
+        "var_explained": 0.6709,
+        "A": 0.0437,
+        "B": 0.75,
+        "C": 0.1281,
+        "D": 0.75
+      }
+    },
+    "3": {
+      "zx_zy_concat": {
+        "actual_dim": 3,
+        "var_explained": 0.3288,
+        "A": 0.125,
+        "B": 0.5,
+        "C": 0.1781,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 3,
+        "var_explained": 0.5826,
+        "A": 0.0625,
+        "B": 0.5,
+        "C": 0.2281,
+        "D": 0.5833
+      },
+      "complex_B": {
+        "actual_dim": 3,
+        "var_explained": 0.6866,
+        "A": 0.0844,
+        "B": 0.75,
+        "C": 0.1219,
+        "D": 0.75
+      }
+    },
+    "5": {
+      "zx_zy_concat": {
+        "actual_dim": 5,
+        "var_explained": 0.4998,
+        "A": 0.2812,
+        "B": 0.5,
+        "C": 0.3063,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 5,
+        "var_explained": 0.8018,
+        "A": 0.1344,
+        "B": 0.5,
+        "C": 0.2594,
+        "D": 0.5312
+      },
+      "complex_B": {
+        "actual_dim": 5,
+        "var_explained": 0.715,
+        "A": 0.2219,
+        "B": 0.75,
+        "C": 0.1437,
+        "D": 0.725
+      }
+    },
+    "10": {
+      "zx_zy_concat": {
+        "actual_dim": 10,
+        "var_explained": 0.8136,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 0.7594,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 10,
+        "var_explained": 0.976,
+        "A": 0.4531,
+        "B": 0.7375,
+        "C": 0.3844,
+        "D": 0.5312
+      },
+      "complex_B": {
+        "actual_dim": 10,
+        "var_explained": 0.771,
+        "A": 0.7094,
+        "B": 0.7562,
+        "C": 0.3187,
+        "D": 0.7229
+      }
+    },
+    "25": {
+      "zx_zy_concat": {
+        "actual_dim": 25,
+        "var_explained": 1.0,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 25,
+        "var_explained": 0.995,
+        "A": 0.5437,
+        "B": 0.9062,
+        "C": 0.4375,
+        "D": 0.5
+      },
+      "complex_B": {
+        "actual_dim": 25,
+        "var_explained": 0.88,
+        "A": 1.0,
+        "B": 0.85,
+        "C": 0.6969,
+        "D": 0.6833
+      }
+    },
+    "50": {
+      "zx_zy_concat": {
+        "actual_dim": 50,
+        "var_explained": 1.0,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 50,
+        "var_explained": 1.0,
+        "A": 0.5656,
+        "B": 1.0,
+        "C": 0.4437,
+        "D": 0.5312
+      },
+      "complex_B": {
+        "actual_dim": 50,
+        "var_explained": 0.9738,
+        "A": 1.0,
+        "B": 0.9833,
+        "C": 0.9875,
+        "D": 0.6937
+      }
+    },
+    "100": {
+      "zx_zy_concat": {
+        "actual_dim": 100,
+        "var_explained": 1.0,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 100,
+        "var_explained": 1.0,
+        "A": 0.5656,
+        "B": 1.0,
+        "C": 0.4437,
+        "D": 0.5312
+      },
+      "complex_B": {
+        "actual_dim": 100,
+        "var_explained": 0.9994,
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0,
+        "D": 0.7292
+      }
+    },
+    "200": {
+      "zx_zy_concat": {
+        "actual_dim": 200,
+        "var_explained": 1.0,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 200,
+        "var_explained": 1.0,
+        "A": 0.5656,
+        "B": 1.0,
+        "C": 0.4437,
+        "D": 0.5417
+      },
+      "complex_B": {
+        "actual_dim": 200,
+        "var_explained": 0.9999,
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0,
+        "D": 0.7292
+      }
+    },
+    "original": {
+      "zx_zy_concat": {
+        "dim": 800,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "dim": 400,
+        "A": 0.5625,
+        "B": 1.0,
+        "C": 0.4437,
+        "D": 0.5417
+      },
+      "complex_B": {
+        "dim": 800,
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0,
+        "D": 0.7292
+      }
+    },
+    "bin10_original": {
+      "zx_zy_concat": {
+        "dim": 5000,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "dim": 2500,
+        "A": 0.5625,
+        "B": 1.0,
+        "C": 0.4437,
+        "D": 0.5833
+      },
+      "complex_B": {
+        "dim": 5000,
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0,
+        "D": 0.7396
+      }
+    },
+    "bin10_d2": {
+      "zx_zy_concat": {
+        "actual_dim": 2,
+        "A": 0.0625,
+        "B": 0.5,
+        "C": 0.0719,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 2,
+        "A": 0.0469,
+        "B": 0.5,
+        "C": 0.1,
+        "D": 0.4792
+      },
+      "complex_B": {
+        "actual_dim": 2,
+        "A": 0.0594,
+        "B": 0.75,
+        "C": 0.1031,
+        "D": 0.7458
+      }
+    },
+    "bin10_d3": {
+      "zx_zy_concat": {
+        "actual_dim": 3,
+        "A": 0.1094,
+        "B": 0.5,
+        "C": 0.1938,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 3,
+        "A": 0.0781,
+        "B": 0.5,
+        "C": 0.225,
+        "D": 0.5312
+      },
+      "complex_B": {
+        "actual_dim": 3,
+        "A": 0.0781,
+        "B": 0.75,
+        "C": 0.1719,
+        "D": 0.75
+      }
+    },
+    "bin10_d5": {
+      "zx_zy_concat": {
+        "actual_dim": 5,
+        "A": 0.25,
+        "B": 0.5,
+        "C": 0.4406,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 5,
+        "A": 0.125,
+        "B": 0.5,
+        "C": 0.25,
+        "D": 0.5625
+      },
+      "complex_B": {
+        "actual_dim": 5,
+        "A": 0.2281,
+        "B": 0.75,
+        "C": 0.1812,
+        "D": 0.7146
+      }
+    },
+    "bin10_d10": {
+      "zx_zy_concat": {
+        "actual_dim": 10,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 0.8156,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 10,
+        "A": 0.4062,
+        "B": 0.7438,
+        "C": 0.4188,
+        "D": 0.5312
+      },
+      "complex_B": {
+        "actual_dim": 10,
+        "A": 0.4437,
+        "B": 0.75,
+        "C": 0.2781,
+        "D": 0.6719
+      }
+    },
+    "bin10_d25": {
+      "zx_zy_concat": {
+        "actual_dim": 25,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 25,
+        "A": 0.5656,
+        "B": 1.0,
+        "C": 0.4344,
+        "D": 0.5104
+      },
+      "complex_B": {
+        "actual_dim": 25,
+        "A": 0.9313,
+        "B": 0.9313,
+        "C": 0.6438,
+        "D": 0.65
+      }
+    },
+    "bin10_d50": {
+      "zx_zy_concat": {
+        "actual_dim": 50,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 50,
+        "A": 0.5594,
+        "B": 1.0,
+        "C": 0.4437,
+        "D": 0.625
+      },
+      "complex_B": {
+        "actual_dim": 50,
+        "A": 1.0,
+        "B": 0.9708,
+        "C": 0.9812,
+        "D": 0.6177
+      }
+    },
+    "bin10_d100": {
+      "zx_zy_concat": {
+        "actual_dim": 100,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 100,
+        "A": 0.5563,
+        "B": 1.0,
+        "C": 0.45,
+        "D": 0.5521
+      },
+      "complex_B": {
+        "actual_dim": 100,
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0,
+        "D": 0.7365
+      }
+    },
+    "bin10_d200": {
+      "zx_zy_concat": {
+        "actual_dim": 200,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear_ew": {
+        "actual_dim": 200,
+        "A": 0.5594,
+        "B": 1.0,
+        "C": 0.4437,
+        "D": 0.5833
+      },
+      "complex_B": {
+        "actual_dim": 200,
+        "A": 1.0,
+        "B": 1.0,
+        "C": 1.0,
+        "D": 0.7396
+      }
+    }
+  }
+}

@@ -1,0 +1,783 @@
+{
+  "low_nout": [
+    {
+      "target_n_out": 4,
+      "bin_size": 250,
+      "actual_channels": 4,
+      "concat": {
+        "name": "concat",
+        "dim": 8,
+        "A": 0.5625,
+        "B": 0.5,
+        "C": 0.6469,
+        "D": 0.5
+      },
+      "digital_bilinear": {
+        "name": "digital_bilinear",
+        "dim": 4,
+        "A": 0.125,
+        "B": 0.5,
+        "C": 0.2437,
+        "D": 0.5
+      },
+      "complex_B": {
+        "name": "complex_B",
+        "dim": 8,
+        "A": 0.3781,
+        "B": 0.75,
+        "C": 0.2188,
+        "D": 0.75
+      }
+    },
+    {
+      "target_n_out": 9,
+      "bin_size": 166,
+      "actual_channels": 9,
+      "concat": {
+        "name": "concat",
+        "dim": 18,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 0.9406,
+        "D": 0.5
+      },
+      "digital_bilinear": {
+        "name": "digital_bilinear",
+        "dim": 9,
+        "A": 0.375,
+        "B": 0.5,
+        "C": 0.325,
+        "D": 0.5104
+      },
+      "complex_B": {
+        "name": "complex_B",
+        "dim": 18,
+        "A": 0.825,
+        "B": 0.75,
+        "C": 0.3688,
+        "D": 0.75
+      }
+    },
+    {
+      "target_n_out": 16,
+      "bin_size": 125,
+      "actual_channels": 16,
+      "concat": {
+        "name": "concat",
+        "dim": 32,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear": {
+        "name": "digital_bilinear",
+        "dim": 16,
+        "A": 0.5,
+        "B": 0.5,
+        "C": 0.3844,
+        "D": 0.5208
+      },
+      "complex_B": {
+        "name": "complex_B",
+        "dim": 32,
+        "A": 0.9844,
+        "B": 0.75,
+        "C": 0.575,
+        "D": 0.75
+      }
+    },
+    {
+      "target_n_out": 25,
+      "bin_size": 100,
+      "actual_channels": 25,
+      "concat": {
+        "name": "concat",
+        "dim": 50,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear": {
+        "name": "digital_bilinear",
+        "dim": 25,
+        "A": 0.5312,
+        "B": 0.5687,
+        "C": 0.4344,
+        "D": 0.5729
+      },
+      "complex_B": {
+        "name": "complex_B",
+        "dim": 50,
+        "A": 1.0,
+        "B": 0.75,
+        "C": 0.7031,
+        "D": 0.7417
+      }
+    },
+    {
+      "target_n_out": 36,
+      "bin_size": 83,
+      "actual_channels": 36,
+      "concat": {
+        "name": "concat",
+        "dim": 72,
+        "A": 1.0,
+        "B": 0.5,
+        "C": 1.0,
+        "D": 0.5
+      },
+      "digital_bilinear": {
+        "name": "digital_bilinear",
+        "dim": 36,
+        "A": 0.5625,
+        "B": 0.8021,
+        "C": 0.4313,
+        "D": 0.4583
+      },
+      "complex_B": {
+        "name": "complex_B",
+        "dim": 72,
+        "A": 1.0,
+        "B": 0.75,
+        "C": 0.9219,
+        "D": 0.7396
+      }
+    }
+  ],
+  "raw_input": [
+    {
+      "name": "concat_raw",
+      "dim": 144,
+      "A": 1.0,
+      "B": 0.5,
+      "C": 1.0,
+      "D": 0.5
+    },
+    {
+      "name": "diff_raw",
+      "dim": 72,
+      "A": 0.875,
+      "B": 0.5,
+      "C": 0.7688,
+      "D": 0.5
+    },
+    {
+      "name": "abs_diff_raw",
+      "dim": 36,
+      "A": 0.4531,
+      "B": 1.0,
+      "C": 0.3344,
+      "D": 0.7188
+    },
+    {
+      "name": "prod_raw",
+      "dim": 72,
+      "A": 0.5625,
+      "B": 1.0,
+      "C": 0.4437,
+      "D": 0.5104
+    },
+    {
+      "name": "conj_prod_raw",
+      "dim": 72,
+      "A": 0.8906,
+      "B": 1.0,
+      "C": 0.8906,
+      "D": 0.6979
+    }
+  ],
+  "scaling_optical": [
+    {
+      "name": "optical_concat",
+      "dim": 8,
+      "A": 0.5625,
+      "B": 0.5,
+      "C": 0.6469,
+      "D": 0.5,
+      "n_out": 4,
+      "bin_size": 250
+    },
+    {
+      "name": "optical_digital_bilinear",
+      "dim": 4,
+      "A": 0.125,
+      "B": 0.5,
+      "C": 0.2437,
+      "D": 0.5,
+      "n_out": 4,
+      "bin_size": 250
+    },
+    {
+      "name": "optical_complex_B",
+      "dim": 8,
+      "A": 0.3781,
+      "B": 0.75,
+      "C": 0.2188,
+      "D": 0.75,
+      "n_out": 4,
+      "bin_size": 250
+    },
+    {
+      "name": "optical_concat",
+      "dim": 18,
+      "A": 1.0,
+      "B": 0.5,
+      "C": 0.9406,
+      "D": 0.5,
+      "n_out": 9,
+      "bin_size": 166
+    },
+    {
+      "name": "optical_digital_bilinear",
+      "dim": 9,
+      "A": 0.375,
+      "B": 0.5,
+      "C": 0.325,
+      "D": 0.5104,
+      "n_out": 9,
+      "bin_size": 166
+    },
+    {
+      "name": "optical_complex_B",
+      "dim": 18,
+      "A": 0.825,
+      "B": 0.75,
+      "C": 0.3688,
+      "D": 0.75,
+      "n_out": 9,
+      "bin_size": 166
+    },
+    {
+      "name": "optical_concat",
+      "dim": 32,
+      "A": 1.0,
+      "B": 0.5,
+      "C": 1.0,
+      "D": 0.5,
+      "n_out": 16,
+      "bin_size": 125
+    },
+    {
+      "name": "optical_digital_bilinear",
+      "dim": 16,
+      "A": 0.5,
+      "B": 0.5,
+      "C": 0.3844,
+      "D": 0.5208,
+      "n_out": 16,
+      "bin_size": 125
+    },
+    {
+      "name": "optical_complex_B",
+      "dim": 32,
+      "A": 0.9844,
+      "B": 0.75,
+      "C": 0.575,
+      "D": 0.75,
+      "n_out": 16,
+      "bin_size": 125
+    },
+    {
+      "name": "optical_concat",
+      "dim": 50,
+      "A": 1.0,
+      "B": 0.5,
+      "C": 1.0,
+      "D": 0.5,
+      "n_out": 25,
+      "bin_size": 100
+    },
+    {
+      "name": "optical_digital_bilinear",
+      "dim": 25,
+      "A": 0.5312,
+      "B": 0.5687,
+      "C": 0.4344,
+      "D": 0.5729,
+      "n_out": 25,
+      "bin_size": 100
+    },
+    {
+      "name": "optical_complex_B",
+      "dim": 50,
+      "A": 1.0,
+      "B": 0.75,
+      "C": 0.7031,
+      "D": 0.7417,
+      "n_out": 25,
+      "bin_size": 100
+    },
+    {
+      "name": "optical_concat",
+      "dim": 72,
+      "A": 1.0,
+      "B": 0.5,
+      "C": 1.0,
+      "D": 0.5,
+      "n_out": 36,
+      "bin_size": 83
+    },
+    {
+      "name": "optical_digital_bilinear",
+      "dim": 36,
+      "A": 0.5625,
+      "B": 0.8021,
+      "C": 0.4313,
+      "D": 0.4583,
+      "n_out": 36,
+      "bin_size": 83
+    },
+    {
+      "name": "optical_complex_B",
+      "dim": 72,
+      "A": 1.0,
+      "B": 0.75,
+      "C": 0.9219,
+      "D": 0.7396,
+      "n_out": 36,
+      "bin_size": 83
+    },
+    {
+      "name": "optical_concat",
+      "dim": 128,
+      "A": 1.0,
+      "B": 0.5,
+      "C": 1.0,
+      "D": 0.5,
+      "n_out": 64,
+      "bin_size": 62
+    },
+    {
+      "name": "optical_digital_bilinear",
+      "dim": 64,
+      "A": 0.5625,
+      "B": 1.0,
+      "C": 0.4437,
+      "D": 0.5,
+      "n_out": 64,
+      "bin_size": 62
+    },
+    {
+      "name": "optical_complex_B",
+      "dim": 128,
+      "A": 1.0,
+      "B": 0.875,
+      "C": 1.0,
+      "D": 0.7313,
+      "n_out": 64,
+      "bin_size": 62
+    },
+    {
+      "name": "optical_concat",
+      "dim": 200,
+      "A": 1.0,
+      "B": 0.5,
+      "C": 1.0,
+      "D": 0.5,
+      "n_out": 100,
+      "bin_size": 50
+    },
+    {
+      "name": "optical_digital_bilinear",
+      "dim": 100,
+      "A": 0.5625,
+      "B": 1.0,
+      "C": 0.4437,
+      "D": 0.6042,
+      "n_out": 100,
+      "bin_size": 50
+    },
+    {
+      "name": "optical_complex_B",
+      "dim": 200,
+      "A": 1.0,
+      "B": 0.9625,
+      "C": 1.0,
+      "D": 0.7594,
+      "n_out": 100,
+      "bin_size": 50
+    },
+    {
+      "name": "optical_concat",
+      "dim": 450,
+      "A": 1.0,
+      "B": 0.5,
+      "C": 1.0,
+      "D": 0.5,
+      "n_out": 225,
+      "bin_size": 33
+    },
+    {
+      "name": "optical_digital_bilinear",
+      "dim": 225,
+      "A": 0.5625,
+      "B": 1.0,
+      "C": 0.4437,
+      "D": 0.625,
+      "n_out": 225,
+      "bin_size": 33
+    },
+    {
+      "name": "optical_complex_B",
+      "dim": 450,
+      "A": 1.0,
+      "B": 1.0,
+      "C": 1.0,
+      "D": 0.7531,
+      "n_out": 225,
+      "bin_size": 33
+    },
+    {
+      "name": "optical_concat",
+      "dim": 800,
+      "A": 1.0,
+      "B": 0.5,
+      "C": 1.0,
+      "D": 0.5,
+      "n_out": 400,
+      "bin_size": 25
+    },
+    {
+      "name": "optical_digital_bilinear",
+      "dim": 400,
+      "A": 0.5625,
+      "B": 1.0,
+      "C": 0.4437,
+      "D": 0.5417,
+      "n_out": 400,
+      "bin_size": 25
+    },
+    {
+      "name": "optical_complex_B",
+      "dim": 800,
+      "A": 1.0,
+      "B": 1.0,
+      "C": 1.0,
+      "D": 0.7292,
+      "n_out": 400,
+      "bin_size": 25
+    },
+    {
+      "name": "optical_concat",
+      "dim": 1922,
+      "A": 1.0,
+      "B": 0.5,
+      "C": 1.0,
+      "D": 0.5,
+      "n_out": 961,
+      "bin_size": 16
+    },
+    {
+      "name": "optical_digital_bilinear",
+      "dim": 961,
+      "A": 0.5625,
+      "B": 1.0,
+      "C": 0.4437,
+      "D": 0.5104,
+      "n_out": 961,
+      "bin_size": 16
+    },
+    {
+      "name": "optical_complex_B",
+      "dim": 1922,
+      "A": 1.0,
+      "B": 1.0,
+      "C": 1.0,
+      "D": 0.7344,
+      "n_out": 961,
+      "bin_size": 16
+    },
+    {
+      "name": "optical_concat",
+      "dim": 3362,
+      "A": 1.0,
+      "B": 0.5,
+      "C": 1.0,
+      "D": 0.5,
+      "n_out": 1681,
+      "bin_size": 12
+    },
+    {
+      "name": "optical_digital_bilinear",
+      "dim": 1681,
+      "A": 0.5625,
+      "B": 1.0,
+      "C": 0.4437,
+      "D": 0.5938,
+      "n_out": 1681,
+      "bin_size": 12
+    },
+    {
+      "name": "optical_complex_B",
+      "dim": 3362,
+      "A": 1.0,
+      "B": 1.0,
+      "C": 1.0,
+      "D": 0.7438,
+      "n_out": 1681,
+      "bin_size": 12
+    },
+    {
+      "name": "optical_concat",
+      "dim": 5000,
+      "A": 1.0,
+      "B": 0.5,
+      "C": 1.0,
+      "D": 0.5,
+      "n_out": 2500,
+      "bin_size": 10
+    },
+    {
+      "name": "optical_digital_bilinear",
+      "dim": 2500,
+      "A": 0.5625,
+      "B": 1.0,
+      "C": 0.4437,
+      "D": 0.5833,
+      "n_out": 2500,
+      "bin_size": 10
+    },
+    {
+      "name": "optical_complex_B",
+      "dim": 5000,
+      "A": 1.0,
+      "B": 1.0,
+      "C": 1.0,
+      "D": 0.7396,
+      "n_out": 2500,
+      "bin_size": 10
+    }
+  ],
+  "scaling_pseudo": [
+    {
+      "n_out": 4,
+      "pseudo_B_A_mean": 0.6172,
+      "pseudo_B_A_std": 0.0966,
+      "pseudo_B_B_mean": 0.6475,
+      "pseudo_B_B_std": 0.0369,
+      "pseudo_B_C_mean": 0.2741,
+      "pseudo_B_C_std": 0.1092,
+      "pseudo_B_D_mean": 0.6229,
+      "pseudo_B_D_std": 0.0384,
+      "pseudo_concat_A_mean": 1.0,
+      "pseudo_concat_A_std": 0.0,
+      "pseudo_concat_B_mean": 0.5,
+      "pseudo_concat_B_std": 0.0,
+      "pseudo_concat_C_mean": 1.0,
+      "pseudo_concat_C_std": 0.0,
+      "pseudo_concat_D_mean": 0.5,
+      "pseudo_concat_D_std": 0.0
+    },
+    {
+      "n_out": 9,
+      "pseudo_B_A_mean": 0.9875,
+      "pseudo_B_A_std": 0.0094,
+      "pseudo_B_B_mean": 0.6892,
+      "pseudo_B_B_std": 0.0594,
+      "pseudo_B_C_mean": 0.5328,
+      "pseudo_B_C_std": 0.1398,
+      "pseudo_B_D_mean": 0.6365,
+      "pseudo_B_D_std": 0.0377,
+      "pseudo_concat_A_mean": 1.0,
+      "pseudo_concat_A_std": 0.0,
+      "pseudo_concat_B_mean": 0.5,
+      "pseudo_concat_B_std": 0.0,
+      "pseudo_concat_C_mean": 1.0,
+      "pseudo_concat_C_std": 0.0,
+      "pseudo_concat_D_mean": 0.5,
+      "pseudo_concat_D_std": 0.0
+    },
+    {
+      "n_out": 16,
+      "pseudo_B_A_mean": 0.9984,
+      "pseudo_B_A_std": 0.0047,
+      "pseudo_B_B_mean": 0.8042,
+      "pseudo_B_B_std": 0.0598,
+      "pseudo_B_C_mean": 0.8328,
+      "pseudo_B_C_std": 0.0549,
+      "pseudo_B_D_mean": 0.5604,
+      "pseudo_B_D_std": 0.1015,
+      "pseudo_concat_A_mean": 1.0,
+      "pseudo_concat_A_std": 0.0,
+      "pseudo_concat_B_mean": 0.5,
+      "pseudo_concat_B_std": 0.0,
+      "pseudo_concat_C_mean": 1.0,
+      "pseudo_concat_C_std": 0.0,
+      "pseudo_concat_D_mean": 0.5,
+      "pseudo_concat_D_std": 0.0
+    },
+    {
+      "n_out": 25,
+      "pseudo_B_A_mean": 1.0,
+      "pseudo_B_A_std": 0.0,
+      "pseudo_B_B_mean": 0.901,
+      "pseudo_B_B_std": 0.0552,
+      "pseudo_B_C_mean": 0.9894,
+      "pseudo_B_C_std": 0.0108,
+      "pseudo_B_D_mean": 0.5698,
+      "pseudo_B_D_std": 0.0771,
+      "pseudo_concat_A_mean": 1.0,
+      "pseudo_concat_A_std": 0.0,
+      "pseudo_concat_B_mean": 0.5,
+      "pseudo_concat_B_std": 0.0,
+      "pseudo_concat_C_mean": 1.0,
+      "pseudo_concat_C_std": 0.0,
+      "pseudo_concat_D_mean": 0.5,
+      "pseudo_concat_D_std": 0.0
+    },
+    {
+      "n_out": 36,
+      "pseudo_B_A_mean": 1.0,
+      "pseudo_B_A_std": 0.0,
+      "pseudo_B_B_mean": 0.9936,
+      "pseudo_B_B_std": 0.0074,
+      "pseudo_B_C_mean": 1.0,
+      "pseudo_B_C_std": 0.0,
+      "pseudo_B_D_mean": 0.6281,
+      "pseudo_B_D_std": 0.0697,
+      "pseudo_concat_A_mean": 1.0,
+      "pseudo_concat_A_std": 0.0,
+      "pseudo_concat_B_mean": 0.5,
+      "pseudo_concat_B_std": 0.0,
+      "pseudo_concat_C_mean": 1.0,
+      "pseudo_concat_C_std": 0.0,
+      "pseudo_concat_D_mean": 0.5,
+      "pseudo_concat_D_std": 0.0
+    },
+    {
+      "n_out": 64,
+      "pseudo_B_A_mean": 1.0,
+      "pseudo_B_A_std": 0.0,
+      "pseudo_B_B_mean": 0.9958,
+      "pseudo_B_B_std": 0.0051,
+      "pseudo_B_C_mean": 1.0,
+      "pseudo_B_C_std": 0.0,
+      "pseudo_B_D_mean": 0.6167,
+      "pseudo_B_D_std": 0.0432,
+      "pseudo_concat_A_mean": 1.0,
+      "pseudo_concat_A_std": 0.0,
+      "pseudo_concat_B_mean": 0.5,
+      "pseudo_concat_B_std": 0.0,
+      "pseudo_concat_C_mean": 1.0,
+      "pseudo_concat_C_std": 0.0,
+      "pseudo_concat_D_mean": 0.5,
+      "pseudo_concat_D_std": 0.0
+    },
+    {
+      "n_out": 100,
+      "pseudo_B_A_mean": 1.0,
+      "pseudo_B_A_std": 0.0,
+      "pseudo_B_B_mean": 0.999,
+      "pseudo_B_B_std": 0.0031,
+      "pseudo_B_C_mean": 1.0,
+      "pseudo_B_C_std": 0.0,
+      "pseudo_B_D_mean": 0.6917,
+      "pseudo_B_D_std": 0.062,
+      "pseudo_concat_A_mean": 1.0,
+      "pseudo_concat_A_std": 0.0,
+      "pseudo_concat_B_mean": 0.5,
+      "pseudo_concat_B_std": 0.0,
+      "pseudo_concat_C_mean": 1.0,
+      "pseudo_concat_C_std": 0.0,
+      "pseudo_concat_D_mean": 0.5,
+      "pseudo_concat_D_std": 0.0
+    },
+    {
+      "n_out": 225,
+      "pseudo_B_A_mean": 1.0,
+      "pseudo_B_A_std": 0.0,
+      "pseudo_B_B_mean": 1.0,
+      "pseudo_B_B_std": 0.0,
+      "pseudo_B_C_mean": 1.0,
+      "pseudo_B_C_std": 0.0,
+      "pseudo_B_D_mean": 0.7198,
+      "pseudo_B_D_std": 0.0518,
+      "pseudo_concat_A_mean": 1.0,
+      "pseudo_concat_A_std": 0.0,
+      "pseudo_concat_B_mean": 0.5,
+      "pseudo_concat_B_std": 0.0,
+      "pseudo_concat_C_mean": 1.0,
+      "pseudo_concat_C_std": 0.0,
+      "pseudo_concat_D_mean": 0.5,
+      "pseudo_concat_D_std": 0.0
+    },
+    {
+      "n_out": 400,
+      "pseudo_B_A_mean": 1.0,
+      "pseudo_B_A_std": 0.0,
+      "pseudo_B_B_mean": 1.0,
+      "pseudo_B_B_std": 0.0,
+      "pseudo_B_C_mean": 1.0,
+      "pseudo_B_C_std": 0.0,
+      "pseudo_B_D_mean": 0.7261,
+      "pseudo_B_D_std": 0.028,
+      "pseudo_concat_A_mean": 1.0,
+      "pseudo_concat_A_std": 0.0,
+      "pseudo_concat_B_mean": 0.5,
+      "pseudo_concat_B_std": 0.0,
+      "pseudo_concat_C_mean": 1.0,
+      "pseudo_concat_C_std": 0.0,
+      "pseudo_concat_D_mean": 0.5,
+      "pseudo_concat_D_std": 0.0
+    },
+    {
+      "n_out": 900,
+      "pseudo_B_A_mean": 1.0,
+      "pseudo_B_A_std": 0.0,
+      "pseudo_B_B_mean": 1.0,
+      "pseudo_B_B_std": 0.0,
+      "pseudo_B_C_mean": 1.0,
+      "pseudo_B_C_std": 0.0,
+      "pseudo_B_D_mean": 0.7229,
+      "pseudo_B_D_std": 0.0141,
+      "pseudo_concat_A_mean": 1.0,
+      "pseudo_concat_A_std": 0.0,
+      "pseudo_concat_B_mean": 0.5,
+      "pseudo_concat_B_std": 0.0,
+      "pseudo_concat_C_mean": 1.0,
+      "pseudo_concat_C_std": 0.0,
+      "pseudo_concat_D_mean": 0.5,
+      "pseudo_concat_D_std": 0.0
+    },
+    {
+      "n_out": 1600,
+      "pseudo_B_A_mean": 1.0,
+      "pseudo_B_A_std": 0.0,
+      "pseudo_B_B_mean": 1.0,
+      "pseudo_B_B_std": 0.0,
+      "pseudo_B_C_mean": 1.0,
+      "pseudo_B_C_std": 0.0,
+      "pseudo_B_D_mean": 0.7292,
+      "pseudo_B_D_std": 0.0066,
+      "pseudo_concat_A_mean": 1.0,
+      "pseudo_concat_A_std": 0.0,
+      "pseudo_concat_B_mean": 0.5,
+      "pseudo_concat_B_std": 0.0,
+      "pseudo_concat_C_mean": 1.0,
+      "pseudo_concat_C_std": 0.0,
+      "pseudo_concat_D_mean": 0.5,
+      "pseudo_concat_D_std": 0.0
+    },
+    {
+      "n_out": 2500,
+      "pseudo_B_A_mean": 1.0,
+      "pseudo_B_A_std": 0.0,
+      "pseudo_B_B_mean": 1.0,
+      "pseudo_B_B_std": 0.0,
+      "pseudo_B_C_mean": 1.0,
+      "pseudo_B_C_std": 0.0,
+      "pseudo_B_D_mean": 0.7208,
+      "pseudo_B_D_std": 0.0091,
+      "pseudo_concat_A_mean": 1.0,
+      "pseudo_concat_A_std": 0.0,
+      "pseudo_concat_B_mean": 0.5,
+      "pseudo_concat_B_std": 0.0,
+      "pseudo_concat_C_mean": 1.0,
+      "pseudo_concat_C_std": 0.0,
+      "pseudo_concat_D_mean": 0.5,
+      "pseudo_concat_D_std": 0.0
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+[00:01:17.725] Experiment started at 2026-04-07T00:01:17.725606
+[00:01:17.725] ============================================================
+[00:01:17.725] Transmission Matrix 256-Mode Refined Acquisition + Focusing Test
+[00:01:17.725] N_MEASURE_MODES = 256
+[00:01:17.725] N_MODES = 256
+[00:01:17.725] Signal size = 80x80
+[00:01:17.725] CMOS2 ROI = 80x80
+[00:01:17.725] Phase steps = 4
+[00:01:17.725] Measure delay = 0.25s | settle_time = 0.25s
+[00:01:17.725] Max retries = 3
+[00:01:17.725] ============================================================
+[00:01:17.726] OpticalClient connected
+[00:01:17.727] === TM Acquisition: 256 Hadamard inputs ===
+[00:01:17.727] Total measurements: 1 ref + 256x4 = 1025
+[00:01:26.701] Reference: mean=2.2348, min=0.0417, max=9.4058, exposure_ms=4.7388, opm_uW=447.2591
+[00:01:26.701] Mode 0/256 | elapsed 0s | ETA 0s
+[00:05:48.737]   Checkpoint saved at mode 16
+[00:05:48.737] Mode 16/256 | elapsed 262s | ETA 3931s
+[00:10:14.989]   Checkpoint saved at mode 32
+[00:10:14.989] Mode 32/256 | elapsed 528s | ETA 3698s
+[00:14:39.738]   Checkpoint saved at mode 48
+[00:14:39.738] Mode 48/256 | elapsed 793s | ETA 3436s
+[00:19:51.199]   WARNING: Measurement failed (attempt 1/3) [k061_p3]: 守护进程执行错误: "The current handle is invalid."
+[00:19:52.801]   WARNING: Measurement failed (attempt 2/3) [k061_p3]: 守护进程执行错误: "The current handle is invalid."
+[00:19:56.310]   WARNING: Measurement failed (attempt 3/3) [k061_p3]: 守护进程执行错误: "The current handle is invalid."
+[00:20:01.312]   ERROR: All 3 attempts failed for [k061_p3] | last=守护进程执行错误: "The current handle is invalid."
+[00:20:01.315]   Mode 61 FAILED — column set to zero
+[00:20:01.844]   WARNING: Measurement failed (attempt 1/3) [k062_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:03.367]   WARNING: Measurement failed (attempt 2/3) [k062_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:06.855]   WARNING: Measurement failed (attempt 3/3) [k062_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:11.855]   ERROR: All 3 attempts failed for [k062_p0] | last=守护进程执行错误: "The current handle is invalid."
+[00:20:11.855]   Mode 62 FAILED — column set to zero
+[00:20:12.381]   WARNING: Measurement failed (attempt 1/3) [k063_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:13.902]   WARNING: Measurement failed (attempt 2/3) [k063_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:17.422]   WARNING: Measurement failed (attempt 3/3) [k063_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:22.423]   ERROR: All 3 attempts failed for [k063_p0] | last=守护进程执行错误: "The current handle is invalid."
+[00:20:22.423]   Mode 63 FAILED — column set to zero
+[00:20:22.442]   Checkpoint saved at mode 64
+[00:20:22.442] Mode 64/256 | elapsed 1136s | ETA 3407s
+[00:20:23.019]   WARNING: Measurement failed (attempt 1/3) [k064_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:24.592]   WARNING: Measurement failed (attempt 2/3) [k064_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:28.080]   WARNING: Measurement failed (attempt 3/3) [k064_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:33.081]   ERROR: All 3 attempts failed for [k064_p0] | last=守护进程执行错误: "The current handle is invalid."
+[00:20:33.081]   Mode 64 FAILED — column set to zero
+[00:20:33.589]   WARNING: Measurement failed (attempt 1/3) [k065_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:35.119]   WARNING: Measurement failed (attempt 2/3) [k065_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:38.626]   WARNING: Measurement failed (attempt 3/3) [k065_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:43.627]   ERROR: All 3 attempts failed for [k065_p0] | last=守护进程执行错误: "The current handle is invalid."
+[00:20:43.627]   Mode 65 FAILED — column set to zero
+[00:20:44.135]   WARNING: Measurement failed (attempt 1/3) [k066_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:45.635]   WARNING: Measurement failed (attempt 2/3) [k066_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:49.130]   WARNING: Measurement failed (attempt 3/3) [k066_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:54.131]   ERROR: All 3 attempts failed for [k066_p0] | last=守护进程执行错误: "The current handle is invalid."
+[00:20:54.131]   Mode 66 FAILED — column set to zero
+[00:20:54.608]   WARNING: Measurement failed (attempt 1/3) [k067_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:56.107]   WARNING: Measurement failed (attempt 2/3) [k067_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:20:59.585]   WARNING: Measurement failed (attempt 3/3) [k067_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:21:04.588]   ERROR: All 3 attempts failed for [k067_p0] | last=守护进程执行错误: "The current handle is invalid."
+[00:21:04.588]   Mode 67 FAILED — column set to zero
+[00:21:05.090]   WARNING: Measurement failed (attempt 1/3) [k068_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:21:06.568]   WARNING: Measurement failed (attempt 2/3) [k068_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:21:10.056]   WARNING: Measurement failed (attempt 3/3) [k068_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:21:15.057]   ERROR: All 3 attempts failed for [k068_p0] | last=守护进程执行错误: "The current handle is invalid."
+[00:21:15.057]   Mode 68 FAILED — column set to zero
+[00:21:15.572]   WARNING: Measurement failed (attempt 1/3) [k069_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:21:17.069]   WARNING: Measurement failed (attempt 2/3) [k069_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:21:20.560]   WARNING: Measurement failed (attempt 3/3) [k069_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:21:25.562]   ERROR: All 3 attempts failed for [k069_p0] | last=守护进程执行错误: "The current handle is invalid."
+[00:21:25.562]   Mode 69 FAILED — column set to zero
+[00:21:26.057]   WARNING: Measurement failed (attempt 1/3) [k070_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:21:27.542]   WARNING: Measurement failed (attempt 2/3) [k070_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:21:31.054]   WARNING: Measurement failed (attempt 3/3) [k070_p0]: 守护进程执行错误: "The current handle is invalid."
+[00:21:36.055]   ERROR: All 3 attempts failed for [k070_p0] | last=守护进程执行错误: "The current handle is invalid."
+[00:21:36.055]   Mode 70 FAILED — column set to zero
+[00:21:36.574]   WARNING: Measurement failed (attempt 1/3) [k071_p0]: 守护进程执行错误: "The current handle is invalid."

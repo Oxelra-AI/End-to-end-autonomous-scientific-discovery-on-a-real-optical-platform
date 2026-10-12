@@ -1,0 +1,244 @@
+{
+  "raw_input": [
+    {
+      "name": "concat_raw",
+      "dim": 144,
+      "A": 1.0,
+      "B": 0.5,
+      "C": 1.0,
+      "D": 0.5
+    },
+    {
+      "name": "diff_raw",
+      "dim": 72,
+      "A": 0.875,
+      "B": 0.5,
+      "C": 0.7688,
+      "D": 0.5
+    },
+    {
+      "name": "absdiff_raw",
+      "dim": 36,
+      "A": 0.4531,
+      "B": 1.0,
+      "C": 0.3344,
+      "D": 0.7188
+    },
+    {
+      "name": "prod_raw",
+      "dim": 72,
+      "A": 0.5625,
+      "B": 1.0,
+      "C": 0.4437,
+      "D": 0.5104
+    },
+    {
+      "name": "conjprod_raw",
+      "dim": 72,
+      "A": 0.8906,
+      "B": 1.0,
+      "C": 0.8906,
+      "D": 0.6979
+    }
+  ],
+  "anchors": [
+    {
+      "bin_size": 10,
+      "n_out": 2500,
+      "optical": {
+        "concat": {
+          "name": "optical_concat",
+          "dim": 5000,
+          "A": 1.0,
+          "B": 0.5,
+          "C": 1.0,
+          "D": 0.5
+        },
+        "digital_bilinear": {
+          "name": "optical_digital_bilinear",
+          "dim": 2500,
+          "A": 0.5625,
+          "B": 1.0,
+          "C": 0.4437,
+          "D": 0.5833
+        },
+        "complex_B": {
+          "name": "optical_complex_B",
+          "dim": 5000,
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 0.7396
+        }
+      },
+      "pseudo_B_matched": {
+        "n_out": 2500,
+        "n_seeds": 10,
+        "pseudo_B_A_mean": 1.0,
+        "pseudo_B_A_std": 0.0,
+        "pseudo_B_B_mean": 1.0,
+        "pseudo_B_B_std": 0.0,
+        "pseudo_B_C_mean": 1.0,
+        "pseudo_B_C_std": 0.0,
+        "pseudo_B_D_mean": 0.7208,
+        "pseudo_B_D_std": 0.0091,
+        "pseudo_concat_A_mean": 1.0,
+        "pseudo_concat_A_std": 0.0,
+        "pseudo_concat_B_mean": 0.5,
+        "pseudo_concat_B_std": 0.0,
+        "pseudo_concat_C_mean": 1.0,
+        "pseudo_concat_C_std": 0.0,
+        "pseudo_concat_D_mean": 0.5,
+        "pseudo_concat_D_std": 0.0
+      },
+      "diagnostics": {
+        "repeat_corr_mean": 0.9759664826371968,
+        "repeat_corr_std": 0.020500643078653947,
+        "eff_rank_complex_B": 9.62339973449707,
+        "eff_rank_concat": 13.445778846740723,
+        "eff_rank_digital_bilinear": 8.346932411193848,
+        "self_pair_centroid": {
+          "0": {
+            "re": 0.5314106941223145,
+            "im": -0.021776601672172546,
+            "abs_centroid": 0.5318566560745239
+          },
+          "1": {
+            "re": 0.38160526752471924,
+            "im": 0.19053146243095398,
+            "abs_centroid": 0.42652642726898193
+          },
+          "2": {
+            "re": 0.3224361836910248,
+            "im": 0.24069799482822418,
+            "abs_centroid": 0.40236878395080566
+          },
+          "3": {
+            "re": 0.7009133100509644,
+            "im": -0.13561893999576569,
+            "abs_centroid": 0.713913083076477
+          },
+          "4": {
+            "re": 0.33692994713783264,
+            "im": 0.15928126871585846,
+            "abs_centroid": 0.3726826012134552
+          },
+          "5": {
+            "re": 0.40931224822998047,
+            "im": 0.18798862397670746,
+            "abs_centroid": 0.45041781663894653
+          },
+          "6": {
+            "re": 0.733043372631073,
+            "im": -0.16219665110111237,
+            "abs_centroid": 0.7507731318473816
+          },
+          "7": {
+            "re": 0.413832426071167,
+            "im": 0.20127372443675995,
+            "abs_centroid": 0.4601829946041107
+          }
+        }
+      }
+    },
+    {
+      "bin_size": 25,
+      "n_out": 400,
+      "optical": {
+        "concat": {
+          "name": "optical_concat",
+          "dim": 800,
+          "A": 1.0,
+          "B": 0.5,
+          "C": 1.0,
+          "D": 0.5
+        },
+        "digital_bilinear": {
+          "name": "optical_digital_bilinear",
+          "dim": 400,
+          "A": 0.5625,
+          "B": 1.0,
+          "C": 0.4437,
+          "D": 0.5417
+        },
+        "complex_B": {
+          "name": "optical_complex_B",
+          "dim": 800,
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 0.7292
+        }
+      },
+      "pseudo_B_matched": {
+        "n_out": 400,
+        "n_seeds": 10,
+        "pseudo_B_A_mean": 1.0,
+        "pseudo_B_A_std": 0.0,
+        "pseudo_B_B_mean": 1.0,
+        "pseudo_B_B_std": 0.0,
+        "pseudo_B_C_mean": 1.0,
+        "pseudo_B_C_std": 0.0,
+        "pseudo_B_D_mean": 0.7261,
+        "pseudo_B_D_std": 0.028,
+        "pseudo_concat_A_mean": 1.0,
+        "pseudo_concat_A_std": 0.0,
+        "pseudo_concat_B_mean": 0.5,
+        "pseudo_concat_B_std": 0.0,
+        "pseudo_concat_C_mean": 1.0,
+        "pseudo_concat_C_std": 0.0,
+        "pseudo_concat_D_mean": 0.5,
+        "pseudo_concat_D_std": 0.0
+      },
+      "diagnostics": {
+        "repeat_corr_mean": 0.982822384781258,
+        "repeat_corr_std": 0.035707388682365844,
+        "eff_rank_complex_B": 3.0023393630981445,
+        "eff_rank_concat": 12.492696762084961,
+        "eff_rank_digital_bilinear": 6.355815410614014,
+        "self_pair_centroid": {
+          "0": {
+            "re": 0.5314106941223145,
+            "im": -0.021776601672172546,
+            "abs_centroid": 0.5318567156791687
+          },
+          "1": {
+            "re": 0.38160526752471924,
+            "im": 0.19053146243095398,
+            "abs_centroid": 0.42652642726898193
+          },
+          "2": {
+            "re": 0.3224361836910248,
+            "im": 0.24069800972938538,
+            "abs_centroid": 0.40236878395080566
+          },
+          "3": {
+            "re": 0.7009132504463196,
+            "im": -0.13561895489692688,
+            "abs_centroid": 0.7139130234718323
+          },
+          "4": {
+            "re": 0.33692991733551025,
+            "im": 0.15928126871585846,
+            "abs_centroid": 0.3726826012134552
+          },
+          "5": {
+            "re": 0.40931227803230286,
+            "im": 0.18798862397670746,
+            "abs_centroid": 0.4504178464412689
+          },
+          "6": {
+            "re": 0.733043372631073,
+            "im": -0.16219665110111237,
+            "abs_centroid": 0.7507731318473816
+          },
+          "7": {
+            "re": 0.4138323962688446,
+            "im": 0.20127372443675995,
+            "abs_centroid": 0.4601829946041107
+          }
+        }
+      }
+    }
+  ]
+}

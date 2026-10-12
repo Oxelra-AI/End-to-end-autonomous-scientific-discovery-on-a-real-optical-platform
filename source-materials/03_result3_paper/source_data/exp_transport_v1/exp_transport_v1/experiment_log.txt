@@ -1,0 +1,67 @@
+[03:55:46] Config: 4 ports, size=8, gap=2, ref=(80,110)
+[03:55:46] Phase 1: TM measurement via Hadamard + 4-phase
+[03:55:46] TM Phase 1: Reference baseline
+[03:55:53]   Ref 0: OPM=805.9uW
+[03:55:56]   Ref 1: OPM=807.4uW
+[03:55:59]   Ref 2: OPM=807.7uW
+[03:55:59]   Reference binned: 125x125 = 15625 output modes
+[03:55:59] TM Phase 2: Hadamard probing (N=4, 4 phases, 16 measurements)
+[03:56:14]   Hadamard vec 1/4: 15s elapsed
+[03:56:28]   Hadamard vec 2/4: 28s elapsed
+[03:56:41]   Hadamard vec 3/4: 42s elapsed
+[03:56:54]   Hadamard vec 4/4: 55s elapsed
+[03:56:54] TM measurement complete: K_obs shape=(15625, 4)
+[03:56:54] TM Phase 3: Post-TM reference check
+[03:56:58]   Drift correlation: 0.9937
+[03:56:58] K_obs saved: shape=(15625, 4), drift_corr=0.9937
+[03:56:58] Phase 2: Computing transport operator H_eff
+[03:56:58]   Selected 11718/15625 output channels (brightness > 1.45)
+[03:56:58]   H_eff eigenvalues (desc): [54.876989 43.283015 38.736169 30.521144]
+[03:56:58]   Condition number: 1.8
+[03:56:58] Phase 3: Computing transport intervals
+[03:56:58]   comp_less: [37.973610, 45.735048] (width=7.761438)
+[03:56:58]   comp_more: [33.788155, 50.697661] (width=16.909506)
+[03:56:58]   incomp_A: [37.321055, 47.063393] (width=9.742338)
+[03:56:58]   incomp_B: [37.804662, 45.566101] (width=7.761438)
+[03:56:58]   incoherent: [41.854329, 41.854329] (width=0.000000)
+[03:56:58]   coherent: [30.521144, 54.876989] (width=24.355845)
+[03:56:58] Phase 4: Majorization consistency check
+[03:56:58]   ✓ comp_less vs comp_more: maj=comp_more majorizes comp_less, intervals=[comp_less] ⊂ [comp_more]
+[03:56:58]   ✗ comp_less vs incomp_A: maj=incomparable, intervals=[comp_less] ⊂ [incomp_A]
+[03:56:58]   ✓ comp_less vs incomp_B: maj=incomparable, intervals=partial overlap
+[03:56:58]   ✓ comp_less vs incoherent: maj=comp_less majorizes incoherent, intervals=[incoherent] ⊂ [comp_less]
+[03:56:58]   ✓ comp_less vs coherent: maj=coherent majorizes comp_less, intervals=[comp_less] ⊂ [coherent]
+[03:56:58]   ✓ comp_more vs incomp_A: maj=comp_more majorizes incomp_A, intervals=[incomp_A] ⊂ [comp_more]
+[03:56:58]   ✓ comp_more vs incomp_B: maj=comp_more majorizes incomp_B, intervals=[incomp_B] ⊂ [comp_more]
+[03:56:58]   ✓ comp_more vs incoherent: maj=comp_more majorizes incoherent, intervals=[incoherent] ⊂ [comp_more]
+[03:56:58]   ✓ comp_more vs coherent: maj=coherent majorizes comp_more, intervals=[comp_more] ⊂ [coherent]
+[03:56:58]   ✗ incomp_A vs incomp_B: maj=incomparable, intervals=[incomp_B] ⊂ [incomp_A]
+[03:56:58]   ✓ incomp_A vs incoherent: maj=incomp_A majorizes incoherent, intervals=[incoherent] ⊂ [incomp_A]
+[03:56:58]   ✓ incomp_A vs coherent: maj=coherent majorizes incomp_A, intervals=[incomp_A] ⊂ [coherent]
+[03:56:58]   ✓ incomp_B vs incoherent: maj=incomp_B majorizes incoherent, intervals=[incoherent] ⊂ [incomp_B]
+[03:56:58]   ✓ incomp_B vs coherent: maj=coherent majorizes incomp_B, intervals=[incomp_B] ⊂ [coherent]
+[03:56:58]   ✓ incoherent vs coherent: maj=coherent majorizes incoherent, intervals=[incoherent] ⊂ [coherent]
+[03:56:58] Phase 5: Physical endpoint verification (selected pairs)
+[03:56:58] 
+  Verifying comp_less: predicted [37.973610, 45.735048]
+[03:57:51]   Endpoint comp_less_max: T_measured = 100.067316
+[03:58:46]   Endpoint comp_less_min: T_measured = 100.506432
+[03:58:46]   comp_less: predicted=[37.973610,45.735048], measured=[100.506432,100.067316], errors=(164.67%, 118.80%)
+[03:58:46] 
+  Verifying comp_more: predicted [33.788155, 50.697661]
+[03:59:40]   Endpoint comp_more_max: T_measured = 105.931489
+[04:00:34]   Endpoint comp_more_min: T_measured = 91.931115
+[04:00:34]   comp_more: predicted=[33.788155,50.697661], measured=[91.931115,105.931489], errors=(172.08%, 108.95%)
+[04:00:34] 
+  Verifying incomp_A: predicted [37.321055, 47.063393]
+[04:01:28]   Endpoint incomp_A_max: T_measured = 104.811073
+[04:02:22]   Endpoint incomp_A_min: T_measured = 94.525356
+[04:02:22]   incomp_A: predicted=[37.321055,47.063393], measured=[94.525356,104.811073], errors=(153.28%, 122.70%)
+[04:02:22] 
+  Verifying incomp_B: predicted [37.804662, 45.566101]
+[04:03:16]   Endpoint incomp_B_max: T_measured = 99.053743
+[04:04:10]   Endpoint incomp_B_min: T_measured = 96.228630
+[04:04:10]   incomp_B: predicted=[37.804662,45.566101], measured=[96.228630,99.053743], errors=(154.54%, 117.38%)
+[04:04:10] 
+Phase 6: Final reference check
+[04:04:13]   Final drift correlation: 0.9911

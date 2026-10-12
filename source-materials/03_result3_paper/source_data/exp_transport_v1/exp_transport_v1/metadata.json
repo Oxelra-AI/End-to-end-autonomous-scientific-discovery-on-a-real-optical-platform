@@ -1,0 +1,369 @@
+{
+  "experiment": "transport_interval_majorization_v1",
+  "timestamp": "2026-04-17 04:04:13",
+  "config": {
+    "n_ports": 4,
+    "port_size": 8,
+    "port_gap": 2,
+    "port_positions": [
+      [
+        -5,
+        -5
+      ],
+      [
+        -5,
+        5
+      ],
+      [
+        5,
+        -5
+      ],
+      [
+        5,
+        5
+      ]
+    ],
+    "ref_inner_r": 80,
+    "ref_outer_r": 110,
+    "cmos2_roi_h": 500,
+    "cmos2_roi_w": 500,
+    "output_bin_size": 4
+  },
+  "tm_shape": [
+    15625,
+    4
+  ],
+  "n_selected_channels": 11718,
+  "drift_corr_post_tm": 0.9936911531488635,
+  "drift_corr_final": 0.9911444531835164,
+  "H_eff_eigenvalues": [
+    54.876988644987236,
+    43.28301485875525,
+    38.73616859842815,
+    30.52114354503658
+  ],
+  "spectra": {
+    "comp_less": [
+      0.4,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "comp_more": [
+      0.7,
+      0.2,
+      0.07,
+      0.03
+    ],
+    "incomp_A": [
+      0.55,
+      0.15,
+      0.15,
+      0.15
+    ],
+    "incomp_B": [
+      0.35,
+      0.35,
+      0.25,
+      0.05
+    ],
+    "incoherent": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "coherent": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "intervals": {
+    "comp_less": {
+      "lower": 37.97360983379285,
+      "upper": 45.73504798981076,
+      "width": 7.76143815601791
+    },
+    "comp_more": {
+      "lower": 33.788154900673725,
+      "upper": 50.69766113148317,
+      "width": 16.90950623080945
+    },
+    "incomp_A": {
+      "lower": 37.32105476509572,
+      "upper": 47.06339280507598,
+      "width": 9.742338039980261
+    },
+    "incomp_B": {
+      "lower": 37.80466239715083,
+      "upper": 45.56610055316874,
+      "width": 7.76143815601791
+    },
+    "incoherent": {
+      "lower": 41.8543289118018,
+      "upper": 41.8543289118018,
+      "width": 0.0
+    },
+    "coherent": {
+      "lower": 30.52114354503658,
+      "upper": 54.876988644987236,
+      "width": 24.355845099950656
+    }
+  },
+  "comparisons": [
+    {
+      "pair": "comp_less vs comp_more",
+      "majorization": "comp_more majorizes comp_less",
+      "interval_1": [
+        37.97360983379285,
+        45.73504798981076
+      ],
+      "interval_2": [
+        33.788154900673725,
+        50.69766113148317
+      ],
+      "interval_relation": "[comp_less] \u2282 [comp_more]",
+      "theory_consistent": true
+    },
+    {
+      "pair": "comp_less vs incomp_A",
+      "majorization": "incomparable",
+      "interval_1": [
+        37.97360983379285,
+        45.73504798981076
+      ],
+      "interval_2": [
+        37.32105476509572,
+        47.06339280507598
+      ],
+      "interval_relation": "[comp_less] \u2282 [incomp_A]",
+      "theory_consistent": false
+    },
+    {
+      "pair": "comp_less vs incomp_B",
+      "majorization": "incomparable",
+      "interval_1": [
+        37.97360983379285,
+        45.73504798981076
+      ],
+      "interval_2": [
+        37.80466239715083,
+        45.56610055316874
+      ],
+      "interval_relation": "partial overlap",
+      "theory_consistent": true
+    },
+    {
+      "pair": "comp_less vs incoherent",
+      "majorization": "comp_less majorizes incoherent",
+      "interval_1": [
+        37.97360983379285,
+        45.73504798981076
+      ],
+      "interval_2": [
+        41.8543289118018,
+        41.8543289118018
+      ],
+      "interval_relation": "[incoherent] \u2282 [comp_less]",
+      "theory_consistent": true
+    },
+    {
+      "pair": "comp_less vs coherent",
+      "majorization": "coherent majorizes comp_less",
+      "interval_1": [
+        37.97360983379285,
+        45.73504798981076
+      ],
+      "interval_2": [
+        30.52114354503658,
+        54.876988644987236
+      ],
+      "interval_relation": "[comp_less] \u2282 [coherent]",
+      "theory_consistent": true
+    },
+    {
+      "pair": "comp_more vs incomp_A",
+      "majorization": "comp_more majorizes incomp_A",
+      "interval_1": [
+        33.788154900673725,
+        50.69766113148317
+      ],
+      "interval_2": [
+        37.32105476509572,
+        47.06339280507598
+      ],
+      "interval_relation": "[incomp_A] \u2282 [comp_more]",
+      "theory_consistent": true
+    },
+    {
+      "pair": "comp_more vs incomp_B",
+      "majorization": "comp_more majorizes incomp_B",
+      "interval_1": [
+        33.788154900673725,
+        50.69766113148317
+      ],
+      "interval_2": [
+        37.80466239715083,
+        45.56610055316874
+      ],
+      "interval_relation": "[incomp_B] \u2282 [comp_more]",
+      "theory_consistent": true
+    },
+    {
+      "pair": "comp_more vs incoherent",
+      "majorization": "comp_more majorizes incoherent",
+      "interval_1": [
+        33.788154900673725,
+        50.69766113148317
+      ],
+      "interval_2": [
+        41.8543289118018,
+        41.8543289118018
+      ],
+      "interval_relation": "[incoherent] \u2282 [comp_more]",
+      "theory_consistent": true
+    },
+    {
+      "pair": "comp_more vs coherent",
+      "majorization": "coherent majorizes comp_more",
+      "interval_1": [
+        33.788154900673725,
+        50.69766113148317
+      ],
+      "interval_2": [
+        30.52114354503658,
+        54.876988644987236
+      ],
+      "interval_relation": "[comp_more] \u2282 [coherent]",
+      "theory_consistent": true
+    },
+    {
+      "pair": "incomp_A vs incomp_B",
+      "majorization": "incomparable",
+      "interval_1": [
+        37.32105476509572,
+        47.06339280507598
+      ],
+      "interval_2": [
+        37.80466239715083,
+        45.56610055316874
+      ],
+      "interval_relation": "[incomp_B] \u2282 [incomp_A]",
+      "theory_consistent": false
+    },
+    {
+      "pair": "incomp_A vs incoherent",
+      "majorization": "incomp_A majorizes incoherent",
+      "interval_1": [
+        37.32105476509572,
+        47.06339280507598
+      ],
+      "interval_2": [
+        41.8543289118018,
+        41.8543289118018
+      ],
+      "interval_relation": "[incoherent] \u2282 [incomp_A]",
+      "theory_consistent": true
+    },
+    {
+      "pair": "incomp_A vs coherent",
+      "majorization": "coherent majorizes incomp_A",
+      "interval_1": [
+        37.32105476509572,
+        47.06339280507598
+      ],
+      "interval_2": [
+        30.52114354503658,
+        54.876988644987236
+      ],
+      "interval_relation": "[incomp_A] \u2282 [coherent]",
+      "theory_consistent": true
+    },
+    {
+      "pair": "incomp_B vs incoherent",
+      "majorization": "incomp_B majorizes incoherent",
+      "interval_1": [
+        37.80466239715083,
+        45.56610055316874
+      ],
+      "interval_2": [
+        41.8543289118018,
+        41.8543289118018
+      ],
+      "interval_relation": "[incoherent] \u2282 [incomp_B]",
+      "theory_consistent": true
+    },
+    {
+      "pair": "incomp_B vs coherent",
+      "majorization": "coherent majorizes incomp_B",
+      "interval_1": [
+        37.80466239715083,
+        45.56610055316874
+      ],
+      "interval_2": [
+        30.52114354503658,
+        54.876988644987236
+      ],
+      "interval_relation": "[incomp_B] \u2282 [coherent]",
+      "theory_consistent": true
+    },
+    {
+      "pair": "incoherent vs coherent",
+      "majorization": "coherent majorizes incoherent",
+      "interval_1": [
+        41.8543289118018,
+        41.8543289118018
+      ],
+      "interval_2": [
+        30.52114354503658,
+        54.876988644987236
+      ],
+      "interval_relation": "[incoherent] \u2282 [coherent]",
+      "theory_consistent": true
+    }
+  ],
+  "physical_verifications": {
+    "comp_less": {
+      "predicted_interval": [
+        37.97360983379285,
+        45.73504798981076
+      ],
+      "measured_max": 100.06731643676757,
+      "measured_min": 100.5064323425293,
+      "max_error": 1.1879788222603682,
+      "min_error": 1.6467442200632785
+    },
+    "comp_more": {
+      "predicted_interval": [
+        33.788154900673725,
+        50.69766113148317
+      ],
+      "measured_max": 105.93148880004881,
+      "measured_min": 91.93111503601074,
+      "max_error": 1.0894748679888413,
+      "min_error": 1.7208089730338505
+    },
+    "incomp_A": {
+      "predicted_interval": [
+        37.32105476509572,
+        47.06339280507598
+      ],
+      "measured_max": 104.8110725402832,
+      "measured_min": 94.52535552978516,
+      "max_error": 1.2270190543716795,
+      "min_error": 1.5327621666842441
+    },
+    "incomp_B": {
+      "predicted_interval": [
+        37.80466239715083,
+        45.56610055316874
+      ],
+      "measured_max": 99.05374298095703,
+      "measured_min": 96.22862968444825,
+      "max_error": 1.1738472631726806,
+      "min_error": 1.5454169825280752
+    }
+  }
+}

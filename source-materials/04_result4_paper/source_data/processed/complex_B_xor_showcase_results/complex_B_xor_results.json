@@ -1,0 +1,172 @@
+{
+  "experiment": "complex_B_xor_showcase_reboot",
+  "primary_object": "complex interaction field B(x,y) = conj(TE_x) * (TE_y)",
+  "object_discipline": "Complex-B only; |B| not used as headline",
+  "task_B_definition": "XOR parity: label = (x + y) % 2",
+  "metadata_summary": {
+    "total_measurements": 432,
+    "total_time_sec": 1842.6
+  },
+  "complex_B_stability": {
+    "(0,0)": {
+      "mean_complex_corr": 0.9977205578995854,
+      "min_complex_corr": 0.9973342919704413,
+      "mean_magnitude": 0.46700066328048706,
+      "mean_phase_std_rad": 0.026176663115620613
+    },
+    "(0,1)": {
+      "mean_complex_corr": 0.9922241751582332,
+      "min_complex_corr": 0.9905687401399892,
+      "mean_magnitude": 0.14656895399093628,
+      "mean_phase_std_rad": 0.18454498052597046
+    },
+    "(0,2)": {
+      "mean_complex_corr": 0.9845638696067247,
+      "min_complex_corr": 0.9797622420029153,
+      "mean_magnitude": 0.11583475768566132,
+      "mean_phase_std_rad": 0.19269874691963196
+    },
+    "(0,3)": {
+      "mean_complex_corr": 0.9898100241793426,
+      "min_complex_corr": 0.9864015710495491,
+      "mean_magnitude": 0.12248591333627701,
+      "mean_phase_std_rad": 0.14630605280399323
+    },
+    "(1,0)": {
+      "mean_complex_corr": 0.9732202952947914,
+      "min_complex_corr": 0.9568014412525667,
+      "mean_magnitude": 0.11991824209690094,
+      "mean_phase_std_rad": 0.3595980703830719
+    },
+    "(1,1)": {
+      "mean_complex_corr": 0.996984094904891,
+      "min_complex_corr": 0.9955622993295086,
+      "mean_magnitude": 0.49902209639549255,
+      "mean_phase_std_rad": 0.02270120196044445
+    },
+    "(1,2)": {
+      "mean_complex_corr": 0.989228917522302,
+      "min_complex_corr": 0.9827789913248042,
+      "mean_magnitude": 0.17673122882843018,
+      "mean_phase_std_rad": 0.12218280881643295
+    },
+    "(1,3)": {
+      "mean_complex_corr": 0.990280062596133,
+      "min_complex_corr": 0.9848074465039911,
+      "mean_magnitude": 0.1411641240119934,
+      "mean_phase_std_rad": 0.24938467144966125
+    },
+    "(2,0)": {
+      "mean_complex_corr": 0.9588840811788357,
+      "min_complex_corr": 0.8980726571209152,
+      "mean_magnitude": 0.14353454113006592,
+      "mean_phase_std_rad": 0.5333642959594727
+    },
+    "(2,1)": {
+      "mean_complex_corr": 0.9919626339397611,
+      "min_complex_corr": 0.9894568167657213,
+      "mean_magnitude": 0.13595184683799744,
+      "mean_phase_std_rad": 0.15371736884117126
+    },
+    "(2,2)": {
+      "mean_complex_corr": 0.9965157314784363,
+      "min_complex_corr": 0.9954869931829832,
+      "mean_magnitude": 0.45809444785118103,
+      "mean_phase_std_rad": 0.021920686587691307
+    },
+    "(2,3)": {
+      "mean_complex_corr": 0.9919794470589569,
+      "min_complex_corr": 0.9893445940159836,
+      "mean_magnitude": 0.1354849487543106,
+      "mean_phase_std_rad": 0.1920536756515503
+    },
+    "(3,0)": {
+      "mean_complex_corr": 0.9694634664706525,
+      "min_complex_corr": 0.9502149678182448,
+      "mean_magnitude": 0.13345587253570557,
+      "mean_phase_std_rad": 0.31609055399894714
+    },
+    "(3,1)": {
+      "mean_complex_corr": 0.9924468541206067,
+      "min_complex_corr": 0.9906635012127478,
+      "mean_magnitude": 0.13457702100276947,
+      "mean_phase_std_rad": 0.18758276104927063
+    },
+    "(3,2)": {
+      "mean_complex_corr": 0.9911816281282784,
+      "min_complex_corr": 0.9897544557588925,
+      "mean_magnitude": 0.12361690402030945,
+      "mean_phase_std_rad": 0.19645459949970245
+    },
+    "(3,3)": {
+      "mean_complex_corr": 0.9934833856131613,
+      "min_complex_corr": 0.9903256836822663,
+      "mean_magnitude": 0.4238812029361725,
+      "mean_phase_std_rad": 0.023804135620594025
+    }
+  },
+  "classification_results": {
+    "zx_only": {
+      "n_features": 400,
+      "full_task_A_bal_acc": 0.0,
+      "full_task_B_bal_acc": 0.0,
+      "compressed_task_A_bal_acc": 0.0,
+      "compressed_task_B_bal_acc": 0.0
+    },
+    "zy_only": {
+      "n_features": 400,
+      "full_task_A_bal_acc": 0.0,
+      "full_task_B_bal_acc": 0.0,
+      "compressed_task_A_bal_acc": 0.0,
+      "compressed_task_B_bal_acc": 0.0
+    },
+    "zx_zy_concat": {
+      "n_features": 800,
+      "full_task_A_bal_acc": 1.0,
+      "full_task_B_bal_acc": 0.0,
+      "compressed_task_A_bal_acc": 1.0,
+      "compressed_task_B_bal_acc": 0.0
+    },
+    "zx_plus_zy": {
+      "n_features": 400,
+      "full_task_A_bal_acc": 0.25,
+      "full_task_B_bal_acc": 0.0,
+      "compressed_task_A_bal_acc": 0.25,
+      "compressed_task_B_bal_acc": 0.0
+    },
+    "zx_minus_zy": {
+      "n_features": 400,
+      "full_task_A_bal_acc": 0.75,
+      "full_task_B_bal_acc": 0.0,
+      "compressed_task_A_bal_acc": 0.75,
+      "compressed_task_B_bal_acc": 0.0
+    },
+    "digital_bilinear_ew": {
+      "n_features": 400,
+      "full_task_A_bal_acc": 0.25,
+      "full_task_B_bal_acc": 1.0,
+      "compressed_task_A_bal_acc": 0.25,
+      "compressed_task_B_bal_acc": 1.0
+    },
+    "complex_B": {
+      "n_features": 800,
+      "full_task_A_bal_acc": 1.0,
+      "full_task_B_bal_acc": 1.0,
+      "compressed_task_A_bal_acc": 1.0,
+      "compressed_task_B_bal_acc": 1.0
+    },
+    "hybrid_zz_B": {
+      "n_features": 1600,
+      "full_task_A_bal_acc": 1.0,
+      "full_task_B_bal_acc": 1.0,
+      "compressed_task_A_bal_acc": 1.0,
+      "compressed_task_B_bal_acc": 1.0
+    }
+  },
+  "n_samples": 80,
+  "n_channels": 400,
+  "xor_label_counts": [
+    40,
+    40
+  ]
+}

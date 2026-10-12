@@ -1,0 +1,202 @@
+[
+  {
+    "token_id": 0,
+    "rep": 0,
+    "opm_uW": 797.154049,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.1552085876464844,
+    "roi_max": 12.050167083740234,
+    "file": "single_t0_rep00.npy",
+    "timestamp": "22:37:02"
+  },
+  {
+    "token_id": 0,
+    "rep": 1,
+    "opm_uW": 797.305291,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.1571621894836426,
+    "roi_max": 12.371353149414062,
+    "file": "single_t0_rep01.npy",
+    "timestamp": "22:37:06"
+  },
+  {
+    "token_id": 0,
+    "rep": 2,
+    "opm_uW": 798.061501,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.1505327224731445,
+    "roi_max": 11.898103713989258,
+    "file": "single_t0_rep02.npy",
+    "timestamp": "22:37:10"
+  },
+  {
+    "token_id": 0,
+    "rep": 3,
+    "opm_uW": 799.044574,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.143531084060669,
+    "roi_max": 12.543980598449707,
+    "file": "single_t0_rep03.npy",
+    "timestamp": "22:37:14"
+  },
+  {
+    "token_id": 0,
+    "rep": 4,
+    "opm_uW": 798.968953,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.1494643688201904,
+    "roi_max": 12.377969741821289,
+    "file": "single_t0_rep04.npy",
+    "timestamp": "22:37:18"
+  },
+  {
+    "token_id": 1,
+    "rep": 0,
+    "opm_uW": 798.74209,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.723771095275879,
+    "roi_max": 16.35719108581543,
+    "file": "single_t1_rep00.npy",
+    "timestamp": "22:37:22"
+  },
+  {
+    "token_id": 1,
+    "rep": 1,
+    "opm_uW": 798.817711,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.7202117443084717,
+    "roi_max": 16.269611358642578,
+    "file": "single_t1_rep01.npy",
+    "timestamp": "22:37:26"
+  },
+  {
+    "token_id": 1,
+    "rep": 2,
+    "opm_uW": 799.4983,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.7218334674835205,
+    "roi_max": 15.221364974975586,
+    "file": "single_t1_rep02.npy",
+    "timestamp": "22:37:30"
+  },
+  {
+    "token_id": 1,
+    "rep": 3,
+    "opm_uW": 799.4983,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.723717212677002,
+    "roi_max": 16.243206024169922,
+    "file": "single_t1_rep03.npy",
+    "timestamp": "22:37:34"
+  },
+  {
+    "token_id": 1,
+    "rep": 4,
+    "opm_uW": 799.800784,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.711963653564453,
+    "roi_max": 15.512486457824707,
+    "file": "single_t1_rep04.npy",
+    "timestamp": "22:37:38"
+  },
+  {
+    "token_id": 2,
+    "rep": 0,
+    "opm_uW": 799.649542,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.399080991744995,
+    "roi_max": 14.785396575927734,
+    "file": "single_t2_rep00.npy",
+    "timestamp": "22:37:42"
+  },
+  {
+    "token_id": 2,
+    "rep": 1,
+    "opm_uW": 800.405752,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.3959972858428955,
+    "roi_max": 15.529221534729004,
+    "file": "single_t2_rep01.npy",
+    "timestamp": "22:37:46"
+  },
+  {
+    "token_id": 2,
+    "rep": 2,
+    "opm_uW": 799.952026,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.401149034500122,
+    "roi_max": 15.527411460876465,
+    "file": "single_t2_rep02.npy",
+    "timestamp": "22:37:50"
+  },
+  {
+    "token_id": 2,
+    "rep": 3,
+    "opm_uW": 800.25451,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.3935844898223877,
+    "roi_max": 15.752638816833496,
+    "file": "single_t2_rep03.npy",
+    "timestamp": "22:37:54"
+  },
+  {
+    "token_id": 2,
+    "rep": 4,
+    "opm_uW": 800.935098,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.3951900005340576,
+    "roi_max": 15.981721878051758,
+    "file": "single_t2_rep04.npy",
+    "timestamp": "22:37:58"
+  },
+  {
+    "token_id": 3,
+    "rep": 0,
+    "opm_uW": 801.388824,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.339581251144409,
+    "roi_max": 14.306222915649414,
+    "file": "single_t3_rep00.npy",
+    "timestamp": "22:38:02"
+  },
+  {
+    "token_id": 3,
+    "rep": 1,
+    "opm_uW": 801.237582,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.3438549041748047,
+    "roi_max": 14.147981643676758,
+    "file": "single_t3_rep01.npy",
+    "timestamp": "22:38:06"
+  },
+  {
+    "token_id": 3,
+    "rep": 2,
+    "opm_uW": 800.632615,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.3460137844085693,
+    "roi_max": 14.997264862060547,
+    "file": "single_t3_rep02.npy",
+    "timestamp": "22:38:09"
+  },
+  {
+    "token_id": 3,
+    "rep": 3,
+    "opm_uW": 800.405752,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.338146209716797,
+    "roi_max": 14.140013694763184,
+    "file": "single_t3_rep03.npy",
+    "timestamp": "22:38:13"
+  },
+  {
+    "token_id": 3,
+    "rep": 4,
+    "opm_uW": 800.783857,
+    "exposure_ms": 2.590091,
+    "roi_mean": 2.3399899005889893,
+    "roi_max": 14.408154487609863,
+    "file": "single_t3_rep04.npy",
+    "timestamp": "22:38:17"
+  }
+]

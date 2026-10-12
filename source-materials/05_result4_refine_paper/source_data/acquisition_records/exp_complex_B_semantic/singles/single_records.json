@@ -1,0 +1,362 @@
+[
+  {
+    "token_id": 0,
+    "word": "cat",
+    "rep": 0,
+    "opm_uW": 869.220845,
+    "exposure_ms": 2.159436,
+    "roi_mean": 2.3051767349243164,
+    "file": "single_t0_rep00.npy"
+  },
+  {
+    "token_id": 0,
+    "word": "cat",
+    "rep": 1,
+    "opm_uW": 868.540256,
+    "exposure_ms": 2.159436,
+    "roi_mean": 2.3036067485809326,
+    "file": "single_t0_rep01.npy"
+  },
+  {
+    "token_id": 0,
+    "word": "cat",
+    "rep": 2,
+    "opm_uW": 866.574111,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.114820718765259,
+    "file": "single_t0_rep02.npy"
+  },
+  {
+    "token_id": 0,
+    "word": "cat",
+    "rep": 3,
+    "opm_uW": 867.405942,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.110161781311035,
+    "file": "single_t0_rep03.npy"
+  },
+  {
+    "token_id": 0,
+    "word": "cat",
+    "rep": 4,
+    "opm_uW": 869.145224,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.1106722354888916,
+    "file": "single_t0_rep04.npy"
+  },
+  {
+    "token_id": 1,
+    "word": "dog",
+    "rep": 0,
+    "opm_uW": 870.128297,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.1934919357299805,
+    "file": "single_t1_rep00.npy"
+  },
+  {
+    "token_id": 1,
+    "word": "dog",
+    "rep": 1,
+    "opm_uW": 870.582023,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.185127019882202,
+    "file": "single_t1_rep01.npy"
+  },
+  {
+    "token_id": 1,
+    "word": "dog",
+    "rep": 2,
+    "opm_uW": 870.052676,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.19576096534729,
+    "file": "single_t1_rep02.npy"
+  },
+  {
+    "token_id": 1,
+    "word": "dog",
+    "rep": 3,
+    "opm_uW": 869.825813,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.19403076171875,
+    "file": "single_t1_rep03.npy"
+  },
+  {
+    "token_id": 1,
+    "word": "dog",
+    "rep": 4,
+    "opm_uW": 870.279539,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.1823906898498535,
+    "file": "single_t1_rep04.npy"
+  },
+  {
+    "token_id": 2,
+    "word": "hammer",
+    "rep": 0,
+    "opm_uW": 868.08653,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.08642315864563,
+    "file": "single_t2_rep00.npy"
+  },
+  {
+    "token_id": 2,
+    "word": "hammer",
+    "rep": 1,
+    "opm_uW": 868.464635,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.0729820728302,
+    "file": "single_t2_rep01.npy"
+  },
+  {
+    "token_id": 2,
+    "word": "hammer",
+    "rep": 2,
+    "opm_uW": 868.08653,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.08752703666687,
+    "file": "single_t2_rep02.npy"
+  },
+  {
+    "token_id": 2,
+    "word": "hammer",
+    "rep": 3,
+    "opm_uW": 868.389014,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.081019163131714,
+    "file": "single_t2_rep03.npy"
+  },
+  {
+    "token_id": 2,
+    "word": "hammer",
+    "rep": 4,
+    "opm_uW": 870.279539,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.0778729915618896,
+    "file": "single_t2_rep04.npy"
+  },
+  {
+    "token_id": 3,
+    "word": "saw",
+    "rep": 0,
+    "opm_uW": 871.9432,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.1278724670410156,
+    "file": "single_t3_rep00.npy"
+  },
+  {
+    "token_id": 3,
+    "word": "saw",
+    "rep": 1,
+    "opm_uW": 872.245684,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.1478755474090576,
+    "file": "single_t3_rep01.npy"
+  },
+  {
+    "token_id": 3,
+    "word": "saw",
+    "rep": 2,
+    "opm_uW": 872.170063,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.1497631072998047,
+    "file": "single_t3_rep02.npy"
+  },
+  {
+    "token_id": 3,
+    "word": "saw",
+    "rep": 3,
+    "opm_uW": 871.791958,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.1458966732025146,
+    "file": "single_t3_rep03.npy"
+  },
+  {
+    "token_id": 3,
+    "word": "saw",
+    "rep": 4,
+    "opm_uW": 869.069603,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.140413761138916,
+    "file": "single_t3_rep04.npy"
+  },
+  {
+    "token_id": 4,
+    "word": "apple",
+    "rep": 0,
+    "opm_uW": 868.313393,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.166133165359497,
+    "file": "single_t4_rep00.npy"
+  },
+  {
+    "token_id": 4,
+    "word": "apple",
+    "rep": 1,
+    "opm_uW": 866.876595,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.1600797176361084,
+    "file": "single_t4_rep01.npy"
+  },
+  {
+    "token_id": 4,
+    "word": "apple",
+    "rep": 2,
+    "opm_uW": 863.322409,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.1673760414123535,
+    "file": "single_t4_rep02.npy"
+  },
+  {
+    "token_id": 4,
+    "word": "apple",
+    "rep": 3,
+    "opm_uW": 863.47365,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.176912307739258,
+    "file": "single_t4_rep03.npy"
+  },
+  {
+    "token_id": 4,
+    "word": "apple",
+    "rep": 4,
+    "opm_uW": 863.700513,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.160090923309326,
+    "file": "single_t4_rep04.npy"
+  },
+  {
+    "token_id": 5,
+    "word": "grape",
+    "rep": 0,
+    "opm_uW": 864.078618,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.4855971336364746,
+    "file": "single_t5_rep00.npy"
+  },
+  {
+    "token_id": 5,
+    "word": "grape",
+    "rep": 1,
+    "opm_uW": 864.078618,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.4823808670043945,
+    "file": "single_t5_rep01.npy"
+  },
+  {
+    "token_id": 5,
+    "word": "grape",
+    "rep": 2,
+    "opm_uW": 864.834828,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.4864213466644287,
+    "file": "single_t5_rep02.npy"
+  },
+  {
+    "token_id": 5,
+    "word": "grape",
+    "rep": 3,
+    "opm_uW": 864.305481,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.4898695945739746,
+    "file": "single_t5_rep03.npy"
+  },
+  {
+    "token_id": 5,
+    "word": "grape",
+    "rep": 4,
+    "opm_uW": 863.322409,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.4961681365966797,
+    "file": "single_t5_rep04.npy"
+  },
+  {
+    "token_id": 6,
+    "word": "car",
+    "rep": 0,
+    "opm_uW": 863.700513,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.2571558952331543,
+    "file": "single_t6_rep00.npy"
+  },
+  {
+    "token_id": 6,
+    "word": "car",
+    "rep": 1,
+    "opm_uW": 864.910449,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.2618534564971924,
+    "file": "single_t6_rep01.npy"
+  },
+  {
+    "token_id": 6,
+    "word": "car",
+    "rep": 2,
+    "opm_uW": 864.078618,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.2630155086517334,
+    "file": "single_t6_rep02.npy"
+  },
+  {
+    "token_id": 6,
+    "word": "car",
+    "rep": 3,
+    "opm_uW": 864.532344,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.2521250247955322,
+    "file": "single_t6_rep03.npy"
+  },
+  {
+    "token_id": 6,
+    "word": "car",
+    "rep": 4,
+    "opm_uW": 863.47365,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.256415843963623,
+    "file": "single_t6_rep04.npy"
+  },
+  {
+    "token_id": 7,
+    "word": "train",
+    "rep": 0,
+    "opm_uW": 864.381102,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.15913724899292,
+    "file": "single_t7_rep00.npy"
+  },
+  {
+    "token_id": 7,
+    "word": "train",
+    "rep": 1,
+    "opm_uW": 862.944304,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.15177321434021,
+    "file": "single_t7_rep01.npy"
+  },
+  {
+    "token_id": 7,
+    "word": "train",
+    "rep": 2,
+    "opm_uW": 861.88561,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.152813196182251,
+    "file": "single_t7_rep02.npy"
+  },
+  {
+    "token_id": 7,
+    "word": "train",
+    "rep": 3,
+    "opm_uW": 859.995085,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.1567394733428955,
+    "file": "single_t7_rep03.npy"
+  },
+  {
+    "token_id": 7,
+    "word": "train",
+    "rep": 4,
+    "opm_uW": 859.843843,
+    "exposure_ms": 2.483848,
+    "roi_mean": 2.1668059825897217,
+    "file": "single_t7_rep04.npy"
+  }
+]

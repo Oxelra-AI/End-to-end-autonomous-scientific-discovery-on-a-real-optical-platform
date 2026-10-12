@@ -1,0 +1,118 @@
+{
+  "experiment": "complex_B_semantic_benchmark_v1",
+  "version": "v1",
+  "primary_object": "complex interaction field B(x,y)",
+  "object_discipline": "|B| is NOT the research object",
+  "semantic_tokens": [
+    {
+      "id": 0,
+      "word": "cat",
+      "category": 0,
+      "category_name": "animals"
+    },
+    {
+      "id": 1,
+      "word": "dog",
+      "category": 0,
+      "category_name": "animals"
+    },
+    {
+      "id": 2,
+      "word": "hammer",
+      "category": 1,
+      "category_name": "tools"
+    },
+    {
+      "id": 3,
+      "word": "saw",
+      "category": 1,
+      "category_name": "tools"
+    },
+    {
+      "id": 4,
+      "word": "apple",
+      "category": 2,
+      "category_name": "fruits"
+    },
+    {
+      "id": 5,
+      "word": "grape",
+      "category": 2,
+      "category_name": "fruits"
+    },
+    {
+      "id": 6,
+      "word": "car",
+      "category": 3,
+      "category_name": "vehicles"
+    },
+    {
+      "id": 7,
+      "word": "train",
+      "category": 3,
+      "category_name": "vehicles"
+    }
+  ],
+  "parameters": {
+    "n_tokens": 8,
+    "n_single_repeats": 5,
+    "n_blank_repeats": 5,
+    "n_pair_repeats": 5,
+    "n_drift_repeats": 3,
+    "block_size": 20,
+    "n_grid": 6,
+    "gap": 4,
+    "cmos2_roi": [
+      500,
+      500
+    ],
+    "cmos1_roi": [
+      500,
+      500
+    ],
+    "laser_percent": 80,
+    "phases_rad": [
+      0.0,
+      1.5707963267948966,
+      3.141592653589793,
+      4.71238898038469
+    ],
+    "phase_labels": [
+      "0",
+      "pi2",
+      "pi",
+      "3pi2"
+    ]
+  },
+  "pre_registered_tasks": {
+    "task_A": "64-class ordered pair identification",
+    "task_B": "binary same-category vs different-category",
+    "task_C": "4-class category-pair identification"
+  },
+  "timing": {
+    "group0_cmos1_sec": 23.4,
+    "group1_singles_sec": 139.6,
+    "group2_blanks_sec": 540.1,
+    "group3_pairs_sec": 4795.1,
+    "group4_drift_sec": 99.6,
+    "total_sec": 5597.9
+  },
+  "measurement_counts": {
+    "group0_cmos1": 8,
+    "group1_singles": 40,
+    "group2_blanks": 160,
+    "group3_pairs": 1280,
+    "group4_drift": 24,
+    "total": 1512
+  },
+  "drift_correlations": {
+    "0_cat": 0.046046174099714725,
+    "1_dog": 0.030435864170436734,
+    "2_hammer": 0.04333524274304818,
+    "3_saw": 0.01679042311793143,
+    "4_apple": 0.0025382335003982432,
+    "5_grape": 0.040369700107462006,
+    "6_car": 0.015411234953290857,
+    "7_train": 0.02845906374388042
+  }
+}

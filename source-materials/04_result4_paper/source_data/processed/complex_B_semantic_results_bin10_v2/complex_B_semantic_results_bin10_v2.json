@@ -1,0 +1,35 @@
+{
+  "bin_size": 10,
+  "n_channels": 2500,
+  "classification_results": {
+    "zx_zy_concat": {
+      "n_features": 5000,
+      "task_A_pair_id": 1.0,
+      "task_B_same_cat": 0.5,
+      "task_C_cat_pair": 1.0
+    },
+    "digital_bilinear_ew": {
+      "n_features": 2500,
+      "task_A_pair_id": 0.5625,
+      "task_B_same_cat": 1.0,
+      "task_C_cat_pair": 0.4437
+    },
+    "complex_B": {
+      "n_features": 5000,
+      "task_A_pair_id": 1.0,
+      "task_B_same_cat": 1.0,
+      "task_C_cat_pair": 1.0
+    }
+  },
+  "cross_split_results": {
+    "zx_zy_concat": {
+      "cross_split_same_cat_bal_acc": 0.5
+    },
+    "digital_bilinear_ew": {
+      "cross_split_same_cat_bal_acc": 0.5833
+    },
+    "complex_B": {
+      "cross_split_same_cat_bal_acc": 0.7396
+    }
+  }
+}
