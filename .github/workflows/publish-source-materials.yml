@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: publish-source-materials
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   publish:
@@ -32,10 +32,16 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Install parallel downloader
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y aria2
+
       - name: Download the complete Zenodo archive
         run: |
-          curl --location --fail --retry 8 --retry-all-errors \
-            --connect-timeout 30 --output "$ARCHIVE" "$ZENODO_URL"
+          aria2c --continue=true --max-connection-per-server=16 \
+            --split=16 --min-split-size=16M --retry-wait=5 --max-tries=0 \
+            --file-allocation=none --dir=. --out="$ARCHIVE" "$ZENODO_URL"
 
       - name: Verify the Zenodo archive
         run: |
