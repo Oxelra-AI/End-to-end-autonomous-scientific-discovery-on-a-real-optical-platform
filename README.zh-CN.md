@@ -27,6 +27,8 @@ optical platform》** 的论文、源数据、离线分析代码、图表、来�
 ## 完整材料
 
 - [论文 PDF](paper/End-to-end_autonomous_scientific_discovery.pdf)
+- [已展开的全部源材料](source-materials/README.md)
+- [求是平台实机视频（4 分 24.2 秒）](source-materials/00_context/visual_documentation/video_qiushi.mp4)
 - [源数据与代码复现指南](reproducibility/SM_Reproducibility_Guide.pdf)
 - [数据和复现说明](DATA_AND_REPRODUCIBILITY.md)
 - [文件完整性清单](reproducibility/MANIFEST.md)
@@ -34,10 +36,28 @@ optical platform》** 的论文、源数据、离线分析代码、图表、来�
 - [Zenodo 原始存档](https://doi.org/10.5281/zenodo.19890402)
 - [arXiv 论文页面](https://arxiv.org/abs/2604.27092)
 
-完整的 1.4 GB 源材料包以 `SM_Source_Materials_CORE_5REPORTS.tar.gz` 的原始形式
-保存于 GitHub Release `v1.0-source-materials`。其中包括五组报告、源数据、29 个
-离线 Python 分析脚本、生成图表、正文数据面板复现、Result 4 原始 CMOS 帧数据、
-来源映射和校验值。
+Zenodo 中的完整材料现已逐文件展开到 [`source-materials/`](source-materials/)；
+读者不必下载或解压总压缩包。全部 2,325 个文件均保留原始五报告结构，可在
+GitHub 中分别打开或下载。其中包括源数据、29 个离线 Python 分析脚本、生成图表、
+正文数据面板复现、Result 4 原始 CMOS 帧数据、来源映射和逐文件校验值。
+
+其中 2,018 个 NumPy 数组通过 Git LFS 保存，以免普通 Git 历史过度膨胀；在 GitHub
+文件页面仍可逐个直接下载。需要完整克隆时，请先安装 Git LFS，或在克隆后执行
+`git lfs pull`。
+
+展开后的主要目录为：
+
+| 路径 | 内容 |
+| --- | --- |
+| `00_context/` | 光学平台与求是系统界面的定性视频记录 |
+| `01_result2_paper/` | 初始传输矩阵复现实验 |
+| `02_result2_refine_paper/` | 自参考传输矩阵改进实验 |
+| `03_result3_paper/` | 主序关系与传输区间实验 |
+| `04_result4_paper/` | Complex-B 双线性场、XOR 与语义基准 |
+| `05_result4_refine_paper/` | 优势区域和稀疏输出的改进分析 |
+| `main_text_data_panels/` | 正文数据面板的审计性重绘 |
+| `shared_raw_data/` | Result 4 原始 CMOS 帧级数组 |
+| `provenance/` | 文件清单、校验值与图表来源映射 |
 
 ## 可复现范围
 
