@@ -1,0 +1,139 @@
+[11:35:43] OpticalClient connected
+[11:35:43] Laser set to 80%
+[11:35:43] Tokens=8, SingleRep=5, BlankRep=5, PairRep=5, DriftRep=3
+[11:35:43] CMOS2 ROI=500x500
+[11:35:43] Token 0 (cat): seed=10000, category=animals
+[11:35:43] Token 1 (dog): seed=17919, category=animals
+[11:35:43] Token 2 (hammer): seed=25838, category=tools
+[11:35:43] Token 3 (saw): seed=33757, category=tools
+[11:35:43] Token 4 (apple): seed=41676, category=fruits
+[11:35:43] Token 5 (grape): seed=49595, category=fruits
+[11:35:43] Token 6 (car): seed=57514, category=vehicles
+[11:35:43] Token 7 (train): seed=65433, category=vehicles
+[11:35:43] ============================================================
+[11:35:43] GROUP 0: CMOS1 documentation shots
+[11:35:43] ============================================================
+[11:35:47]   CMOS1 token 0 (cat): mean=0.0493
+[11:35:50]   CMOS1 token 1 (dog): mean=0.0493
+[11:35:52]   CMOS1 token 2 (hammer): mean=0.0482
+[11:35:55]   CMOS1 token 3 (saw): mean=0.0501
+[11:35:58]   CMOS1 token 4 (apple): mean=0.0484
+[11:36:01]   CMOS1 token 5 (grape): mean=0.0505
+[11:36:04]   CMOS1 token 6 (car): mean=0.0493
+[11:36:07]   CMOS1 token 7 (train): mean=0.0492
+[11:36:07] Group 0 done: 8 shots in 23s
+[11:36:07] ============================================================
+[11:36:07] GROUP 1: Single-token baselines (CMOS2)
+[11:36:07] ============================================================
+[11:36:28]   Token 0 (cat): 5 reps done [total=13]
+[11:36:45]   Token 1 (dog): 5 reps done [total=18]
+[11:37:02]   Token 2 (hammer): 5 reps done [total=23]
+[11:37:19]   Token 3 (saw): 5 reps done [total=28]
+[11:37:35]   Token 4 (apple): 5 reps done [total=33]
+[11:37:53]   Token 5 (grape): 5 reps done [total=38]
+[11:38:09]   Token 6 (car): 5 reps done [total=43]
+[11:38:26]   Token 7 (train): 5 reps done [total=48]
+[11:38:26] Group 1 done: 40 measurements in 140s
+[11:38:26] ============================================================
+[11:38:26] GROUP 2: Blank-control phase cycles
+[11:38:26] ============================================================
+[11:39:34]   Blank y=0 (cat): 4 phases × 5 reps done [total=68]
+[11:40:41]   Blank y=1 (dog): 4 phases × 5 reps done [total=88]
+[11:41:49]   Blank y=2 (hammer): 4 phases × 5 reps done [total=108]
+[11:42:56]   Blank y=3 (saw): 4 phases × 5 reps done [total=128]
+[11:44:04]   Blank y=4 (apple): 4 phases × 5 reps done [total=148]
+[11:45:11]   Blank y=5 (grape): 4 phases × 5 reps done [total=168]
+[11:46:19]   Blank y=6 (car): 4 phases × 5 reps done [total=188]
+[11:47:26]   Blank y=7 (train): 4 phases × 5 reps done [total=208]
+[11:47:26] Group 2 done: 160 measurements in 540s
+[11:47:26] ============================================================
+[11:47:26] GROUP 3: Pair interaction phase cycles (64 ordered pairs)
+[11:47:26] ============================================================
+[11:48:39]   Pair (0,0) (cat,cat) same_cat=1: done [total=228]
+[11:49:51]   Pair (0,1) (cat,dog) same_cat=1: done [total=248]
+[11:50:59]   Pair (0,2) (cat,hammer) same_cat=0: done [total=268]
+[11:52:07]   Pair (0,3) (cat,saw) same_cat=0: done [total=288]
+[11:53:14]   Pair (0,4) (cat,apple) same_cat=0: done [total=308]
+[11:54:21]   Pair (0,5) (cat,grape) same_cat=0: done [total=328]
+[11:55:29]   Pair (0,6) (cat,car) same_cat=0: done [total=348]
+[11:56:36]   Pair (0,7) (cat,train) same_cat=0: done [total=368]
+[11:57:44]   Pair (1,0) (dog,cat) same_cat=1: done [total=388]
+[11:58:57]   Pair (1,1) (dog,dog) same_cat=1: done [total=408]
+[12:00:10]   Pair (1,2) (dog,hammer) same_cat=0: done [total=428]
+[12:01:19]   Pair (1,3) (dog,saw) same_cat=0: done [total=448]
+[12:02:27]   Pair (1,4) (dog,apple) same_cat=0: done [total=468]
+[12:03:35]   Pair (1,5) (dog,grape) same_cat=0: done [total=488]
+[12:04:43]   Pair (1,6) (dog,car) same_cat=0: done [total=508]
+[12:05:51]   Pair (1,7) (dog,train) same_cat=0: done [total=528]
+[12:06:59]   Pair (2,0) (hammer,cat) same_cat=0: done [total=548]
+[12:08:06]   Pair (2,1) (hammer,dog) same_cat=0: done [total=568]
+[12:09:18]   Pair (2,2) (hammer,hammer) same_cat=1: done [total=588]
+[12:10:30]   Pair (2,3) (hammer,saw) same_cat=1: done [total=608]
+[12:11:41]   Pair (2,4) (hammer,apple) same_cat=0: done [total=628]
+[12:12:48]   Pair (2,5) (hammer,grape) same_cat=0: done [total=648]
+[12:13:56]   Pair (2,6) (hammer,car) same_cat=0: done [total=668]
+[12:15:03]   Pair (2,7) (hammer,train) same_cat=0: done [total=688]
+[12:16:11]   Pair (3,0) (saw,cat) same_cat=0: done [total=708]
+[12:17:19]   Pair (3,1) (saw,dog) same_cat=0: done [total=728]
+[12:18:27]   Pair (3,2) (saw,hammer) same_cat=1: done [total=748]
+[12:19:42]   Pair (3,3) (saw,saw) same_cat=1: done [total=768]
+[12:20:52]   Pair (3,4) (saw,apple) same_cat=0: done [total=788]
+[12:22:03]   Pair (3,5) (saw,grape) same_cat=0: done [total=808]
+[12:23:20]   Pair (3,6) (saw,car) same_cat=0: done [total=828]
+[12:24:40]   Pair (3,7) (saw,train) same_cat=0: done [total=848]
+[12:26:00]   Pair (4,0) (apple,cat) same_cat=0: done [total=868]
+[12:27:20]   Pair (4,1) (apple,dog) same_cat=0: done [total=888]
+[12:28:42]   Pair (4,2) (apple,hammer) same_cat=0: done [total=908]
+[12:30:01]   Pair (4,3) (apple,saw) same_cat=0: done [total=928]
+[12:31:25]   Pair (4,4) (apple,apple) same_cat=1: done [total=948]
+[12:32:46]   Pair (4,5) (apple,grape) same_cat=1: done [total=968]
+[12:34:07]   Pair (4,6) (apple,car) same_cat=0: done [total=988]
+[12:35:26]   Pair (4,7) (apple,train) same_cat=0: done [total=1008]
+[12:36:43]   Pair (5,0) (grape,cat) same_cat=0: done [total=1028]
+[12:38:01]   Pair (5,1) (grape,dog) same_cat=0: done [total=1048]
+[12:39:19]   Pair (5,2) (grape,hammer) same_cat=0: done [total=1068]
+[12:40:37]   Pair (5,3) (grape,saw) same_cat=0: done [total=1088]
+[12:41:55]   Pair (5,4) (grape,apple) same_cat=1: done [total=1108]
+[12:43:20]   Pair (5,5) (grape,grape) same_cat=1: done [total=1128]
+[12:44:41]   Pair (5,6) (grape,car) same_cat=0: done [total=1148]
+[12:46:03]   Pair (5,7) (grape,train) same_cat=0: done [total=1168]
+[12:47:28]   Pair (6,0) (car,cat) same_cat=0: done [total=1188]
+[12:48:50]   Pair (6,1) (car,dog) same_cat=0: done [total=1208]
+[12:50:11]   Pair (6,2) (car,hammer) same_cat=0: done [total=1228]
+[12:51:32]   Pair (6,3) (car,saw) same_cat=0: done [total=1248]
+[12:52:52]   Pair (6,4) (car,apple) same_cat=0: done [total=1268]
+[12:54:14]   Pair (6,5) (car,grape) same_cat=0: done [total=1288]
+[12:55:39]   Pair (6,6) (car,car) same_cat=1: done [total=1308]
+[12:56:54]   Pair (6,7) (car,train) same_cat=1: done [total=1328]
+[12:58:06]   Pair (7,0) (train,cat) same_cat=0: done [total=1348]
+[12:59:20]   Pair (7,1) (train,dog) same_cat=0: done [total=1368]
+[13:00:30]   Pair (7,2) (train,hammer) same_cat=0: done [total=1388]
+[13:01:51]   Pair (7,3) (train,saw) same_cat=0: done [total=1408]
+[13:03:12]   Pair (7,4) (train,apple) same_cat=0: done [total=1428]
+[13:04:33]   Pair (7,5) (train,grape) same_cat=0: done [total=1448]
+[13:05:56]   Pair (7,6) (train,car) same_cat=1: done [total=1468]
+[13:07:22]   Pair (7,7) (train,train) same_cat=1: done [total=1488]
+[13:07:22] Group 3 done: 1280 measurements in 4795s
+[13:07:22] ============================================================
+[13:07:22] GROUP 4: Drift checks
+[13:07:22] ============================================================
+[13:07:34]   Drift token 0 (cat): 3 reps done
+[13:07:46]   Drift token 1 (dog): 3 reps done
+[13:07:58]   Drift token 2 (hammer): 3 reps done
+[13:08:11]   Drift token 3 (saw): 3 reps done
+[13:08:24]   Drift token 4 (apple): 3 reps done
+[13:08:37]   Drift token 5 (grape): 3 reps done
+[13:08:49]   Drift token 6 (car): 3 reps done
+[13:09:01]   Drift token 7 (train): 3 reps done
+[13:09:01] Group 4 done: 24 measurements in 100s
+[13:09:01]   Token 0 (cat) drift correlation: 0.04605
+[13:09:01]   Token 1 (dog) drift correlation: 0.03044
+[13:09:01]   Token 2 (hammer) drift correlation: 0.04334
+[13:09:01]   Token 3 (saw) drift correlation: 0.01679
+[13:09:01]   Token 4 (apple) drift correlation: 0.00254
+[13:09:01]   Token 5 (grape) drift correlation: 0.04037
+[13:09:01]   Token 6 (car) drift correlation: 0.01541
+[13:09:01]   Token 7 (train) drift correlation: 0.02846
+[13:09:01] ============================================================
+[13:09:01] EXPERIMENT COMPLETE: 1512 measurements in 5598s (93.3 min)
+[13:09:01] ============================================================
