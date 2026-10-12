@@ -1,0 +1,60 @@
+[22:36:54] OpticalClient connected
+[22:36:54] Laser set to 80%
+[22:36:54] Tokens=4, SingleRep=5, BlankRep=5, PairRep=5, DriftRep=3
+[22:36:54] Phases: ['0', 'pi2', 'pi', '3pi2']
+[22:36:54] CMOS2 ROI=500x500
+[22:36:54] Token 0: seed=42, pattern_size=140
+[22:36:54] Token 1: seed=1042, pattern_size=140
+[22:36:54] Token 2: seed=2042, pattern_size=140
+[22:36:54] Token 3: seed=3042, pattern_size=140
+[22:36:54] ============================================================
+[22:36:54] GROUP 1: Single-token baselines
+[22:36:54] ============================================================
+[22:37:02]   Token 0: OPM=797.2uW, mean=2.1552
+[22:37:22]   Token 1: OPM=798.7uW, mean=2.7238
+[22:37:42]   Token 2: OPM=799.6uW, mean=2.3991
+[22:38:02]   Token 3: OPM=801.4uW, mean=2.3396
+[22:38:17] Group 1 done: 20 measurements in 83s
+[22:38:17] ============================================================
+[22:38:17] GROUP 2: Blank-control phase cycles
+[22:38:17] ============================================================
+[22:39:38]   Blank+Token0: 4 phases x 5 reps done
+[22:40:57]   Blank+Token1: 4 phases x 5 reps done
+[22:42:16]   Blank+Token2: 4 phases x 5 reps done
+[22:43:35]   Blank+Token3: 4 phases x 5 reps done
+[22:43:35] Group 2 done: 80 measurements in 318s
+[22:43:35] ============================================================
+[22:43:35] GROUP 3: Pair interaction phase cycles
+[22:43:35] ============================================================
+[22:45:01]   Pair (0,0) label=0: 4 phases x 5 reps done [total=120]
+[22:46:26]   Pair (0,1) label=1: 4 phases x 5 reps done [total=140]
+[22:47:47]   Pair (0,2) label=0: 4 phases x 5 reps done [total=160]
+[22:49:05]   Pair (0,3) label=1: 4 phases x 5 reps done [total=180]
+[22:50:25]   Pair (1,0) label=1: 4 phases x 5 reps done [total=200]
+[22:51:51]   Pair (1,1) label=0: 4 phases x 5 reps done [total=220]
+[22:53:14]   Pair (1,2) label=1: 4 phases x 5 reps done [total=240]
+[22:54:35]   Pair (1,3) label=0: 4 phases x 5 reps done [total=260]
+[22:55:53]   Pair (2,0) label=0: 4 phases x 5 reps done [total=280]
+[22:57:17]   Pair (2,1) label=1: 4 phases x 5 reps done [total=300]
+[22:58:59]   Pair (2,2) label=0: 4 phases x 5 reps done [total=320]
+[23:00:35]   Pair (2,3) label=1: 4 phases x 5 reps done [total=340]
+[23:02:06]   Pair (3,0) label=1: 4 phases x 5 reps done [total=360]
+[23:03:38]   Pair (3,1) label=0: 4 phases x 5 reps done [total=380]
+[23:05:08]   Pair (3,2) label=1: 4 phases x 5 reps done [total=400]
+[23:06:42]   Pair (3,3) label=0: 4 phases x 5 reps done [total=420]
+[23:06:42] Group 3 done: 320 measurements in 1387s
+[23:06:42] ============================================================
+[23:06:42] GROUP 4: Drift checks
+[23:06:42] ============================================================
+[23:06:56]   Drift token 0: 3 reps done
+[23:07:10]   Drift token 1: 3 reps done
+[23:07:23]   Drift token 2: 3 reps done
+[23:07:37]   Drift token 3: 3 reps done
+[23:07:37] Group 4 done: 12 measurements in 55s
+[23:07:37]   Token 0 drift correlation: 0.93831
+[23:07:37]   Token 1 drift correlation: 0.94529
+[23:07:37]   Token 2 drift correlation: 0.93853
+[23:07:37]   Token 3 drift correlation: 0.94191
+[23:07:37] ============================================================
+[23:07:37] EXPERIMENT COMPLETE: 432 measurements in 1843s (30.7 min)
+[23:07:37] ============================================================
