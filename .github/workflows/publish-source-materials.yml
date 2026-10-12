@@ -1,0 +1,89 @@
+name: Publish complete source materials
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/publish-source-materials.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-source-materials
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      TAG: v1.0-source-materials
+      ARCHIVE: SM_Source_Materials_CORE_5REPORTS.tar.gz
+      PAPER: End-to-end_autonomous_scientific_discovery_arXiv_v1.pdf
+      ZENODO_URL: https://zenodo.org/records/19890402/files/SM_Source_Materials_CORE_5REPORTS.tar.gz?download=1
+      ARXIV_URL: https://arxiv.org/pdf/2604.27092
+      ARCHIVE_MD5: 5b742fb14f82496aa6fda35ad7613c80
+      PAPER_SHA256: e5bf5110d5aae245547acfb3879f394a7afafde43b7631382489c6fa892f5778
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download the complete Zenodo archive
+        run: |
+          curl --location --fail --retry 8 --retry-all-errors \
+            --connect-timeout 30 --output "$ARCHIVE" "$ZENODO_URL"
+
+      - name: Verify the Zenodo archive
+        run: |
+          printf '%s  %s\n' "$ARCHIVE_MD5" "$ARCHIVE" | md5sum --check -
+
+      - name: Download the original arXiv paper
+        run: |
+          curl --location --fail --retry 8 --retry-all-errors \
+            --connect-timeout 30 --output "$PAPER" "$ARXIV_URL"
+
+      - name: Verify the original arXiv paper
+        run: |
+          printf '%s  %s\n' "$PAPER_SHA256" "$PAPER" | sha256sum --check -
+
+      - name: Publish the complete GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          NOTES="$(mktemp)"
+          printf '%s\n' \
+            '# Complete source materials' \
+            '' \
+            'This release mirrors the complete public research deposit for “End-to-end autonomous scientific discovery on a real optical platform.”' \
+            '' \
+            '- The 1.4 GB archive is byte-identical to Zenodo record 19890402.' \
+            '- The paper PDF is byte-identical to arXiv:2604.27092v1.' \
+            '- The reproducibility guide is the copy preserved in the repository.' \
+            '- All upstream hashes are verified before publication.' \
+            '' \
+            'Canonical records:' \
+            '- https://doi.org/10.5281/zenodo.19890402' \
+            '- https://arxiv.org/abs/2604.27092' > "$NOTES"
+
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" \
+              "$ARCHIVE#Complete source-data and code archive" \
+              "$PAPER#Original arXiv v1 paper" \
+              "reproducibility/SM_Reproducibility_Guide.pdf#Source-data and code guide" \
+              --clobber
+            gh release edit "$TAG" \
+              --title 'Complete source materials (Zenodo v1)' \
+              --notes-file "$NOTES"
+          else
+            gh release create "$TAG" \
+              "$ARCHIVE#Complete source-data and code archive" \
+              "$PAPER#Original arXiv v1 paper" \
+              "reproducibility/SM_Reproducibility_Guide.pdf#Source-data and code guide" \
+              --target "$GITHUB_SHA" \
+              --title 'Complete source materials (Zenodo v1)' \
+              --notes-file "$NOTES"
+          fi
