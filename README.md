@@ -44,22 +44,40 @@ paper/
 reproducibility/
   SM_Reproducibility_Guide.pdf
   MANIFEST.md
+source-materials/
+  README.md
+  00_context/visual_documentation/video_qiushi.mp4
+  01_result2_paper/
+  02_result2_refine_paper/
+  03_result3_paper/
+  04_result4_paper/
+  05_result4_refine_paper/
+  main_text_data_panels/
+  shared_raw_data/result4_frame_data/
+  provenance/
 DATA_AND_REPRODUCIBILITY.md
 RESEARCH_LINEAGE.md
 CITATION.cff
 CITATION.bib
 ```
 
-The complete 1.4 GB source-material package is attached to the
-[`v1.0-source-materials`](../../releases/tag/v1.0-source-materials) release as
-`SM_Source_Materials_CORE_5REPORTS.tar.gz`. It is an exact copy of the Zenodo
-deposit and contains all five report sections, source data, 29 offline Python
-analysis scripts, generated figures, selected main-text-panel replots, raw
-Result 4 CMOS arrays, provenance maps and checksums.
+The complete Zenodo deposit is unpacked under [`source-materials/`](source-materials/),
+so no bundle download or extraction is required. All 2,325 files can be opened
+or downloaded separately while retaining the original five-report layout. The
+directory contains source data, 29 offline Python analysis scripts, generated
+figures, selected main-text-panel replots, raw Result 4 CMOS arrays, provenance
+maps and per-file checksums.
+
+The 2,018 NumPy arrays are stored with Git LFS to keep normal Git history
+usable. They remain individually downloadable from their GitHub file pages.
+For a complete local clone, install Git LFS before cloning, or run
+`git lfs pull` after cloning.
 
 ## Start here
 
 - [Paper](paper/End-to-end_autonomous_scientific_discovery.pdf)
+- [Expanded source materials](source-materials/README.md)
+- [Live Qiushi platform video (4 min 24.2 s)](source-materials/00_context/visual_documentation/video_qiushi.mp4)
 - [Source-data and code guide](reproducibility/SM_Reproducibility_Guide.pdf)
 - [Data and reproduction map](DATA_AND_REPRODUCIBILITY.md)
 - [Integrity manifest](reproducibility/MANIFEST.md)
@@ -74,7 +92,8 @@ analyses. It does not include the Qiushi Engine core system or the
 instrument-control software. Re-acquiring measurements requires the original
 optical platform and its calibrated control environment. The paper and formal
 Supplementary Information remain the authoritative scientific description;
-the source-material archive provides data, code and provenance traceability.
+the expanded source-material tree provides data, code and provenance
+traceability.
 
 ## Authors
 
@@ -87,7 +106,7 @@ For correspondence, see the paper.
 
 Use the metadata in [`CITATION.cff`](CITATION.cff) or
 [`CITATION.bib`](CITATION.bib). Cite both the arXiv paper and the Zenodo
-source-data record when using the archived data or analysis code.
+source-data record when using the deposited data or analysis code.
 
 ## Rights
 
