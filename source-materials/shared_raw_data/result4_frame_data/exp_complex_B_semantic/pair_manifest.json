@@ -1,0 +1,578 @@
+[
+  {
+    "x_id": 0,
+    "y_id": 0,
+    "x_word": "cat",
+    "y_word": "cat",
+    "same_category": 1,
+    "x_category": 0,
+    "y_category": 0
+  },
+  {
+    "x_id": 0,
+    "y_id": 1,
+    "x_word": "cat",
+    "y_word": "dog",
+    "same_category": 1,
+    "x_category": 0,
+    "y_category": 0
+  },
+  {
+    "x_id": 0,
+    "y_id": 2,
+    "x_word": "cat",
+    "y_word": "hammer",
+    "same_category": 0,
+    "x_category": 0,
+    "y_category": 1
+  },
+  {
+    "x_id": 0,
+    "y_id": 3,
+    "x_word": "cat",
+    "y_word": "saw",
+    "same_category": 0,
+    "x_category": 0,
+    "y_category": 1
+  },
+  {
+    "x_id": 0,
+    "y_id": 4,
+    "x_word": "cat",
+    "y_word": "apple",
+    "same_category": 0,
+    "x_category": 0,
+    "y_category": 2
+  },
+  {
+    "x_id": 0,
+    "y_id": 5,
+    "x_word": "cat",
+    "y_word": "grape",
+    "same_category": 0,
+    "x_category": 0,
+    "y_category": 2
+  },
+  {
+    "x_id": 0,
+    "y_id": 6,
+    "x_word": "cat",
+    "y_word": "car",
+    "same_category": 0,
+    "x_category": 0,
+    "y_category": 3
+  },
+  {
+    "x_id": 0,
+    "y_id": 7,
+    "x_word": "cat",
+    "y_word": "train",
+    "same_category": 0,
+    "x_category": 0,
+    "y_category": 3
+  },
+  {
+    "x_id": 1,
+    "y_id": 0,
+    "x_word": "dog",
+    "y_word": "cat",
+    "same_category": 1,
+    "x_category": 0,
+    "y_category": 0
+  },
+  {
+    "x_id": 1,
+    "y_id": 1,
+    "x_word": "dog",
+    "y_word": "dog",
+    "same_category": 1,
+    "x_category": 0,
+    "y_category": 0
+  },
+  {
+    "x_id": 1,
+    "y_id": 2,
+    "x_word": "dog",
+    "y_word": "hammer",
+    "same_category": 0,
+    "x_category": 0,
+    "y_category": 1
+  },
+  {
+    "x_id": 1,
+    "y_id": 3,
+    "x_word": "dog",
+    "y_word": "saw",
+    "same_category": 0,
+    "x_category": 0,
+    "y_category": 1
+  },
+  {
+    "x_id": 1,
+    "y_id": 4,
+    "x_word": "dog",
+    "y_word": "apple",
+    "same_category": 0,
+    "x_category": 0,
+    "y_category": 2
+  },
+  {
+    "x_id": 1,
+    "y_id": 5,
+    "x_word": "dog",
+    "y_word": "grape",
+    "same_category": 0,
+    "x_category": 0,
+    "y_category": 2
+  },
+  {
+    "x_id": 1,
+    "y_id": 6,
+    "x_word": "dog",
+    "y_word": "car",
+    "same_category": 0,
+    "x_category": 0,
+    "y_category": 3
+  },
+  {
+    "x_id": 1,
+    "y_id": 7,
+    "x_word": "dog",
+    "y_word": "train",
+    "same_category": 0,
+    "x_category": 0,
+    "y_category": 3
+  },
+  {
+    "x_id": 2,
+    "y_id": 0,
+    "x_word": "hammer",
+    "y_word": "cat",
+    "same_category": 0,
+    "x_category": 1,
+    "y_category": 0
+  },
+  {
+    "x_id": 2,
+    "y_id": 1,
+    "x_word": "hammer",
+    "y_word": "dog",
+    "same_category": 0,
+    "x_category": 1,
+    "y_category": 0
+  },
+  {
+    "x_id": 2,
+    "y_id": 2,
+    "x_word": "hammer",
+    "y_word": "hammer",
+    "same_category": 1,
+    "x_category": 1,
+    "y_category": 1
+  },
+  {
+    "x_id": 2,
+    "y_id": 3,
+    "x_word": "hammer",
+    "y_word": "saw",
+    "same_category": 1,
+    "x_category": 1,
+    "y_category": 1
+  },
+  {
+    "x_id": 2,
+    "y_id": 4,
+    "x_word": "hammer",
+    "y_word": "apple",
+    "same_category": 0,
+    "x_category": 1,
+    "y_category": 2
+  },
+  {
+    "x_id": 2,
+    "y_id": 5,
+    "x_word": "hammer",
+    "y_word": "grape",
+    "same_category": 0,
+    "x_category": 1,
+    "y_category": 2
+  },
+  {
+    "x_id": 2,
+    "y_id": 6,
+    "x_word": "hammer",
+    "y_word": "car",
+    "same_category": 0,
+    "x_category": 1,
+    "y_category": 3
+  },
+  {
+    "x_id": 2,
+    "y_id": 7,
+    "x_word": "hammer",
+    "y_word": "train",
+    "same_category": 0,
+    "x_category": 1,
+    "y_category": 3
+  },
+  {
+    "x_id": 3,
+    "y_id": 0,
+    "x_word": "saw",
+    "y_word": "cat",
+    "same_category": 0,
+    "x_category": 1,
+    "y_category": 0
+  },
+  {
+    "x_id": 3,
+    "y_id": 1,
+    "x_word": "saw",
+    "y_word": "dog",
+    "same_category": 0,
+    "x_category": 1,
+    "y_category": 0
+  },
+  {
+    "x_id": 3,
+    "y_id": 2,
+    "x_word": "saw",
+    "y_word": "hammer",
+    "same_category": 1,
+    "x_category": 1,
+    "y_category": 1
+  },
+  {
+    "x_id": 3,
+    "y_id": 3,
+    "x_word": "saw",
+    "y_word": "saw",
+    "same_category": 1,
+    "x_category": 1,
+    "y_category": 1
+  },
+  {
+    "x_id": 3,
+    "y_id": 4,
+    "x_word": "saw",
+    "y_word": "apple",
+    "same_category": 0,
+    "x_category": 1,
+    "y_category": 2
+  },
+  {
+    "x_id": 3,
+    "y_id": 5,
+    "x_word": "saw",
+    "y_word": "grape",
+    "same_category": 0,
+    "x_category": 1,
+    "y_category": 2
+  },
+  {
+    "x_id": 3,
+    "y_id": 6,
+    "x_word": "saw",
+    "y_word": "car",
+    "same_category": 0,
+    "x_category": 1,
+    "y_category": 3
+  },
+  {
+    "x_id": 3,
+    "y_id": 7,
+    "x_word": "saw",
+    "y_word": "train",
+    "same_category": 0,
+    "x_category": 1,
+    "y_category": 3
+  },
+  {
+    "x_id": 4,
+    "y_id": 0,
+    "x_word": "apple",
+    "y_word": "cat",
+    "same_category": 0,
+    "x_category": 2,
+    "y_category": 0
+  },
+  {
+    "x_id": 4,
+    "y_id": 1,
+    "x_word": "apple",
+    "y_word": "dog",
+    "same_category": 0,
+    "x_category": 2,
+    "y_category": 0
+  },
+  {
+    "x_id": 4,
+    "y_id": 2,
+    "x_word": "apple",
+    "y_word": "hammer",
+    "same_category": 0,
+    "x_category": 2,
+    "y_category": 1
+  },
+  {
+    "x_id": 4,
+    "y_id": 3,
+    "x_word": "apple",
+    "y_word": "saw",
+    "same_category": 0,
+    "x_category": 2,
+    "y_category": 1
+  },
+  {
+    "x_id": 4,
+    "y_id": 4,
+    "x_word": "apple",
+    "y_word": "apple",
+    "same_category": 1,
+    "x_category": 2,
+    "y_category": 2
+  },
+  {
+    "x_id": 4,
+    "y_id": 5,
+    "x_word": "apple",
+    "y_word": "grape",
+    "same_category": 1,
+    "x_category": 2,
+    "y_category": 2
+  },
+  {
+    "x_id": 4,
+    "y_id": 6,
+    "x_word": "apple",
+    "y_word": "car",
+    "same_category": 0,
+    "x_category": 2,
+    "y_category": 3
+  },
+  {
+    "x_id": 4,
+    "y_id": 7,
+    "x_word": "apple",
+    "y_word": "train",
+    "same_category": 0,
+    "x_category": 2,
+    "y_category": 3
+  },
+  {
+    "x_id": 5,
+    "y_id": 0,
+    "x_word": "grape",
+    "y_word": "cat",
+    "same_category": 0,
+    "x_category": 2,
+    "y_category": 0
+  },
+  {
+    "x_id": 5,
+    "y_id": 1,
+    "x_word": "grape",
+    "y_word": "dog",
+    "same_category": 0,
+    "x_category": 2,
+    "y_category": 0
+  },
+  {
+    "x_id": 5,
+    "y_id": 2,
+    "x_word": "grape",
+    "y_word": "hammer",
+    "same_category": 0,
+    "x_category": 2,
+    "y_category": 1
+  },
+  {
+    "x_id": 5,
+    "y_id": 3,
+    "x_word": "grape",
+    "y_word": "saw",
+    "same_category": 0,
+    "x_category": 2,
+    "y_category": 1
+  },
+  {
+    "x_id": 5,
+    "y_id": 4,
+    "x_word": "grape",
+    "y_word": "apple",
+    "same_category": 1,
+    "x_category": 2,
+    "y_category": 2
+  },
+  {
+    "x_id": 5,
+    "y_id": 5,
+    "x_word": "grape",
+    "y_word": "grape",
+    "same_category": 1,
+    "x_category": 2,
+    "y_category": 2
+  },
+  {
+    "x_id": 5,
+    "y_id": 6,
+    "x_word": "grape",
+    "y_word": "car",
+    "same_category": 0,
+    "x_category": 2,
+    "y_category": 3
+  },
+  {
+    "x_id": 5,
+    "y_id": 7,
+    "x_word": "grape",
+    "y_word": "train",
+    "same_category": 0,
+    "x_category": 2,
+    "y_category": 3
+  },
+  {
+    "x_id": 6,
+    "y_id": 0,
+    "x_word": "car",
+    "y_word": "cat",
+    "same_category": 0,
+    "x_category": 3,
+    "y_category": 0
+  },
+  {
+    "x_id": 6,
+    "y_id": 1,
+    "x_word": "car",
+    "y_word": "dog",
+    "same_category": 0,
+    "x_category": 3,
+    "y_category": 0
+  },
+  {
+    "x_id": 6,
+    "y_id": 2,
+    "x_word": "car",
+    "y_word": "hammer",
+    "same_category": 0,
+    "x_category": 3,
+    "y_category": 1
+  },
+  {
+    "x_id": 6,
+    "y_id": 3,
+    "x_word": "car",
+    "y_word": "saw",
+    "same_category": 0,
+    "x_category": 3,
+    "y_category": 1
+  },
+  {
+    "x_id": 6,
+    "y_id": 4,
+    "x_word": "car",
+    "y_word": "apple",
+    "same_category": 0,
+    "x_category": 3,
+    "y_category": 2
+  },
+  {
+    "x_id": 6,
+    "y_id": 5,
+    "x_word": "car",
+    "y_word": "grape",
+    "same_category": 0,
+    "x_category": 3,
+    "y_category": 2
+  },
+  {
+    "x_id": 6,
+    "y_id": 6,
+    "x_word": "car",
+    "y_word": "car",
+    "same_category": 1,
+    "x_category": 3,
+    "y_category": 3
+  },
+  {
+    "x_id": 6,
+    "y_id": 7,
+    "x_word": "car",
+    "y_word": "train",
+    "same_category": 1,
+    "x_category": 3,
+    "y_category": 3
+  },
+  {
+    "x_id": 7,
+    "y_id": 0,
+    "x_word": "train",
+    "y_word": "cat",
+    "same_category": 0,
+    "x_category": 3,
+    "y_category": 0
+  },
+  {
+    "x_id": 7,
+    "y_id": 1,
+    "x_word": "train",
+    "y_word": "dog",
+    "same_category": 0,
+    "x_category": 3,
+    "y_category": 0
+  },
+  {
+    "x_id": 7,
+    "y_id": 2,
+    "x_word": "train",
+    "y_word": "hammer",
+    "same_category": 0,
+    "x_category": 3,
+    "y_category": 1
+  },
+  {
+    "x_id": 7,
+    "y_id": 3,
+    "x_word": "train",
+    "y_word": "saw",
+    "same_category": 0,
+    "x_category": 3,
+    "y_category": 1
+  },
+  {
+    "x_id": 7,
+    "y_id": 4,
+    "x_word": "train",
+    "y_word": "apple",
+    "same_category": 0,
+    "x_category": 3,
+    "y_category": 2
+  },
+  {
+    "x_id": 7,
+    "y_id": 5,
+    "x_word": "train",
+    "y_word": "grape",
+    "same_category": 0,
+    "x_category": 3,
+    "y_category": 2
+  },
+  {
+    "x_id": 7,
+    "y_id": 6,
+    "x_word": "train",
+    "y_word": "car",
+    "same_category": 1,
+    "x_category": 3,
+    "y_category": 3
+  },
+  {
+    "x_id": 7,
+    "y_id": 7,
+    "x_word": "train",
+    "y_word": "train",
+    "same_category": 1,
+    "x_category": 3,
+    "y_category": 3
+  }
+]
