@@ -1,4 +1,4 @@
-name: Publish complete source materials
+name: Expand complete source materials
 
 on:
   workflow_dispatch:
@@ -12,84 +12,143 @@ permissions:
   contents: write
 
 concurrency:
-  group: publish-source-materials
-  cancel-in-progress: true
+  group: expand-source-materials
+  cancel-in-progress: false
 
 jobs:
-  publish:
+  expand:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 360
     env:
       TAG: v1.0-source-materials
       ARCHIVE: SM_Source_Materials_CORE_5REPORTS.tar.gz
-      PAPER: End-to-end_autonomous_scientific_discovery_arXiv_v1.pdf
       ZENODO_URL: https://zenodo.org/records/19890402/files/SM_Source_Materials_CORE_5REPORTS.tar.gz?download=1
-      ARXIV_URL: https://arxiv.org/pdf/2604.27092
       ARCHIVE_MD5: 5b742fb14f82496aa6fda35ad7613c80
-      PAPER_SHA256: e5bf5110d5aae245547acfb3879f394a7afafde43b7631382489c6fa892f5778
+      ARCHIVE_SHA256: 5f4a9ede99ce79d3dba7f9c33b51905ebe1c32c13749d6e156239e5c075747c6
+      EXPECTED_FILES: 2325
+      EXPECTED_CHECKSUMS: 2324
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Install parallel downloader
+      - name: Install download and large-file tools
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y aria2
+          sudo apt-get install -y aria2 git-lfs
+          git lfs install --local
 
-      - name: Download the complete Zenodo archive
+      - name: Download the canonical Zenodo package
         run: |
           aria2c --continue=true --max-connection-per-server=16 \
             --split=16 --min-split-size=16M --retry-wait=5 --max-tries=0 \
             --file-allocation=none --dir=. --out="$ARCHIVE" "$ZENODO_URL"
 
-      - name: Verify the Zenodo archive
+      - name: Verify the package
         run: |
           printf '%s  %s\n' "$ARCHIVE_MD5" "$ARCHIVE" | md5sum --check -
+          printf '%s  %s\n' "$ARCHIVE_SHA256" "$ARCHIVE" | sha256sum --check -
 
-      - name: Download the original arXiv paper
+      - name: Expand and verify every deposited file
         run: |
-          curl --location --fail --retry 8 --retry-all-errors \
-            --connect-timeout 30 --output "$PAPER" "$ARXIV_URL"
+          mkdir extracted
+          tar -xzf "$ARCHIVE" --strip-components=1 -C extracted
 
-      - name: Verify the original arXiv paper
+          file_count="$(find extracted -type f | wc -l)"
+          checksum_count="$(wc -l < extracted/provenance/checksums_sha256.txt)"
+          test "$file_count" -eq "$EXPECTED_FILES"
+          test "$checksum_count" -eq "$EXPECTED_CHECKSUMS"
+
+          (
+            cd extracted
+            sha256sum --check provenance/checksums_sha256.txt --quiet
+          )
+
+          mkdir -p source-materials
+          cp -a extracted/. source-materials/
+          rm -rf extracted
+          rm "$ARCHIVE"
+
+      - name: Configure Git LFS for binary research arrays
         run: |
-          printf '%s  %s\n' "$PAPER_SHA256" "$PAPER" | sha256sum --check -
+          git lfs track '*.npy' '*.mp4'
 
-      - name: Publish the complete GitHub release
+          oversized="$(find source-materials -type f -size +99M -print -quit)"
+          test -z "$oversized"
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - name: Commit guides, code, figures, and compact data
+        run: |
+          git add .gitattributes
+          find source-materials -mindepth 1 -maxdepth 1 \
+            ! -name shared_raw_data -print0 | xargs -0 git add
+
+          if ! git diff --cached --quiet; then
+            git commit -m 'Add expanded Zenodo source materials'
+            git push origin HEAD:main
+            sleep 12
+          fi
+
+      - name: Commit raw arrays in reviewable batches
+        run: |
+          batch=0
+          batch_bytes=0
+          batch_files=0
+
+          commit_batch() {
+            if git diff --cached --quiet; then
+              return
+            fi
+
+            batch=$((batch + 1))
+            git commit -m "Add expanded raw data batch ${batch}"
+            git push origin HEAD:main
+            sleep 12
+          }
+
+          while IFS= read -r -d '' file; do
+            git add "$file"
+            batch_bytes=$((batch_bytes + $(stat -c '%s' "$file")))
+            batch_files=$((batch_files + 1))
+
+            if (( batch_bytes >= 200000000 || batch_files >= 250 )); then
+              commit_batch
+              batch_bytes=0
+              batch_files=0
+            fi
+          done < <(find source-materials/shared_raw_data -type f -print0 | sort -z)
+
+          commit_batch
+
+      - name: Verify expanded repository state
+        run: |
+          tracked="$(git ls-files source-materials | wc -l)"
+          lfs_objects="$(git lfs ls-files --name-only | wc -l)"
+          test "$tracked" -eq "$EXPECTED_FILES"
+          test "$lfs_objects" -eq 2019
+          git status --short
+
+      - name: Remove the opaque package from the GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          NOTES="$(mktemp)"
-          printf '%s\n' \
-            '# Complete source materials' \
-            '' \
-            'This release mirrors the complete public research deposit for “End-to-end autonomous scientific discovery on a real optical platform.”' \
-            '' \
-            '- The 1.4 GB archive is byte-identical to Zenodo record 19890402.' \
-            '- The paper PDF is byte-identical to arXiv:2604.27092v1.' \
-            '- The reproducibility guide is the copy preserved in the repository.' \
-            '- All upstream hashes are verified before publication.' \
-            '' \
-            'Canonical records:' \
-            '- https://doi.org/10.5281/zenodo.19890402' \
-            '- https://arxiv.org/abs/2604.27092' > "$NOTES"
+          gh release delete-asset "$TAG" "$ARCHIVE" --yes || true
 
-          if gh release view "$TAG" >/dev/null 2>&1; then
-            gh release upload "$TAG" \
-              "$ARCHIVE#Complete source-data and code archive" \
-              "$PAPER#Original arXiv v1 paper" \
-              "reproducibility/SM_Reproducibility_Guide.pdf#Source-data and code guide" \
-              --clobber
-            gh release edit "$TAG" \
-              --title 'Complete source materials (Zenodo v1)' \
-              --notes-file "$NOTES"
-          else
-            gh release create "$TAG" \
-              "$ARCHIVE#Complete source-data and code archive" \
-              "$PAPER#Original arXiv v1 paper" \
-              "reproducibility/SM_Reproducibility_Guide.pdf#Source-data and code guide" \
-              --target "$GITHUB_SHA" \
-              --title 'Complete source materials (Zenodo v1)' \
-              --notes-file "$NOTES"
-          fi
+          notes="$(mktemp)"
+          printf '%s\n' \
+            '# Paper, guide, and expanded source materials' \
+            '' \
+            'The complete Zenodo v1 deposit is now expanded directly in the repository under `source-materials/`.' \
+            'All 2,325 files can be browsed and downloaded separately; the GitHub release no longer duplicates the opaque 1.4 GB package.' \
+            '' \
+            '- Expanded materials: https://github.com/Oxelra-AI/End-to-end-autonomous-scientific-discovery-on-a-real-optical-platform/tree/main/source-materials' \
+            '- Canonical Zenodo record: https://doi.org/10.5281/zenodo.19890402' \
+            '- arXiv record: https://arxiv.org/abs/2604.27092' > "$notes"
+
+          gh release edit "$TAG" \
+            --title 'Paper and expanded source materials (Zenodo v1)' \
+            --notes-file "$notes"
