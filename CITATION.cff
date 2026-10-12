@@ -1,0 +1,77 @@
+cff-version: 1.2.0
+message: "Please cite both the paper and the source-data record when using these materials."
+title: "End-to-end autonomous scientific discovery on a real optical platform"
+type: dataset
+version: "1.0"
+date-released: 2026-04-29
+authors:
+  - family-names: Yang
+    given-names: Shuxing
+  - family-names: Chen
+    given-names: Fujia
+  - family-names: Zhao
+    given-names: Rui
+  - family-names: Wu
+    given-names: Junyao
+  - family-names: Wang
+    given-names: Yize
+  - family-names: Luo
+    given-names: Haiyao
+  - family-names: Han
+    given-names: Ning
+  - family-names: Chen
+    given-names: Qiaolu
+  - family-names: Hu
+    given-names: Yuze
+  - family-names: Li
+    given-names: Wenhao
+  - family-names: Li
+    given-names: Mingzhu
+  - family-names: Chen
+    given-names: Hongsheng
+  - family-names: Yang
+    given-names: Yihao
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.19890402
+    description: Source-data and code archive
+  - type: other
+    value: arXiv:2604.27092
+    description: Paper
+repository-code: "https://github.com/Oxelra-AI/End-to-end-autonomous-scientific-discovery-on-a-real-optical-platform"
+url: "https://doi.org/10.5281/zenodo.19890402"
+preferred-citation:
+  type: article
+  title: "End-to-end autonomous scientific discovery on a real optical platform"
+  year: 2026
+  authors:
+    - family-names: Yang
+      given-names: Shuxing
+    - family-names: Chen
+      given-names: Fujia
+    - family-names: Zhao
+      given-names: Rui
+    - family-names: Wu
+      given-names: Junyao
+    - family-names: Wang
+      given-names: Yize
+    - family-names: Luo
+      given-names: Haiyao
+    - family-names: Han
+      given-names: Ning
+    - family-names: Chen
+      given-names: Qiaolu
+    - family-names: Hu
+      given-names: Yuze
+    - family-names: Li
+      given-names: Wenhao
+    - family-names: Li
+      given-names: Mingzhu
+    - family-names: Chen
+      given-names: Hongsheng
+    - family-names: Yang
+      given-names: Yihao
+  identifiers:
+    - type: other
+      value: arXiv:2604.27092
+  url: "https://arxiv.org/abs/2604.27092"
