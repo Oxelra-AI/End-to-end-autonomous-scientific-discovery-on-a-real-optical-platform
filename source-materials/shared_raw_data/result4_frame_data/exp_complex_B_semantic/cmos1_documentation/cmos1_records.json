@@ -1,0 +1,66 @@
+[
+  {
+    "token_id": 0,
+    "word": "cat",
+    "opm_uW": 870.884507,
+    "exposure_ms": 1.0,
+    "roi_mean": 0.04932219535112381,
+    "file": "cmos1_t0_cat.npy"
+  },
+  {
+    "token_id": 1,
+    "word": "dog",
+    "opm_uW": 870.808886,
+    "exposure_ms": 1.0,
+    "roi_mean": 0.04925885796546936,
+    "file": "cmos1_t1_dog.npy"
+  },
+  {
+    "token_id": 2,
+    "word": "hammer",
+    "opm_uW": 871.565096,
+    "exposure_ms": 1.0,
+    "roi_mean": 0.04818378761410713,
+    "file": "cmos1_t2_hammer.npy"
+  },
+  {
+    "token_id": 3,
+    "word": "saw",
+    "opm_uW": 871.791958,
+    "exposure_ms": 1.0,
+    "roi_mean": 0.0500916987657547,
+    "file": "cmos1_t3_saw.npy"
+  },
+  {
+    "token_id": 4,
+    "word": "apple",
+    "opm_uW": 871.035749,
+    "exposure_ms": 1.0,
+    "roi_mean": 0.04841621220111847,
+    "file": "cmos1_t4_apple.npy"
+  },
+  {
+    "token_id": 5,
+    "word": "grape",
+    "opm_uW": 870.582023,
+    "exposure_ms": 1.0,
+    "roi_mean": 0.05051501840353012,
+    "file": "cmos1_t5_grape.npy"
+  },
+  {
+    "token_id": 6,
+    "word": "car",
+    "opm_uW": 870.430781,
+    "exposure_ms": 1.0,
+    "roi_mean": 0.04933038726449013,
+    "file": "cmos1_t6_car.npy"
+  },
+  {
+    "token_id": 7,
+    "word": "train",
+    "opm_uW": 870.35516,
+    "exposure_ms": 1.0,
+    "roi_mean": 0.0491509884595871,
+    "file": "cmos1_t7_train.npy"
+  }
+]

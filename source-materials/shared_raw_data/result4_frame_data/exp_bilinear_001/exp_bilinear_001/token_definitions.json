@@ -1,0 +1,38 @@
+[
+  {
+    "token_id": 0,
+    "block_size": 20,
+    "n_grid": 6,
+    "gap": 4,
+    "seed": 42,
+    "pattern_size": 140,
+    "n_superpixels": 36
+  },
+  {
+    "token_id": 1,
+    "block_size": 20,
+    "n_grid": 6,
+    "gap": 4,
+    "seed": 1042,
+    "pattern_size": 140,
+    "n_superpixels": 36
+  },
+  {
+    "token_id": 2,
+    "block_size": 20,
+    "n_grid": 6,
+    "gap": 4,
+    "seed": 2042,
+    "pattern_size": 140,
+    "n_superpixels": 36
+  },
+  {
+    "token_id": 3,
+    "block_size": 20,
+    "n_grid": 6,
+    "gap": 4,
+    "seed": 3042,
+    "pattern_size": 140,
+    "n_superpixels": 36
+  }
+]
