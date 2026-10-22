@@ -1,36 +1,25 @@
 # Research lineage
 
-This repository records the foundational real-platform study of Qiushi
-Discovery Engine. Its importance lies in the complete research loop rather than
-in a single benchmark score: a long-horizon agentic system formed hypotheses,
-translated theory into measurements, operated through a physical interface,
-revised claims under experimental evidence and produced an auditable research
-record.
+This study connects autonomous research to an experimental system whose
+response must be measured. Across the three studies, the question becomes
+progressively more open: reproduce a transmission-matrix experiment on a
+different platform; turn a theoretical ordering relation into a transport
+experiment; then develop and evaluate an optical representation for input
+pairs.
 
-The three studies establish a deliberate progression:
+The open-ended study brings coherent superposition, scattering and intensity
+detection into a phase-stepped measurement protocol. Its research trajectory
+connects the choice of observable, experimental implementation and downstream
+comparison. The current [evaluation methods](EVALUATION.md) separate the
+readout definition, fixed-library recognition and transfer to unseen inputs,
+so each result answers a specific question.
 
-1. **Reproduction under changed conditions** tests whether the system can
-   reconstruct a scientific method rather than replay a fixed script.
-2. **Theory-to-experiment translation** tests whether it can invent the missing
-   operational bridge between an abstract statement and measurable evidence.
-3. **Open-ended discovery** tests whether the research direction itself can
-   emerge from interaction among theory, computation and a physical platform.
+Related Qiushi Engine projects explore sustained autonomous research in other
+domains:
 
-The third study identifies optical bilinear interaction by combining three
-ordinary physical ingredients—coherent superposition, high-dimensional
-scattering and square-law detection—into a nontrivial pairwise-computation
-mechanism. The result is significant because the hypothesis, observable,
-measurement protocol and evidence boundary were developed along one sustained
-autonomous trajectory.
-
-Later public Qiushi Engine research repositories extend this research model to
-other domains:
-
-- [BabyLM research](https://github.com/Oxelra-AI/Qiushi-Engine-Babylm-Research)
-- [Matrix multiplication research](https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research)
+- [Language-model research](https://github.com/Oxelra-AI/Qiushi-Engine-Babylm-Research)
+- [Matrix-multiplication research](https://github.com/Oxelra-AI/Qiushi-Engine-Matmul-Research)
 - [Kissing-number research](https://github.com/Oxelra-AI/Qiushi-Engine-Kissing-Number-Research)
 
-Those projects should be read as later branches of a broader program in
-sustained, evidence-grounded autonomous research. This repository preserves the
-original experimentally grounded starting point and its complete public
-evidence package.
+Each project has its own scientific question, methods and results. This
+repository provides the optical study's measurements and offline analyses.

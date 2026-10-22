@@ -3,114 +3,90 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2604.27092-b31b1b.svg)](https://arxiv.org/abs/2604.27092)
 [![Zenodo](https://zenodo.org/badge/DOI/10.5281/zenodo.19890402.svg)](https://doi.org/10.5281/zenodo.19890402)
 
-This repository brings together the paper, source data, offline analysis code,
-figures, provenance records and reproducibility materials for **“End-to-end
-autonomous scientific discovery on a real optical platform.”**
+[中文](README.zh-CN.md) · [Run the analyses](DATA_AND_REPRODUCIBILITY.md) · [Evaluation methods and results](EVALUATION.md)
 
-The study introduces **Qiushi Discovery Engine**, a long-horizon research
-system coupled to a real free-space optical platform. Across three studies, the
-system moves from reproducing a published experiment, to translating an
-abstract theory into a physical validation, and finally to proposing and
-experimentally validating an optical bilinear interaction for pairwise
-computation.
+**Qiushi Discovery Engine connects sustained autonomous research to a real
+optical experiment.** The system develops a research plan, writes and executes
+experimental code, measures optical responses, and uses the results to revise
+its next experiment. This repository provides the public measurements, analysis
+code and research records for three studies with progressively more open goals.
 
-## Scientific result
+## From reproducing an experiment to developing a research direction
 
-The work reports three progressively more open research settings:
+| Study | Scientific work | Experimental record |
+| --- | --- | --- |
+| Transmission matrices | Adapt a published method to a different optical platform and improve wavefront control | A 256 × 256 acquisition using 1,025 calibrated measurements; best focusing enhancement increases from 25.59 to 46.1 |
+| Majorization and wave transport | Translate an abstract ordering relation into experimentally accessible transport intervals | Operators reconstructed from optical measurements, interval comparisons, and physical spot checks |
+| Optical pair representations | Develop a phase-sensitive interaction readout from coherent superposition, scattering and intensity detection | Four-token XOR and eight-token category-labelled experiments, with comparisons across feature families and readout budgets |
 
-1. **Transmission-matrix reproduction.** Qiushi Engine transfers a published
-   transmission-matrix experiment to a non-original optical platform, completes
-   a 256 × 256 acquisition with 1,025 calibrated measurements, and improves the
-   best focusing enhancement from 25.59 to 46.1.
-2. **Theory-to-experiment translation.** It converts majorization order in wave
-   coherence into measurable transport intervals and validates the predicted
-   nesting relation on the physical platform.
-3. **Open-ended discovery.** Starting from the broad theme of optical computing
-   for artificial intelligence, it identifies an optical bilinear interaction:
-   coherent superposition, scattering and square-law detection generate a
-   measurable pair-dependent field structurally related to the bilinear
-   compatibility operation in Transformer attention.
+The open-ended study spans 206 research steps and 1,288.1 minutes, producing
+163 research notes and 44 scripts. The common thread is a research process
+that keeps theory, implementation and physical measurement connected as the
+question develops.
 
-The open-ended study spans 206 Agent Steps, 1,288.1 minutes, 145.9 million
-tokens, 3,242 model calls and 1,242 tool calls, producing 163 research notes and
-44 scripts. The claim is grounded in physical measurements rather than a
-simulation-only workflow.
+## Optical pair computation
 
-## Repository map
+Four phase-stepped measurements and a blank control produce a complex
+pair-dependent readout, represented numerically by its real and imaginary
+parts. This lets a linear classifier use phase-sensitive pair information
+alongside the intensity-based representations tested in the study.
 
-```text
-paper/
-  End-to-end_autonomous_scientific_discovery.pdf
-reproducibility/
-  SM_Reproducibility_Guide.pdf
-  MANIFEST.md
-source-materials/
-  README.md
-  00_context/visual_documentation/video_qiushi.mp4
-  01_result2_paper/
-  02_result2_refine_paper/
-  03_result3_paper/
-  04_result4_paper/
-  05_result4_refine_paper/
-  main_text_data_panels/
-  shared_raw_data/result4_frame_data/
-  provenance/
-DATA_AND_REPRODUCIBILITY.md
-RESEARCH_LINEAGE.md
-CITATION.cff
-CITATION.bib
+On the eight-token fixed-library experiment, the full complex readout achieves
+100% balanced accuracy for ordered-pair identity, same-category classification
+and ordered category-pair classification when holding out one repeat index
+across all input pairs. These are measurements from the same acquisition
+campaign. [The evaluation guide](EVALUATION.md) reports this result alongside
+unseen-pair and held-category tests, defines each split, and gives the
+corresponding digital baselines.
+
+## Run it
+
+With Python 3.12 and Git LFS installed, run these commands from the repository root:
+
+```bash
+git lfs pull
+python -m pip install -r requirements.txt
+python -m analysis.result4 --stage main --output outputs/result4
 ```
 
-The complete Zenodo deposit is unpacked under [`source-materials/`](source-materials/),
-so no bundle download or extraction is required. All 2,325 files can be opened
-or downloaded separately while retaining the original five-report layout. The
-directory contains source data, 29 offline Python analysis scripts, generated
-figures, selected main-text-panel replots, raw Result 4 CMOS arrays, provenance
-maps and per-file checksums.
+The current analysis fits normalization on training data, records held-out
+predictions, and distinguishes measurements, input pairs and categories as
+split units. Compressed-feature selection uses inner cross-validation when a
+subset is selected. See [the reproduction guide](DATA_AND_REPRODUCIBILITY.md)
+for sparse readouts, feature budgets and four-phase readout checks.
 
-The 2,018 NumPy arrays are stored with Git LFS to keep normal Git history
-usable. They remain individually downloadable from their GitHub file pages.
-For a complete local clone, install Git LFS before cloning, or run
-`git lfs pull` after cloning.
+## Explore the repository
 
-## Start here
+| Path | Contents |
+| --- | --- |
+| [`analysis/`](analysis/) | Maintained offline analysis and evaluation code |
+| [`results/`](results/) | Compact results from the public measurements |
+| [`source-materials/`](source-materials/) | The unchanged, expanded Zenodo v1 deposit: measurements, original scripts, figures and provenance |
+| [`paper/`](paper/) | Previously released paper |
+| [`reproducibility/`](reproducibility/) | Original source-data guide and integrity manifest |
+| [`tests/`](tests/) | Tests for splitting, preprocessing, feature selection and phase readout |
 
-- [Paper](paper/End-to-end_autonomous_scientific_discovery.pdf)
-- [Expanded source materials](source-materials/README.md)
-- [Live Qiushi platform video (4 min 24.2 s)](source-materials/00_context/visual_documentation/video_qiushi.mp4)
-- [Source-data and code guide](reproducibility/SM_Reproducibility_Guide.pdf)
-- [Data and reproduction map](DATA_AND_REPRODUCIBILITY.md)
-- [Integrity manifest](reproducibility/MANIFEST.md)
-- [Research lineage](RESEARCH_LINEAGE.md)
-- [Zenodo record](https://doi.org/10.5281/zenodo.19890402)
-- [arXiv record](https://arxiv.org/abs/2604.27092)
+The archive contains 2,325 files, including 2,018 NumPy arrays stored with Git
+LFS. The [platform video](source-materials/00_context/visual_documentation/video_qiushi.mp4)
+shows the experimental setting. New analyses write to `outputs/`, leaving the
+archived measurements and results intact. Optical acquisition uses the
+separately maintained hardware-control environment; this repository runs the
+offline analyses.
 
-## Reproducibility boundary
-
-The public package supports inspection and offline rerunning of the reported
-analyses. It does not include the Qiushi Engine core system or the
-instrument-control software. Re-acquiring measurements requires the original
-optical platform and its calibrated control environment. The paper and formal
-Supplementary Information remain the authoritative scientific description;
-the expanded source-material tree provides data, code and provenance
-traceability.
-
-## Authors
+## Authors and citation
 
 Shuxing Yang, Fujia Chen, Rui Zhao, Junyao Wu, Yize Wang, Haiyao Luo, Ning Han,
 Qiaolu Chen, Yuze Hu, Wenhao Li, Mingzhu Li, Hongsheng Chen, and Yihao Yang.
 
-For correspondence, see the paper.
+Use [`CITATION.cff`](CITATION.cff) or [`CITATION.bib`](CITATION.bib), and cite the
+paper and data record when using the measurements. Related Qiushi research
+projects are linked in [Research lineage](RESEARCH_LINEAGE.md).
 
-## Citation
-
-Use the metadata in [`CITATION.cff`](CITATION.cff) or
-[`CITATION.bib`](CITATION.bib). Cite both the arXiv paper and the Zenodo
-source-data record when using the deposited data or analysis code.
+[Organization repository](https://github.com/Oxelra-AI/End-to-end-autonomous-scientific-discovery-on-a-real-optical-platform)
+· [Shuxing Yang's repository](https://github.com/Cherish0925/End-to-end-autonomous-scientific-discovery-on-a-real-optical-platform)
 
 ## Rights
 
-No repository-wide license is asserted here. The arXiv paper and Zenodo record
-retain their own terms, and third-party materials remain subject to their
-respective rights. Contact the corresponding authors for uses not already
-permitted by those terms.
+The paper, Zenodo deposit and third-party materials retain their existing
+terms. No repository-wide license is asserted; contact the corresponding
+authors for uses not already permitted by those terms.

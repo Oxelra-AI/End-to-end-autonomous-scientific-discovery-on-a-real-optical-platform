@@ -1,139 +1,117 @@
 # Data and reproducibility
 
-## Expanded GitHub mirror and canonical record
+Run the maintained analyses from the repository root. Their outputs go to
+`outputs/`; the original measurements, scripts and figures remain in
+`source-materials/` as an unchanged archival snapshot.
 
-The complete deposit is expanded under [`source-materials/`](source-materials/).
-Every file can be inspected or downloaded separately; no archive extraction is
-required. The tree contains 2,325 files and preserves the paths and bytes from
-the Zenodo v1 package.
+## Setup
 
-The canonical archival record remains Zenodo DOI
-<https://doi.org/10.5281/zenodo.19890402>. Its original package is
-`SM_Source_Materials_CORE_5REPORTS.tar.gz`, MD5
-`5b742fb14f82496aa6fda35ad7613c80` and SHA-256
-`5f4a9ede99ce79d3dba7f9c33b51905ebe1c32c13749d6e156239e5c075747c6`.
-
-After cloning with Git LFS, verify the expanded files directly:
+Use Python 3.12 and Git LFS:
 
 ```bash
 git lfs pull
-cd source-materials
-sha256sum -c provenance/checksums_sha256.txt --quiet
+python -m pip install -r requirements.txt
 ```
 
-A silent checksum command means that all 2,324 files listed by the upstream
-manifest match the Zenodo package. The checksum list itself is the 2,325th
-file.
+`requirements.txt` pins the environment used for the committed results.
+The NumPy arrays must be downloaded as data, not left as LFS pointer files;
+the current loader reports a specific error if it encounters a pointer.
 
-## Package structure
+## Current Result 4 analyses
 
-| Path | Role |
+```bash
+# Full readout, training-fold normalization, and explicit holdout units.
+python -m analysis.result4 --stage main --output outputs/result4
+
+# Sparse readouts, held-category evaluation and self-pair controls.
+python -m analysis.result4 --stage refined --output outputs/refined
+
+# Prespecified random subsets and nested feature selection.
+python -m analysis.budgets --features outputs/result4 --output outputs/budgets
+
+# Four-phase consistency, including blank-subtracted residuals.
+python -m analysis.phase_readout --output outputs/phase_readout
+
+# Rebuild the compact, version-controlled result tables after all runs finish.
+python -m analysis.summarize --runs outputs --output results
+```
+
+The first two commands also accept `--deposit PATH` for an extracted copy of
+the public package. Use a fresh output directory for a different dataset;
+frame caches are associated with the dataset path, experiment and bin size.
+No hardware access or model-service credentials are needed.
+
+The main stage regenerates the archived full-budget scores, then evaluates
+training-fold normalization and additional holdouts. The refined stage
+recomputes the three-bin sparse grid and direct raw-input baselines, with and
+without self-pairs. Hyperparameter `alpha=1.0`, token definitions and labels
+are preserved. A compact table is in [EVALUATION.md](EVALUATION.md).
+
+| Output | Contents |
 | --- | --- |
-| `source-materials/00_context/` | Qualitative visual documentation of the optical platform |
-| `source-materials/01_result2_paper/` | Initial transmission-matrix reproduction |
-| `source-materials/02_result2_refine_paper/` | Refined self-referenced transmission-matrix experiment |
-| `source-materials/03_result3_paper/` | Majorization-order transport experiment |
-| `source-materials/04_result4_paper/` | Complex-B bilinear field, XOR and semantic benchmark |
-| `source-materials/05_result4_refine_paper/` | Refined advantage map and sparse-output analyses |
-| `source-materials/main_text_data_panels/` | Audit replots for Fig. 2d-g, Fig. 3d-f and Fig. 4g-i |
-| `source-materials/shared_raw_data/result4_frame_data/` | Full Result 4 frame-level CMOS arrays |
-| `source-materials/provenance/` | File inventory, checksums, figure-source and raw-data maps |
+| `environment.json` | Package versions, input-script hashes and analysis hash |
+| `semantic_main.json`, `xor_main.json` | Archived, regenerated and training-normalized scores; corrected predictions |
+| `*_split_comparisons.json` | Repeat-blocked, ordered-pair and unordered-pair holdouts; fixed 16-pair split for the eight-token experiment |
+| `*_bin25_features.npz` | Reconstructed full-readout features for budget analyses |
+| `sparse_comparisons.json`, `sparse_summary.csv` | All three bins and nine sparse-output counts, with each self-pair protocol |
+| `raw_baselines.json` | The six direct raw-input feature baselines under matching category splits |
+| `semantic_k50.json`, `xor_nested_k400.json` | Feature-budget results and subset choices |
+| `phase_readout.json` | Phase means, repeat variation, closure and blank-subtracted closure in the released array units |
 
-Every report section contains `report/`, `source_data/`, `scripts/` and
-`figures/` subdirectories. The audit replots are generated from the included
-data; they are not intended to reproduce the final manuscript page layout.
+In the main-stage JSON, use `corrected.balanced_accuracy` for current LOO
+scores. In category-holdout results, use `mean_fold_balanced_accuracy`.
+Individual category folds overlap in their cross-category test pairs, so
+folds are not independent experimental repetitions.
 
-## Environment
+## Archived package
 
-- Python 3.9 or newer
-- NumPy
-- SciPy
-- Matplotlib
-- scikit-learn
+The canonical v1 deposit is [Zenodo 19890402](https://doi.org/10.5281/zenodo.19890402).
+Its package is `SM_Source_Materials_CORE_5REPORTS.tar.gz`:
 
-For headless execution:
+- MD5: `5b742fb14f82496aa6fda35ad7613c80`
+- SHA-256: `5f4a9ede99ce79d3dba7f9c33b51905ebe1c32c13749d6e156239e5c075747c6`
 
-```bash
-export MPLBACKEND=Agg
-```
-
-## Main-text data panels
+Verify the expanded data after `git lfs pull`:
 
 ```bash
-cd source-materials
-python main_text_data_panels/scripts/generate_main_text_data_panels.py
+(cd source-materials && sha256sum -c provenance/checksums_sha256.txt --quiet)
 ```
 
-## Report 1: transmission-matrix reproduction
+The manifest covers 2,324 files; the checksum list is the 2,325th file.
+The original scripts and generated figures remain available for historical
+reproduction. Use `analysis/` for the current Result 4 evaluation. The v1
+report PDFs and archived outputs retain their original values.
+
+| Archive path | Study |
+| --- | --- |
+| `01_result2_paper/` | Initial transmission-matrix reproduction |
+| `02_result2_refine_paper/` | Refined self-referenced transmission matrix |
+| `03_result3_paper/` | Majorization-order transport |
+| `04_result4_paper/` | XOR and eight-token pair benchmarks |
+| `05_result4_refine_paper/` | Readout-budget and sparse-output studies |
+| `shared_raw_data/result4_frame_data/` | Result 4 camera arrays |
+| `provenance/` | Input, figure and checksum maps |
+
+The existing figure commands for the first two research settings are:
 
 ```bash
-cd source-materials/01_result2_paper
-python scripts/make_core_figures.py
-python scripts/make_core_figures_v2.py
+(cd source-materials/01_result2_paper && python scripts/make_core_figures_v2.py)
+(cd source-materials/02_result2_refine_paper && python scripts/generate_paper_figures.py)
+(cd source-materials/03_result3_paper && python scripts/generate_v3_figures.py)
 ```
 
-## Report 2: refined self-referenced transmission matrix
-
-```bash
-cd source-materials/02_result2_refine_paper
-python scripts/generate_paper_figures.py
-```
-
-`fix_tm_filtering.py` optionally recomputes filtered transmission-matrix
-diagnostics and can overwrite filtered arrays.
-
-## Report 3: majorization-order transport
-
-```bash
-cd source-materials/03_result3_paper
-python scripts/generate_v3_figures.py
-python scripts/generate_raw_data_figure.py
-python scripts/analyze_majorization_spectra.py
-python scripts/analyze_majorization_spectra_v2.py
-```
-
-## Report 4: Complex-B bilinear interaction field
-
-```bash
-cd source-materials/04_result4_paper
-RAW=../shared_raw_data/result4_frame_data
-
-python scripts/analyze_complex_B_xor_showcase.py \
-  --data-dir $RAW/exp_bilinear_001/exp_bilinear_001 \
-  --output-dir source_data/processed/complex_B_xor_showcase_results
-
-python scripts/analyze_complex_B_semantic.py \
-  --data-dir $RAW/exp_complex_B_semantic \
-  --output-dir source_data/processed/complex_B_semantic_results
-
-python scripts/generate_semantic_bin10_figures.py
-python scripts/generate_semantic_bin10_figures_v2.py
-
-python scripts/analyze_semantic_compressed_budget.py \
-  --data-dir $RAW/exp_complex_B_semantic \
-  --output-dir source_data/processed/semantic_compressed_budget_results
-```
-
-## Report 5: refined Complex-B advantage map
-
-```bash
-cd source-materials/05_result4_refine_paper
-python scripts/analyze_refinement_phase2_fast.py
-python scripts/regenerate_xor_complex_scatter_bin10.py
-python scripts/analyze_three_bin_sparse.py
-python scripts/analyze_advantage_boundary.py
-python scripts/analyze_bin_anchored_twin.py
-python scripts/analyze_sparse_tap_twin.py
-```
-
-## What is and is not reproduced
-
-The package supports report, figure, processed-data and script inspection;
-offline regeneration of the included analyses; main-text data-panel reruns;
-and Result 4 raw-frame reprocessing. It does not support optical data
-re-acquisition. That requires the original hardware, calibration and
-instrument-control stack, which are not part of this deposit.
-
-For the authoritative mapping from inputs and scripts to outputs, use
+These regenerate the archived analyses for those studies; they are separate
+from the current Result 4 recomputation. Source mappings are in
 `source-materials/provenance/FIGURE_SOURCE_MAP.tsv` and
 `source-materials/main_text_data_panels/MAIN_TEXT_DATA_PANEL_SOURCE_MAP.tsv`.
+
+## Tests
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+Tests cover training-only normalization, held-category token separation,
+reverse-pair grouping, inner feature selection and the analytical four-phase
+readout. GitHub Actions runs these tests without downloading the camera data.
+Full numerical runs use the commands above.

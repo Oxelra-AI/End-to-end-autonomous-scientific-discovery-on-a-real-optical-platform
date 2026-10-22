@@ -1,0 +1,8 @@
+{
+  "main_scores": 48,
+  "main_scores_unchanged_by_training_fold_normalization": 47,
+  "maximum_archived_main_difference": 3.333333333332966e-05,
+  "sparse_scores": 324,
+  "sparse_mismatches_at_archived_precision": [],
+  "interpretation": "Reproduction compares the released scores at their stored precision; added holdouts answer different prediction questions."
+}

@@ -1,0 +1,20 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "scikit_learn": "1.8.0",
+  "ridge_alpha": 1.0,
+  "started_utc": "2026-10-22T15:29:44.737918+00:00",
+  "source": "https://zenodo.org/records/19890402",
+  "archive_md5": "5b742fb14f82496aa6fda35ad7613c80",
+  "stage": "refined",
+  "input_sha256": {
+    "provenance/checksums_sha256.txt": "168d10e591b9d46d79c6f576be2ec3758707648a01e4067ca4b1c8c12ebe348f",
+    "04_result4_paper/scripts/analyze_complex_B_semantic.py": "cd4fa5d741b4e4558b5c491fd4fb454be95b79a059eb974b45bf9a00c4b7427c",
+    "04_result4_paper/scripts/analyze_complex_B_xor_showcase.py": "1e6c3822a85e1163558e77c39414a7e1752cfa75d181988e4c18ac7b43cd22a7",
+    "05_result4_refine_paper/scripts/analyze_advantage_boundary.py": "880ced1cc850d544220dcd76779a7704b406d5cc58be2371381cb4614ce66679",
+    "05_result4_refine_paper/scripts/analyze_three_bin_sparse.py": "a10450d4a4931ca809dd9f1d96c593b8e628f5560affc6ffb3c0b6f4224a7706"
+  },
+  "analysis_sha256": "0f1b9c59b641e121d6aa80ef77ab4719803b1659a87d34b9983a2f1b6437594c",
+  "elapsed_seconds": 29.359
+}
